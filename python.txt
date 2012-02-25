@@ -1,6 +1,41 @@
+PIP
+---
+
+Installing modules:
+
+	pip install [modulename]
+
+Install module and upgrade if possible:
+
+	pip install --upgrade [modulename]
+
+
+VIRTUALENV
+----------
+
+Install:
+
+	pip install virtualenv
+
+Creating new virtualenv:
+
+	virtualenv [envname]
+
+Activating environment:
+
+	[envname]/Scripts/activate (in Windows: [envname]\Scripts\activate)
+
+Freezing requirements from env:
+
+	pip freeze > requirements.txt
+
+FABRIK
+------
+
+
 EPIO
+----
 
 Uploading app:
 
 epio upload -a appname
-
