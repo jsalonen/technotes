@@ -1,0 +1,27 @@
+INSTALLING
+-----------
+
+Installing Coffeescript with npm:
+
+npm install -g coffee-script
+
+
+COMPILING
+---------
+
+coffee -c source.coffee
+-> produces source.js
+
+SYNTAX HIGHLIGHTING
+-------------------
+
+For Textmate / Sumblime Text:
+
+	https://github.com/jashkenas/coffee-script-tmbundle
+
+
+SYNTAX REFERENCE
+----------------
+
+Reference:
+	http://jashkenas.github.com/coffee-script/#overview

@@ -1,0 +1,1 @@
+Python on Heroku: http://devcenter.heroku.com/articles/python#prerequisites

@@ -1,0 +1,141 @@
+LESSONS LEARNED FROM NODE.JS STUFF SO FAR
+-----------------------------------------
+
+- npm is awesome
+- Windows support is horrible
+
+BEGINNING NODE.JS
+-----------------
+
+Beginner's guide:
+	http://nodeguide.com/beginner.html
+
+Getting started with Node.js, npm, Coffeescript, Express, Jade and Redis
+	http://blog.xebia.com/2011/06/24/getting-started-with-node-js-npm-coffeescript-express-jade-and-redis/
+
+NPM
+---
+
+NPM = Package manager for Node
+
+General stuff about packages
+
+- Global module location (under ~)
+- Local modules under project (node_modules/)
+
+Install new package:
+
+	npm install [packagename]
+
+List modules under current project:
+
+	npm list
+
+IDEs
+----
+
+http://c9.io/
+(IDE + hosting)
+
+DEPLOYING NODE
+--------------
+
+http://howtonode.org/deploying-node-upstart-monit
+- upstart + monit
+
+NODE.JS ON WINDOWS
+------------------
+
+In Windows 7 global modules are at:
+	~/AppData/Roaming/npm/node_modules
+
+Installing Contextify on Windows from git
+-----------------------------------------
+
+Open console and run (https://github.com/brianmcd/contextify/pull/17):
+
+	npm install -g node-gyp
+	git clone https://github.com/brianmcd/contextify.git
+	cd contextify
+	node-gyp clean
+	node-gyp configure
+	node-gyp build
+
+-> FAILS (msbuild.exe)
+	-> Added "C:\Windows\Microsoft.NET\Framework64\v2.0.50727" to path
+
+-> FAILS (VCBuild.exe)
+	-> VC++ compiler is needed, which I don't have
+	- First thought: "F*** this, I'm gonna switch to Linux"
+	-> Second thought: maybe somebody has already made pre-built binaries?
+		- https://github.com/tmpvar/jsdom/issues/360
+		- https://github.com/Benvie/contextify/blob/master/build/Release/contextify.node
+
+- Copied contextify.node (see above) under node_modules
+
+Tried out if it works:
+
+	node
+	> require('contextify')
+	{ wrap: [Function] }
+	-> contextify loads OK
+
+Problem: npm still struggles with installing modules that depend on contextify:
+
+	npm install jsdom
+
+	"Failed at the contextify@0.1.1 preinstall script.""
+
+Back to drawing board.
+
+Contextify "fork for Windows":
+
+	- Installed Visual Studio (sigh)
+	git clone https://github.com/Benvie/contextify.git
+	Opened the VC project in Visual Studio
+	- Build:	
+	-> "Error	1	error D8016: '/ZI' and '/Ox' command-line options are incompatible"
+
+Retrying via gyp (now Visual Studio is installed):
+
+	git clone https://github.com/brianmcd/contextify.git
+	cd contextify
+	node-gyp clean
+	node-gyp configure
+	node-gyp build 
+
+=> HELL YEAH!!!!!! (use `node-gyp build -v` for more verbose output)
+
+Copied generated `Release/contextify.node` to `node_modules/contextify.node`
+
+Tried out if it works in:
+
+	node
+	> require('contextify')
+	{ ContextifyContext: [Function: ContextifyContext] }
+
+Ok let's see what happens when we try to install some dependent libraries locally (like jsdom):
+
+	npm install jsdom
+	-> OK!
+	- install -g fails
+	-> Seems like its a good idea to plant this custom built module per project
+
+Seems like I finally got it working with jsom by doing it this way:
+
+	- Clean local node_modules folder
+	- Copy freshly built contextify.node  under node_modules
+	- Install jsdom with npm install jsdom
+	- Make sure you don't spoil this build by letting npm f*** up contextify by auto-building it
+
+What we actually needed:
+	- node-gyp
+	- MS Visual Studio
+	- A LOT OF PATIENCE and keeping fingers crossed
+	- This stuff seriously sucked
+
+NODE.JS HOSTING
+---------------
+
+Seems like very popular:
+http://www.joyent.com/

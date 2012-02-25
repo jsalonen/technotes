@@ -1,0 +1,52 @@
+Using Git
+
+Create new repository
+`git init`
+
+ALIASES
+In ~/.gitconfig:
+
+[alias]
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+
+
+Staging:
+`git add ...`
+`git rm ...`
+
+Create new remote
+`git remote add URL`
+
+Initial push to master:
+`git push -u origin master`
+
+Next time you can just do:
+`git push`
+
+Ignoring files:
+- Create `.gitignore`
+
+Sample:
+
+	# Can ignore specific files
+	.DS_Store
+
+	# Use wildcards as well
+	*~
+	*.swp
+
+	# Can also ignore all directories and files in a directory.
+	tmp/**/* 
+
+Pull changes from remote repository:
+
+`git pull`
+
+Resetting stashing:
+
+`git reset`
+
+`git reset HEAD`
+
+`git reset --hard HEAD`
+
