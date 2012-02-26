@@ -50,3 +50,24 @@ Resetting stashing:
 
 `git reset --hard HEAD`
 
+## Tagging
+
+List tags:
+
+	git tag
+
+List tags (wildcard search):
+
+	git tag -l v0.1*
+
+Creating tag:
+
+	git tag -a v0.2 -m 'Version 0.2'
+
+	v0.2 = tag name
+	-m = add annotation
+
+Sharing tags:
+
+	git push --tags
+

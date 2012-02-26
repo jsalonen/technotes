@@ -25,9 +25,13 @@ Activating environment:
 
 	[envname]/Scripts/activate (in Windows: [envname]\Scripts\activate)
 
+	NOTE: if you are using Windows Powershell, this doesn't work as expected
+		Fallback to using `cmd`. E.g. run `cmd` inside PowerShell
+
 Freezing requirements from env:
 
 	pip freeze > requirements.txt
+
 
 FABRIK
 ------

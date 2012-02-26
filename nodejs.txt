@@ -31,6 +31,19 @@ List modules under current project:
 
 	npm list
 
+BEGINNING EXPRESS.JS (AND MONGODB)
+----------------------------------
+
+http://howtonode.org/express-mongodb
+
+Omg:
+
+	mkdir [project]
+	cd project
+	express -c stylus
+	npm install -d
+
+
 IDEs
 ----
 
