@@ -1,27 +1,25 @@
-INSTALLING
------------
+# CoffeeScript
+
+## Installation
 
 Installing Coffeescript with npm:
 
 npm install -g coffee-script
 
 
-COMPILING
----------
+## Compiling
 
 coffee -c source.coffee
 -> produces source.js
 
-SYNTAX HIGHLIGHTING
--------------------
+## Tutorials and Learning materials
 
-For Textmate / Sumblime Text:
+The little book on CoffeeScript: <http://arcturo.github.com/library/coffeescript/>
 
-	https://github.com/jashkenas/coffee-script-tmbundle
+## Syntax Highlighting
 
+For Textmate / Sumblime Text: <https://github.com/jashkenas/coffee-script-tmbundle>
 
-SYNTAX REFERENCE
-----------------
+## Syntax Reference
 
-Reference:
-	http://jashkenas.github.com/coffee-script/#overview
+Language Overview: <http://jashkenas.github.com/coffee-script/#overview>
