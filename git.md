@@ -90,8 +90,8 @@ For instance, you could have a remote with name `origin`.
 
 ### Pushing and pulling
 
-Pushing = you want to update (push) your local changes to a remote repository.
-Pulling = you want to fetch (pull) remote changes to your local repository.
+- Pushing = you want to update (push) your local changes to a remote repository.
+- Pulling = you want to fetch (pull) remote changes to your local repository.
 
 To initially push stuff to remote (named origin) run:
 
@@ -117,19 +117,19 @@ Resetting stashing:
 
 List tags:
 
-	git tag
+    git tag
 
 List tags (wildcard search):
 
-	git tag -l v0.1*
+    git tag -l v0.1*
 
 Creating tag:
 
-	git tag -a v0.2 -m 'Version 0.2'
+    git tag -a v0.2 -m 'Version 0.2'
 
-	v0.2 = tag name
-	-m = add annotation
+    v0.2 = tag name
+    -m = add annotation
 
-Sharing tags:
+Sharing tags (they are not pushed to remote by default):
 
-	git push --tags
+    git push --tags
