@@ -1,8 +1,11 @@
-LEARN YOURSELF HASKELL KEY POINTS (http://learnyouahaskell.com/starting-out)
+# Haskell
 
-CHAPTER 1 - STARTING OUT
+My collection of key points from "Learn You a Haskell for Great Good" <http://learnyouahaskell.com/>!
 
-Running Haskell interpreter: ghci
+## Notes: starting Out
+
+Running Haskell interpreter:
+	ghci
 
 "Space is simply function application in Haskell"
 

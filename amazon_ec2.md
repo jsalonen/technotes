@@ -1,7 +1,10 @@
+# Amazon EC2
+
 Running security updates: `sudo yum update`
 
-MongoDB on EC2:
-http://www.mongodb.org/display/DOCS/Amazon+EC2
+## Running MongoDB on EC2 
+
+Notes: <http://www.mongodb.org/display/DOCS/Amazon+EC2>
 
 Mounting Amazon Elastic Block Store (EBS)
 http://aws.amazon.com/ebs/
@@ -11,6 +14,7 @@ Command-line reference:
 http://docs.amazonwebservices.com/AWSEC2/latest/CommandLineReference/index.html?ApiReference-cmd-DescribeVolumes.html
 
 Configuring command-line for making EC2 SOAP requests:
+
 - Need to obtain pkey and cert
 - Go to Amazon account
 - Copy private key and cert to ~/.ssh/
@@ -29,7 +33,7 @@ FUN COMMANDS (http://paulstamatiou.com/how-to-getting-started-with-amazon-ec2):
 	List out all instances in our EC2 account
 	Don't know why it returns blank output!?!?
 
-INITIALIZING NEW FILESYSTEM ON EBS FOR MONGODB
+## How to initialize new filesystem on EBS for MongoDB
 
 They say to mount with noatime and nodiratime (http://www.mongodb.org/display/DOCS/Amazon+EC2)
 There is also some ebsmount utility for automated mounting (http://www.turnkeylinux.org/blog/ebsmount)
@@ -44,6 +48,6 @@ There is also some ebsmount utility for automated mounting (http://www.turnkeyli
 
 Note that they recommend having 4 EBS volumes raided to run as MongoDB stack.
 
-CONFIGURING MONGO ON THIS EBS SYSTEM
+### Configuring MongoDB for this EBS system
 
 sudo mkdir -p /ebsvol1/db/
