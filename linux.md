@@ -15,6 +15,20 @@ Install (yes, rudimentary):
 
 	sudo apt-get install [package]
 
+### Hardware
+
+Display hardware config:
+
+	lshw
+
+Display USB status:
+
+	lsusb
+
+Display PCI status:
+
+	lspci
+
 ## Managing files
 
 ### Transferring files with SCP
