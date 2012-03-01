@@ -35,7 +35,7 @@ Remembering passphrases. Use ssh-agent. For details and code see: <http://help.g
 
 ### Using PowerShell instead of Git bash
 
-See: [Powershell.md][powershell.md]
+See: [Powershell.md](powershell.md)
 
 ## Using Git
 
