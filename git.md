@@ -33,6 +33,9 @@ Adding/changing passphrases in existing keys:
 
 Remembering passphrases. Use ssh-agent. For details and code see: <http://help.github.com/ssh-key-passphrases/>
 
+### Using PowerShell instead of Git bash
+
+See: [Powershell.md][powershell.md]
 
 ## Using Git
 
