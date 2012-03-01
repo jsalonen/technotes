@@ -50,8 +50,8 @@ See: [Powershell.md](powershell.md)
 You find them at `~/.gitconfig` in section `alias`:
 
     [alias]
-    st = status
-    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+        st = status
+        hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 
 ### Staging
 
