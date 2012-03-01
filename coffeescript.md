@@ -4,7 +4,7 @@
 
 Installing Coffeescript with npm:
 
-  npm install -g coffee-script
+    npm install -g coffee-script
 
 
 ## Compiling
