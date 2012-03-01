@@ -11,6 +11,7 @@ functional reasoner for Python.
 ### Installing layercake (an rdflib fork)
 
 Get it:
+
 - Go to <http://code.google.com/p/python-dlp/wiki/LayerCakePythonDivergence>
 - Make SVN checkout (creates folder `python-dlp`)
 
