@@ -1,6 +1,6 @@
 # Node.js
 
-In short: lessons learned from node.js stuff so far
+Lessons learned from node.js stuff so far:
 
 - npm is awesome
 - Windows support for some node stuff is horrible
