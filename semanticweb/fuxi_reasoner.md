@@ -20,3 +20,15 @@ Now install that layercake:
 	cd layercake-python
 	python setup.py install
 
+### Installing FuXi
+
+Fuxi is part of that `python-dlp` package you already downloaded
+if you installed layercake.
+
+Install fuxi:
+
+	cd python-dlp (if you didn't)
+	cd fuxi
+	python setup.py install
+
+You're done!
