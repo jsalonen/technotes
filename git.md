@@ -1,4 +1,40 @@
-Using Git
+# Git
+
+## Setting up Git
+
+### Setting up Git for Windows
+
+See: <http://help.github.com/win-set-up-git/>
+
+Remember to use Git bash instead of cmd.exe or PowerShell!
+It's ridiculously simple and effective to use.
+
+Go to your .ssh:
+
+	cd ~/.ssh
+
+If you want to remove and backup old keys:
+
+	mkdir key_backup
+	cd id_rsa* key_backup
+	rm id_rsa*
+
+Generate key:
+
+	ssh-keygen -t rsa -C "email@domain.com"
+
+- Instead of passwords, git uses SSH public key authentication
+- Using SSH key without a passphrase is like storing your passwords in a .txt file (for anyone to pickup and use)
+- => always use passphrases with ssh keys
+
+Adding/changing passphrases in existing keys:
+
+	ssh-keygen -p
+
+Remembering passphrases. Use ssh-agent. For details and code see: <http://help.github.com/ssh-key-passphrases/>
+
+
+## Using Git
 
 Create new repository
 `git init`
@@ -8,7 +44,6 @@ In ~/.gitconfig:
 
 [alias]
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-
 
 Staging:
 `git add ...`
@@ -70,4 +105,3 @@ Creating tag:
 Sharing tags:
 
 	git push --tags
-
