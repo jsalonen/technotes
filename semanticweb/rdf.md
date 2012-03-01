@@ -1,5 +1,14 @@
 # RDF (Resource Description Framework)
 
+## CMS Integrations
+
+### Drupal
+
+Drupal 7:
+
+- RDF extensions: <http://drupal.org/project/rdfx>
+- Video: The Semantic Web and Drupal Part I <http://www.youtube.com/watch?v=xcPf4PeF57Y>
+
 ## Storage solutions
 
 ### MongoDB as an RDF Store
