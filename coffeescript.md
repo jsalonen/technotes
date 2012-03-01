@@ -11,7 +11,7 @@ Installing Coffeescript with npm:
 
 Simple example:
 
-  coffee -c source.coffee
+    coffee -c source.coffee
   
 -> produces `source.js`
 
