@@ -4,13 +4,16 @@
 
 Installing Coffeescript with npm:
 
-npm install -g coffee-script
+  npm install -g coffee-script
 
 
 ## Compiling
 
-coffee -c source.coffee
--> produces source.js
+Simple example:
+
+  coffee -c source.coffee
+  
+-> produces `source.js`
 
 ## Tutorials and Learning materials
 
