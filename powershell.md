@@ -1,8 +1,8 @@
 # Using Windows PowerShell
 
 First point: PowerShell is awesome. When using Windows, don't cripple
-yourself with cmd.exe or cygwin, when you can use the best tool
-available, that is: the Windows PowerShell. 
+yourself with cmd.exe or cygwin, when you can use the best tool available,
+that is: the Windows PowerShell. 
 
 Second point: Yeah, I love using shell tools on Linux. Cygwin is just
 too hacky for Windows. And there are a lot of good, finer points too.

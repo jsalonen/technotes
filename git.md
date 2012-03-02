@@ -6,8 +6,8 @@
 
 See: <http://help.github.com/win-set-up-git/>
 
-Remember to use Git bash instead of cmd.exe or PowerShell!
-It's ridiculously simple and effective to use.
+Remember to use Git bash instead of cmd.exe or PowerShell! It's
+ridiculously simple and effective to use.
 
 Go to your .ssh:
 
@@ -39,46 +39,71 @@ See: [Powershell.md](powershell.md)
 
 ## Using Git
 
-Create new repository
-`git init`
+### Creating new repository
 
-ALIASES
-In ~/.gitconfig:
+    mkdir project
+    cd project
+    git init
 
-[alias]
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+### Aliases
 
-Staging:
-`git add ...`
-`git rm ...`
+You find them at `~/.gitconfig` in section `alias`:
 
-Create new remote
-`git remote add URL`
+    [alias]
+        st = status
+        hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 
-Initial push to master:
-`git push -u origin master`
+### Staging
+
+    git add [pattern]
+    git rm [pattern]
+
+#### Using ignores (.gitignore)
+
+To leave out files from git, specify them as masks in `.gitignore` files. Each directory can have its own ignore file.
+
+Sample file:
+
+    # Example 1: Ignoring specific file
+    .DS_Store
+
+    # Example 2: Ignore with wildcard matching
+    *~
+    *.swp
+
+    # Example 3: You can also ignore stuff from subdirectories
+    tmp/**/* 
+
+
+Examples:
+
+    git add README.txt
+    git rm README.old
+
+### Managing remotes
+
+Create new remote:
+
+    git remote add <remotename> <remoteurl>
+
+For instance, you could have a remote with name `origin`. 
+
+### Pushing and pulling
+
+- Pushing = you want to update (push) your local changes to a remote repository.
+- Pulling = you want to fetch (pull) remote changes to your local repository.
+
+To initially push stuff to remote (named origin) run:
+
+    git push -u origin master
 
 Next time you can just do:
-`git push`
 
-Ignoring files:
-- Create `.gitignore`
+    git push
 
-Sample:
+To pull changes from remote repository:
 
-	# Can ignore specific files
-	.DS_Store
-
-	# Use wildcards as well
-	*~
-	*.swp
-
-	# Can also ignore all directories and files in a directory.
-	tmp/**/* 
-
-Pull changes from remote repository:
-
-`git pull`
+    git pull
 
 Resetting stashing:
 
@@ -92,19 +117,19 @@ Resetting stashing:
 
 List tags:
 
-	git tag
+    git tag
 
 List tags (wildcard search):
 
-	git tag -l v0.1*
+    git tag -l v0.1*
 
 Creating tag:
 
-	git tag -a v0.2 -m 'Version 0.2'
+    git tag -a v0.2 -m 'Version 0.2'
 
-	v0.2 = tag name
-	-m = add annotation
+    v0.2 = tag name
+    -m = add annotation
 
-Sharing tags:
+Sharing tags (they are not pushed to remote by default):
 
-	git push --tags
+    git push --tags
