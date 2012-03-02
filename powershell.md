@@ -12,6 +12,12 @@ More readings with finer points at:
 
 ## Introduction
 
+Basic stuff:
+
+- Remember to use TAB a lot for auto-completing commands (who likes writing too much anyway)
+- You are no longer able to run executables with "filename", you need to do ".\filename" (equivalent of ./filename in unix)
+  - Autocomplete is your friend here as well
+
 ### Opening PowerShell and Checking Version
 
 - Just look for `PowerShell` in start menu.
@@ -107,3 +113,12 @@ passphrases, you need to keep it running.
 ## Further readings
 
 	<http://www.amazon.com/dp/1932394907/>
+
+## System Administration
+
+### Managing Services
+
+List services:
+
+	Get-Service
+
