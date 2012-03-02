@@ -29,6 +29,18 @@ Check your PowerShell version:
 
 Make sure you are using PowerShell 2 (Major=2, others don't matter right here)
 
+### Using Profile
+
+Where your profile location:
+
+	$PROFILE
+
+Reloading your profile:
+
+	. $PROFILE
+
+More stuff: <http://msdn.microsoft.com/en-us/library/windows/desktop/bb613488%28v=vs.85%29.aspx>
+
 ### Managing modules with PsGet
 
 Search and install PowerShell modules easy: <http://psget.net/>
