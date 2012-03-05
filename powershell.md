@@ -99,6 +99,17 @@ Also you can try reloading your profile:
 
 	. $PROFILE
 
+### Using Python's Virtualenv from PowerShell
+
+System's execution policies need to be relaxed.
+Run this in PowerShell (as administrator):
+
+	Set-ExecutionPolicy AllSigned
+
+For more details on execution policies, type:
+
+	Get-Help Set-ExecutionPolicy
+
 #### Setting up SSH agent for PowerShell
 
 SSH agent is basically a program that remember your SSH

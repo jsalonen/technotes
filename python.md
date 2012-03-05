@@ -28,3 +28,14 @@ projects.
 
 With virtualenv, you can create project-specific configurations
 of Python modules and packages. 
+
+Craeting a new virtualenv:
+
+	virtualenv [envname]
+
+Activating it:
+
+	./envname/Scripts/activate
+
+Note: if you are using Windows [[PowerShell]], you may need to change your
+execution policy!
