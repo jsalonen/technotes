@@ -66,8 +66,6 @@ I wouldn't deploy node.js apps on Windows machines, but developing stuff locally
 
 ### Specific problem: Installing Contextify on Windows from git
 
-<a href="#contextify-on-windows"></a>
-
 This is what I went through:
 
 Found out that node-gyp allows you to work around installing contextify on Windows <https://github.com/brianmcd/contextify/pull/17>.
