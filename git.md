@@ -33,6 +33,13 @@ Adding/changing passphrases in existing keys:
 
 Remembering passphrases. Use ssh-agent. For details and code see: <http://help.github.com/ssh-key-passphrases/>
 
+### Minimal Configurations
+
+It is strongly recommended to set yourself username and email to label your commits:
+
+    git config --global user.name "Firstname Lastname"
+    git config --global user.email "your_email@youremail.com"    
+   
 ### Using PowerShell instead of Git bash
 
 See: [Powershell.md](powershell.md)
