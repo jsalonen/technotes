@@ -64,7 +64,9 @@ Self-hosted:
 
 I wouldn't deploy node.js apps on Windows machines, but developing stuff locally on a Windows machine is an option nice to have. **A word of warning: node.js and Windows are not best friends. Usually you are just fine, but some stuff may be tricky (or even impossible).**
 
-### Specific problem: Installing Contextify on Windows from git <a id="contextify-on-windows" />
+### Specific problem: Installing Contextify on Windows from git
+
+<a href="#contextify-on-windows"></a>
 
 This is what I went through:
 
