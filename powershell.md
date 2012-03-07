@@ -148,6 +148,10 @@ What is in your path:
 Add to path:
 
     $env.path+"C:\Program Files\My Program\bin"
+    
+Update registry:
+
+    Set-ItemProperty -Path 'Registry::HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment' -Name PATH –Value $env:path
 
 ### Managing Services
 
