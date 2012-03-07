@@ -139,6 +139,16 @@ passphrases, you need to keep it running.
 
 ## System Administration
 
+### Managing PATH
+
+What is in your path:
+
+    $env:path
+    
+Add to path:
+
+    $env.path+"C:\Program Files\My Program\bin"
+
 ### Managing Services
 
 List services:
