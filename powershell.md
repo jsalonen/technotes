@@ -133,10 +133,6 @@ When you want to stop the agent, just run:
 Note that as long as you want it to remember your
 passphrases, you need to keep it running.
 
-## Further readings
-
-	<http://www.amazon.com/dp/1932394907/>
-
 ## System Administration
 
 ### Managing PATH
@@ -160,3 +156,4 @@ List services:
 	Get-Service
 
 More stuff: http://www.youtube.com/watch?v=I8fyElEGo60&feature=related
+
