@@ -120,6 +120,40 @@ Resetting stashing:
 
 `git reset --hard HEAD`
 
+## Merging and Conflicts
+
+**Auto-merge with pull**
+
+    git pull
+    git push
+
+**Typical merge (no conflicts):**
+
+    git fetch
+    git status
+    git merge origin/master
+    git push
+
+Done
+
+**Merge with conflicts:**
+
+    git fetch
+    git status
+
+Find and fix conflicts:
+
+    git diff
+
+When fixed, add:
+
+    git add [filename]
+
+Commit and push back:
+
+    git commit -m "..."
+    git push
+
 ## Tagging
 
 List tags:
@@ -140,3 +174,4 @@ Creating tag:
 Sharing tags (they are not pushed to remote by default):
 
     git push --tags
+
