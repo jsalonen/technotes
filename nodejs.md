@@ -19,8 +19,11 @@ NPM = Package manager for Node
 ### General stuff about npm packages
 
 - Global modules
- - Windows: ~\AppData\Roaming\npm\node_modules
- - Use npm with -g switch to install as a global module
+ - Windows: `C:\Program Files (x86)\nodejs\node_modules`
+ - You need to run `npm install` under that folder to install modules there
+- User-specific modules
+ - Windows: `C:\Users\[username]\AppData\Roaming\npm\node_modules`
+ - Use `npm with -g` switch to install here
 - Project-specific modules
  - [projectname]/node_modules
 
