@@ -157,3 +157,26 @@ What eventually worked out:
 
 This stuff seriously sucked.
 
+### Specific problem: Installing Now.js on Windows
+
+Found this thread: <https://groups.google.com/group/nowjs/browse_thread/thread/6073639ad58a7fdf?pli=1>
+
+First install `socket.io` (run shell as admin):
+
+    cd "C:\Program Files (x86)\nodejs"
+    npm install socket.io
+
+Obtain nowjs Windows build from <https://github.com/Flotype/now/zipball/windows >    
+
+- Unzip
+- Rename from `Flotype-now-xxx` to `now`
+- Move `now` under `C:\Program Files (x86)\nodejs\node_modules\`
+- As a result you should have like the bin folder as `C:\Program Files (x86)\nodejs\node_modules\now\bin`
+
+Let's try out chatroom example:
+
+- `cd node_modules\now\examples\multiroomchat_example`
+- `node .\multiroomchat_server.js`
+- Open browser (`http://localhost:8080`)
+
+ROCK!
