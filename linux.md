@@ -40,3 +40,14 @@ Transfer files with SCP:
 ### Mounting filesystem over SSH
 
 	sshfs user@host.com:/sourcefolder/ /home/localuser/targetdir
+
+## Find text in files
+
+Recursively find files that contain `word`:
+
+	grep -r "word" .
+
+Case-insensitive version:
+
+	grep -ir "word" .
+

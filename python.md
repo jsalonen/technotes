@@ -39,3 +39,8 @@ Activating it:
 
 Note: if you are using Windows [[PowerShell]], you may need to change your
 execution policy!
+
+## REST Programming in Python
+
+Check out python-requests library: <https://github.com/kennethreitz/requests>
+
