@@ -10,6 +10,12 @@ See: <http://devcenter.heroku.com/articles/python#prerequisites>
 
 See: <http://devcenter.heroku.com/articles/node-js>
 
+#### Now.js on Heroku
+
+From <https://twitter.com/#!/NowJsTeam/status/115861105032708096>:
+
+	nowjs.initialize('httpServer', {socketio: {transports:['xhr-polling','jsonp-polling']}});	
+
 ## Understanding Heroku
 
 ### Using Heroku Console (Cedar stack)
