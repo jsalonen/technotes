@@ -1,4 +1,4 @@
-# Linux
+# Linux (Red Hat)
 
 Some rudimentary Linux stuff
 
@@ -51,3 +51,10 @@ Case-insensitive version:
 
 	grep -ir "word" .
 
+
+## Managing firewall
+
+### Starting / stopping firewall
+
+    /etc/init.d/iptables start
+    /etc/init.d/iptables stop
