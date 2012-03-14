@@ -58,3 +58,4 @@ Case-insensitive version:
 
     /etc/init.d/iptables start
     /etc/init.d/iptables stop
+    /etc/init.d/iptables restart
