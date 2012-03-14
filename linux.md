@@ -59,3 +59,7 @@ Case-insensitive version:
     /etc/init.d/iptables start
     /etc/init.d/iptables stop
     /etc/init.d/iptables restart
+
+Open port `8080`:
+
+    iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
