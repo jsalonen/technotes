@@ -76,4 +76,5 @@ Iptables config can be found from:
 
     /etc/sysconfig/iptables
     
-*Warning: it may be wise to backup iptables file, if you wish to edit it manually!*
+**Warning: it is generally unwise to directly edit the config file**
+
