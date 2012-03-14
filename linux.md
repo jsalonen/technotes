@@ -52,9 +52,17 @@ Case-insensitive version:
 	grep -ir "word" .
 
 
-## Managing firewall
+## Managing network
 
-### Starting / stopping firewall
+### Network adapters
+
+List all adapters:
+
+    ifconfig -a
+
+### Firewall
+
+Start / stopping firewall
 
     /etc/init.d/iptables start
     /etc/init.d/iptables stop
