@@ -71,3 +71,9 @@ Start / stopping firewall
 Open port `8080`:
 
     iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
+    
+Iptables config can be found from:
+
+    /etc/sysconfig/iptables
+    
+*Warning: it may be wise to backup iptables file, if you wish to edit it manually!*
