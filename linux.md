@@ -1,4 +1,4 @@
-# Linux
+# Linux (Red Hat)
 
 Some rudimentary Linux stuff
 
@@ -50,4 +50,31 @@ Recursively find files that contain `word`:
 Case-insensitive version:
 
 	grep -ir "word" .
+
+
+## Managing network
+
+### Network adapters
+
+List all adapters:
+
+    ifconfig -a
+
+### Firewall
+
+Start / stopping firewall
+
+    /etc/init.d/iptables start
+    /etc/init.d/iptables stop
+    /etc/init.d/iptables restart
+
+Open port `8080`:
+
+    iptables -I INPUT -p tcp --dport 8080 -j ACCEPT
+    
+Iptables config can be found from:
+
+    /etc/sysconfig/iptables
+    
+**Warning: it is generally unwise to directly edit the config file**
 
