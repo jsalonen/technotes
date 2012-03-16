@@ -44,3 +44,7 @@ execution policy!
 
 Check out python-requests library: <https://github.com/kennethreitz/requests>
 
+## Prebuilt packages for Windows
+
+See: <http://www.lfd.uci.edu/~gohlke/pythonlibs/>
+
