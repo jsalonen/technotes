@@ -1,4 +1,10 @@
-# pathedit.ps1 - A Windows PATH Variable Editor
+# PathEditor - A Windows PATH Variable Editor
+#
+# HOW TO INSTALL
+# - Copy this file under the folder of your $profile
+# - Add that folder to your PATH
+# - From now on you can start this app by invoking `PathEditor` in PowerShell
+# 
 #
 # From: <http://github.com/jsalonen>
 #
