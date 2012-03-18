@@ -2,11 +2,10 @@
 
 First point: PowerShell is awesome. When using Windows, don't cripple
 yourself with cmd.exe or cygwin, when you can use the best tool available,
-that is: the Windows PowerShell. 
+that is: the Windows PowerShell.
 
-Second point: Yeah, I love using shell tools on Linux. Cygwin is just
-too hacky for Windows. And there are a lot of good, finer points too.
-More readings with finer points at:
+Ok, I am somewhat kidding, but there are really good points on why you
+should use PowerShell in Windows. I really suggest that you read this:
 
 	<http://blogs.technet.com/b/jamesone/archive/2009/11/02/you-can-t-be-a-21st-century-admin-without-powershell.aspx>
 
@@ -196,6 +195,14 @@ Example 2: Using Input Parameters:
 
 ## Recipes
 
+### Writing Errors to Console
+
+	$Host.UI.WriteErrorLine("Your error message")
+
+### Alert WIndow
+
+	[System.Windows.Forms.MessageBox]::Show("Add your alert message here")
+
 ### Current Directory vs. Current Location
 
 - When you `cd` PowerShell doesn't change current working directory
@@ -209,3 +216,15 @@ More notes: <http://huddledmasses.org/powershell-power-user-tips-current-directo
 	$i = new-object System.Drawing.Bitmap("C:\Filepath\file.jpg); 
 	$i.rotateflip("Rotate90FlipNone"); 
 	$i.Save("C:\Filepath\file-rotated.jpg");
+
+### Greater than, smaller than
+
+Greater than comparisons:
+
+	$a -gt $b
+
+Smaller than:
+
+	$a -lt $b
+
+Etc.
