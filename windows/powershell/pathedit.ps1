@@ -1,3 +1,8 @@
+# pathedit.ps1 - A Windows PATH Variable Editor
+#
+# From: <http://github.com/jsalonen>
+#
+
 # Load the Winforms assembly
 [reflection.assembly]::LoadWithPartialName("System.Windows.Forms")
 
@@ -28,7 +33,6 @@ $pathItemTextboxes = @()
 
 $form = New-Object Windows.Forms.Form
 $form.Size = New-Object Drawing.Point $windowWidth, $windowHeight
-$form.AutoScroll = True
 
 # Set the dialog title
 $form.text = "PathEdit"
@@ -39,13 +43,14 @@ $font = new-object System.Drawing.Font "Consolas", 10
 # Create the label control and set text, size and location
 $label = New-Object Windows.Forms.Label
 $label.Location = New-Object Drawing.Point 8,8
-$label.Size = New-Object Drawing.Point 200,15
-$label.text = "PATH ("+[Environment]::UserName+")"
+$label.Size = New-Object Drawing.Point $windowWidth,15
+$label.text = "User PATH (username: "+[Environment]::UserName+")"
 $label.font = $font
 
 # Print textfield for each item
 $y = [int]32
 $i = 0;
+$pathItems += ''
 Foreach ($pathitem in $pathItems)
 {
     $textfield = New-Object Windows.Forms.TextBox
