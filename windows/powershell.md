@@ -84,6 +84,10 @@ Now install PsGet:
 Install it with PsGet:
 
 	install-module PsUrl
+	
+**Important: you need to import module before it can be used (otherwise you just get an error):**
+
+	import-module PsUrl
 
 Simple `wget` style get URL:
 
