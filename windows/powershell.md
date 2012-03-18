@@ -180,3 +180,32 @@ List services:
 	Get-Service
 
 More stuff: http://www.youtube.com/watch?v=I8fyElEGo60&feature=related
+
+## Creating Your Own Scripts
+
+Example (`helloworld.ps1`):
+
+	"Hello World!"
+
+Example 2: Using Input Parameters:
+
+	param($Param1, $Param2)
+	"You specified following parameters:"
+	"$Param1"
+	"$Param2"
+
+## Recipes
+
+### Current Directory vs. Current Location
+
+- When you `cd` PowerShell doesn't change current working directory
+- This may become problematic on many occassions
+
+More notes: <http://huddledmasses.org/powershell-power-user-tips-current-directory/>
+
+### Rotating an Image File
+
+	[Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms"); 
+	$i = new-object System.Drawing.Bitmap("C:\Filepath\file.jpg); 
+	$i.rotateflip("Rotate90FlipNone"); 
+	$i.Save("C:\Filepath\file-rotated.jpg");
