@@ -7,7 +7,7 @@
         <th>Command Prompt</th>
     </tr>
     <tr>
-      <td><code>ls</code></td>
+      <td><code>ls</code><br>&nbsp;</td>
       <td><code>ls</code><br><code>dir</code></td>
       <td><code>dir</code></td>
     </tr>
@@ -27,7 +27,7 @@
       <td><em>N/A</em></td>
     </tr>
     <tr>
-      <td><code>ps</code></td>
+      <td><code>ps</code><br>&nbsp;</td>
       <td><code>ps</code> (alias)<br><code>get-process</code> (native)</td>
       <td><em>N/A</em></td>
     </tr>
@@ -37,7 +37,7 @@
       <td><em>N/A</em></td>
     </tr>
     <tr>
-      <td><code>kill 1234</code></td>
+      <td><code>kill 1234</code><br>&nbsp;</td>
       <td><code>kill 1234</code> (alias)<br><code>stop-process 1234</code> (native)</td>
       <td><em>N/A</em></td>
     </tr>
