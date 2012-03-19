@@ -52,3 +52,5 @@
       <td><em>N/A</em></td>
     </tr>
 </table>
+
+Disclaimer: the listed commands are rough equivalents.
