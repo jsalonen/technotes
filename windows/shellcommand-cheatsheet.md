@@ -33,6 +33,12 @@
     </tr>
     <tr>
       <td><code>ps aux | grep /usr/bin/yourprocess</code></td>
+      <td><code>ps</code><br><code>Get-Process</code></td>
+      <td><em>N/A</em></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>ps aux | grep /usr/bin/yourprocess</code></td>
       <td>?</td>
       <td><em>N/A</em></td>
       <td></td>
