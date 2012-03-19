@@ -7,6 +7,11 @@
         <th>Command Prompt</th>
     </tr>
     <tr>
+      <td><code>ls</code></td>
+      <td><code>ls</code><br><code>dir</code></td>
+      <td><code>dir</code></td>
+    </tr>
+    <tr>
       <td><code>cd ~</code></td>
       <td><code>cd ~</code></td>
       <td><em>N/A</em></td>
