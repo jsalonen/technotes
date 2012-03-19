@@ -49,6 +49,11 @@
       <td><em>N/A</em></td>
     </tr>
     <tr>
+      <td><code>man command</code><br>&nbsp;</td>
+      <td><code>man command</code> (alias)<br><code>get-help command</code> (native)</td>
+      <td><em>N/A</em></td>
+    </tr>
+    <tr>
       <td><code></code></td>
       <td><code></code></td>
       <td><em>N/A</em></td>
