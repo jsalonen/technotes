@@ -50,7 +50,7 @@
     </tr>
     <tr>
       <td><code>top</code></td>
-      <td><a href="http://jon.netdork.net/2010/04/06/powershell-top-x-processes-using-cpu/">(with scripting)</a></td>
+      <td><a href="http://jon.netdork.net/2010/04/06/powershell-top-x-processes-using-cpu/">[1]</a>, <a href="http://superuser.com/a/176625/25810">[2]</a></td>
       <td>-</td>
     </tr>
     <tr>
