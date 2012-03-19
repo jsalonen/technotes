@@ -39,7 +39,7 @@
       <td>-</td>
     </tr>
     <tr>
-      <td><code>ps -aux | grep yourprocess</code></td>
+      <td><code>ps -aux | grep yourprocess</code><br>&nbsp;</td>
       <td><code>ps | grep yourprocess</code> (alias)<br><code>get-process yourprocess*</code> (native; better)</td>
       <td>-</td>
     </tr>
