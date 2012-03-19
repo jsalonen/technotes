@@ -238,3 +238,7 @@ Smaller than:
 	$a -lt $b
 
 Etc.
+
+## Literature
+
+Bruce Payette. (2007). Windows PowerShell in Action. Manning. <http://manning.com/payette/>
