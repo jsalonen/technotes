@@ -38,8 +38,8 @@
     </tr>
     <tr>
       <td><code>ps -aux | grep yourprocess</code><br>&nbsp;</td>
-      <td><code>ps yourprocess*</code> (alias)<br><code>get-process yourprocess*</code> (native)</td>
-      <td>You can use grep in PowerShell too, but it hides table header</td>
+      <td><code>ps yourprocess*</code><br><code>get-process yourprocess*</code></td>
+      <td>`ps` is an alias of `get-process`. `grep` works in PowerShell too, but unlike `get-process` it hides the table header.</td>
     </tr>
     <tr>
       <td><code>kill 1234</code><br>&nbsp;</td>
