@@ -13,7 +13,7 @@
     </tr>
     <tr>
       <td><code>rm -Rf dirname</code></td>
-      <td><code>Remove-Item -Recurse -Force dirname</code></td>
+      <td><code>remove-item -recurse -force dirname</code></td>
       <td><code>rmdir /s /q dirname</code></td>
     </tr>
     <tr>
@@ -23,12 +23,12 @@
     </tr>
     <tr>
       <td><code>find . | xargs grep 'string' -ls</code></td>
-      <td><code>ls | Select-String "string"</code></td>
+      <td><code>ls | select-string "string"</code></td>
       <td><em>N/A</em></td>
     </tr>
     <tr>
       <td><code>ps</code></td>
-      <td><code>ps</code> (alias)<br><code>Get-Process</code> (native)</td>
+      <td><code>ps</code> (alias)<br><code>get-process</code> (native)</td>
       <td><em>N/A</em></td>
     </tr>
     <tr>
@@ -42,8 +42,8 @@
       <td><em>N/A</em></td>
     </tr>
     <tr>
-      <td><code>kill</code></td>
-      <td><code>?</code></td>
+      <td><code>kill 1234</code></td>
+      <td><code>stop-process 1234</code></td>
       <td><em>N/A</em></td>
     </tr>
     <tr>
