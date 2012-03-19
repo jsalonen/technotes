@@ -7,7 +7,13 @@ that is: the Windows PowerShell.
 Ok, I am somewhat kidding, but there are really good points on why you
 should use PowerShell in Windows. I really suggest that you read this:
 
-	<http://blogs.technet.com/b/jamesone/archive/2009/11/02/you-can-t-be-a-21st-century-admin-without-powershell.aspx>
+<http://blogs.technet.com/b/jamesone/archive/2009/11/02/you-can-t-be-a-21st-century-admin-without-powershell.aspx>
+
+And take a look at this:
+
+<http://www.slideshare.net/noahgift/iron-python-command-line>
+
+And then decide, whether there is something going on here.
 
 ## Introduction
 
