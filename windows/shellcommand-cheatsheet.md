@@ -13,8 +13,8 @@
     </tr>
     <tr>
       <td><code>man command</code><br>&nbsp;</td>      
-      <td><code>man command</code> (alias)<br><code>get-help command</code> (native)</td>
-      <td></td>
+      <td><code>man command</code><br><code>get-help command</code></td>
+      <td>`man` is an alias of `get-help`</td>
     </tr>
     <tr>
       <td><code>rm -Rf dirname</code></td>
@@ -29,11 +29,11 @@
     <tr>
       <td><code>find . | xargs grep 'string' -ls</code></td>
       <td><code>ls | select-string "string"</code></td>
-      <td></td>
+      <td>`ls` is an alias of `select-string`</td>
     </tr>
     <tr>
       <td><code>ps</code><br>&nbsp;</td>
-      <td><code>ps</code> (alias)<br><code>get-process</code> (native)</td>
+      <td><code>ps</code><br><code>get-process</code></td>
       <td></td>
     </tr>
     <tr>
@@ -43,8 +43,8 @@
     </tr>
     <tr>
       <td><code>kill 1234</code><br>&nbsp;</td>
-      <td><code>kill 1234</code> (alias)<br><code>stop-process 1234</code> (native)</td>
-      <td></td>
+      <td><code>kill 1234</code><br><code>stop-process 1234</code></td>
+      <td>`kill` is an alias of `stop-process`</td>
     </tr>
     <tr>
       <td><code>top</code></td>
