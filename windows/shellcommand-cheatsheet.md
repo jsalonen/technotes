@@ -45,7 +45,7 @@
     </tr>
     <tr>
       <td><code>top</code></td>
-      <td>(todo)[http://jon.netdork.net/2010/04/06/powershell-top-x-processes-using-cpu/]</td>
+      <td><a href="http://jon.netdork.net/2010/04/06/powershell-top-x-processes-using-cpu/">(with scripting)</a></td>
       <td><em>N/A</em></td>
     </tr>
     <tr>
