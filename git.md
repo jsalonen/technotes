@@ -175,3 +175,18 @@ Sharing tags (they are not pushed to remote by default):
 
     git push --tags
 
+## Recipes
+
+### Updating a Github Fork From the Original Repo
+
+From: <http://bradlyfeeley.com/2008/09/03/update-a-github-fork-from-the-original-repo/>
+
+And a remote and a track it:
+    git remote add --track master user1 git://github.com/user1/reponame.git
+
+List remotes:
+    git remote
+
+Fetch and merge:
+    git fetch user1
+    git merge user1/master
