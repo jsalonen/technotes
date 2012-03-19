@@ -37,13 +37,13 @@
       <td><em>N/A</em></td>
     </tr>
     <tr>
-      <td><code>top</code></td>
-      <td>(todo)[http://jon.netdork.net/2010/04/06/powershell-top-x-processes-using-cpu/]</td>
+      <td><code>kill 1234</code></td>
+      <td><code>kill 1234</code> (alias)<br><code>stop-process 1234</code> (native)</td>
       <td><em>N/A</em></td>
     </tr>
     <tr>
-      <td><code>kill 1234</code></td>
-      <td><code>kill 1234</code> (alias)<br><code>stop-process 1234</code> (native)</td>
+      <td><code>top</code></td>
+      <td>(todo)[http://jon.netdork.net/2010/04/06/powershell-top-x-processes-using-cpu/]</td>
       <td><em>N/A</em></td>
     </tr>
     <tr>
