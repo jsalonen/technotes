@@ -9,7 +9,7 @@
     <tr>
       <td><code>cd ~</code></td>
       <td><code>cd ~/<code></td>
-      <td><code>N/A</code></td>
+      <td><em>N/A</em></td>
     </tr>
     <tr>
       <td><code>rm -Rf dirname</code></td>
