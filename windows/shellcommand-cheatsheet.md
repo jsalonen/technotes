@@ -39,9 +39,15 @@
     </tr>
     <tr>
       <td><code>top</code></td>
-      <td>[todo](http://jon.netdork.net/2010/04/06/powershell-top-x-processes-using-cpu/)</td>
+      <td>(todo)[http://jon.netdork.net/2010/04/06/powershell-top-x-processes-using-cpu/]</td>
       <td><em>N/A</em></td>
       <td>Show top X processes using CPU</td>
+    </tr>
+    <tr>
+      <td><code>kill</code></td>
+      <td><code>?</code></td>
+      <td><em>N/A</em></td>
+      <td>Killing a specific process</td>
     </tr>
     <tr>
       <td><code></code></td>
