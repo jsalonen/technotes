@@ -32,13 +32,13 @@
       <td></td>
     </tr>
     <tr>
-      <td><code>ps aux | grep /usr/bin/yourprocess</code></td>
+      <td><code>ps</code><br></td>
       <td><code>ps</code> (alias)<br><code>Get-Process</code> (native method)</td>
       <td><em>N/A</em></td>
       <td></td>
     </tr>
     <tr>
-      <td><code>ps aux | grep yourprocess</code></td>
+      <td><code>ps -aux | grep yourprocess</code></td>
       <td><code>ps | grep yourprocess</td>
       <td><em>N/A</em></td>
       <td></td>
