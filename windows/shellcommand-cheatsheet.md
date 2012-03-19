@@ -28,7 +28,7 @@
     </tr>
     <tr>
       <td><code>ps</code></td>
-      <td><code>ps</code> *(alias)*<br><code>Get-Process</code> *(native method)*</td>
+      <td><code>ps</code> (alias)<br><code>Get-Process</code> (native)</td>
       <td><em>N/A</em></td>
     </tr>
     <tr>
