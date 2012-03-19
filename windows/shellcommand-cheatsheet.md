@@ -2,7 +2,7 @@
 
 <table>
     <tr>
-        <th>Cygwin</th>
+        <th>Cygwin (bash)</th>
         <th>PowerShell</th>
         <th>Command Prompt</th>
     </tr>
