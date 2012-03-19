@@ -44,8 +44,8 @@ Done? Now let's get started
 
 Creating our project:
 
+    git clone https://github.com/tbranyen/backbone-boilerplate.git myproject
     cd myproject
-    git clone https://github.com/tbranyen/backbone-boilerplate.git .
     rm -Rf .git
     node build server
 
