@@ -14,15 +14,15 @@
       <td></td>
     </tr>
     <tr>
-      <td><code>cd ~</code></td>
-      <td><code>cd ~</code></td>
-      <td><em>N/A</em></td>
-      <td></td>
-    </tr>
-    <tr>
       <td><code>rm -Rf dirname</code></td>
       <td><code>Remove-Item -Recurse -Force dirname</code></td>
       <td><code>rmdir /s /q dirname</code></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><code>cd ~</code></td>
+      <td><code>cd ~</code></td>
+      <td><em>N/A</em></td>
       <td></td>
     </tr>
     <tr>
