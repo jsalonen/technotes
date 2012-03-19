@@ -1,4 +1,4 @@
-# Comparison: Typical Linux vs. PowerShell Commands
+# Cheatsheet: Typical Linux vs. PowerShell Commands
 
 <table>
     <tr>
