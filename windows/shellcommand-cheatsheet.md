@@ -2,7 +2,7 @@
 
 <table>
     <tr>
-        <th>Typical Linux Shell Command</th>
+        <th>Typical Linux Shell</th>
         <th>PowerShell</th>
         <th>Command Prompt</th>
     </tr>
