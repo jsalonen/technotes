@@ -1,4 +1,4 @@
-# Cheatsheet: Windows Command Prompt and PowerShell Shell Commands
+# Cheatsheet: Shell Commands in Windows
 
 | Cygwin                             | Command Prompt                 | PowerShell                            |
 | ---------------------------------- | ------------------------------ | ------------------------------------- |
