@@ -1,5 +1,7 @@
 # Cheatsheet: Shell Commands in Windows
 
+## Typical Linux Shell Commands vs. PowerShell Commands
+
 <table>
     <tr>
         <th>Typical Linux Shell</th>
