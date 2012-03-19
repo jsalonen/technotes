@@ -2,7 +2,7 @@
 
 <table>
     <tr>
-        <th>Cygwin (bash)</th>
+        <th>Typical Linux Shell Command</th>
         <th>PowerShell</th>
         <th>Command Prompt</th>
     </tr>
