@@ -43,7 +43,7 @@
     </tr>
     <tr>
       <td><code>kill 1234</code></td>
-      <td><code>stop-process 1234</code></td>
+      <td><code>kill 1234</code> (alias)<br><code>stop-process 1234</code> (native)</td>
       <td><em>N/A</em></td>
     </tr>
     <tr>
