@@ -53,8 +53,8 @@ Creating our project:
 
 IT'S ALIVE
 
-(*) `rmdir /s /q .git` if in Windows Command Prompt
-(**) `Remove-Item .git` if in Windows PowerShell
+- (*) `rmdir /s /q .git` if in Windows Command Prompt
+- (**) `Remove-Item -Recurse -Force .git` if in Windows PowerShell
 
 ---
 
