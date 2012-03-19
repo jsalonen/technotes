@@ -42,8 +42,8 @@
       <td>`ps` is an alias of `get-process`. `grep` works in PowerShell too, but unlike `get-process` it hides the table header.</td>
     </tr>
     <tr>
-      <td><code>kill 1234</code><br>&nbsp;</td>
-      <td><code>kill 1234</code><br><code>stop-process 1234</code></td>
+      <td><code>kill 1234</code><br>&nbsp;<br>&nbsp;</td>
+      <td><code>kill 1234</code><br><code>spps 1234</code><br><code>stop-process 1234</code></td>
       <td>`kill` is an alias of `stop-process`</td>
     </tr>
     <tr>
