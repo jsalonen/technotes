@@ -14,6 +14,11 @@
       <td><code>dir</code><br>&nbsp;</td>
     </tr>
     <tr>
+      <td><code>man command</code><br>&nbsp;</td>
+      <td><code>man command</code> (alias)<br><code>get-help command</code> (native)</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td><code>rm -Rf dirname</code></td>
       <td><code>remove-item -recurse -force dirname</code></td>
       <td><code>rmdir /s /q dirname</code></td>
@@ -46,11 +51,6 @@
     <tr>
       <td><code>top</code></td>
       <td><a href="http://jon.netdork.net/2010/04/06/powershell-top-x-processes-using-cpu/">(with scripting)</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><code>man command</code><br>&nbsp;</td>
-      <td><code>man command</code> (alias)<br><code>get-help command</code> (native)</td>
       <td>-</td>
     </tr>
     <tr>
