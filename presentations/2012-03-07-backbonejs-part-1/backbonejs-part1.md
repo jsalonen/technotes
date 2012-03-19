@@ -4,7 +4,7 @@
 
 ### Part 1: How to Get Your Hands Dirty with Backbone.js in 5 Minutes
 
-<img src="6185783412_04dd8bfe87_z.jpg" height="400px"></img><br>
+![Image](https://github.com/jsalonen/technotes/raw/master/presentations/2012-03-07-backbonejs-part-1/6185783412_04dd8bfe87_z.jpg)
 
 By: **Jaakko Salonen (@jsalonen)**
 
