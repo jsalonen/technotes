@@ -54,6 +54,11 @@
       <td>-</td>
     </tr>
     <tr>
+      <td><code>lsusb</code></td>
+      <td><code>gwmi Win32_USBControllerDevice</code></td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td><code></code></td>
       <td><code></code></td>
       <td>-</td>
