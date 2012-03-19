@@ -11,7 +11,7 @@
     <tr>
       <td><code>ls</code><br>&nbsp;</td>
       <td><code>ls</code><br><code>dir</code></td>
-      <td><code>dir</code></td>
+      <td><code>dir</code><br>&nbsp;</td>
     </tr>
     <tr>
       <td><code>rm -Rf dirname</code></td>
