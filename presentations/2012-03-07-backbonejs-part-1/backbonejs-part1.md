@@ -53,7 +53,7 @@ Creating our project:
 
 ## IT'S ALIVE
 
-Windows hint: replace `rm` command with `rmdir /s /q .git` (Windows Command Prompt) or `Remove-Item -Recurse -Force .git` (Windows PowerShell).
+Windows hint: replace `rm` command with `rmdir /s /q .git` (Command Prompt) or `Remove-Item -Recurse -Force .git` (PowerShell).
 
 ---
 
