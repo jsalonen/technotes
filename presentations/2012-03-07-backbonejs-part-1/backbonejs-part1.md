@@ -46,15 +46,17 @@ Creating our project:
 
     git clone https://github.com/tbranyen/backbone-boilerplate.git myproject
     cd myproject
-    rm -Rf .git (*, **)
+    rm -Rf .git
     node build server
 
 - Open [localhost:8000](http://localhost:8000)
 
-IT'S ALIVE
+## IT'S ALIVE
 
-- (*) `rmdir /s /q .git` if in Windows Command Prompt
-- (**) `Remove-Item -Recurse -Force .git` if in Windows PowerShell
+Windows-specific notes (`rm -Rf .git` doesn't work there):
+
+- `rmdir /s /q .git` (Windows Command Prompt)
+- `Remove-Item -Recurse -Force .git` (Windows PowerShell)
 
 ---
 
