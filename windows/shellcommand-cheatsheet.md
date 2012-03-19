@@ -8,7 +8,7 @@
     </tr>
     <tr>
       <td><code>cd ~</code></td>
-      <td><code>cd ~/<code></td>
+      <td><code>cd ~</code></td>
       <td><em>N/A</em></td>
     </tr>
     <tr>
