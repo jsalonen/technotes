@@ -131,13 +131,27 @@ Get yourself started by using the following list of rough equivalents for typica
     </tr>
 </table>
 
-## @TODO@
+## Key Concepts in PowerShell
 
-- PowerShell concepts:
--- Verbs (get-verb)
--- Cmdlets (<http://technet.microsoft.com/en-us/library/hh848794.aspx>)
+For compatibility with command prompt and Unix/Linux style shell usage, PowerShell
+uses aliases to its native commands. The native commands itself are often longer
+and often in the format of `Verb-Noun` such as `Set-Location`. For convenience,
+you do not need to obey letter casing. In fact, I prefer just writing commands
+in lowercase and auto-completing the name with *TAB* key if necessary. Aliases
+for native commands are often provided as well: for instance, `Set-Location` has
+a short-hand of `sl`.
 
-## Appendix I: Recipes
+*A cmdlet* is a lightweight command that is used in the Windows PowerShell environment.
+By convention, cmdlets are named in the format of `Verb-Noun`. Examples include
+`Get-Help`, `Stop-Process` and `Format-List`.
+
+It is recommended that verbs are chosen from a list of approved alternatives. This list
+can be displayed in PowerShell by invoking:
+
+    Get-Verb
+
+
+## More Recipes
 
 ### Find Occurrences of Given String from Files
 
@@ -210,7 +224,8 @@ Bash:
 - Writing Command-line Tools with IronPython and Visual Studio. PyCon 2011 Presentation. (<http://www.slideshare.net/noahgift/iron-python-command-line>)
 - You can’t be a 21st century admin without PowerShell. (<http://blogs.technet.com/b/jamesone/archive/2009/11/02/you-can-t-be-a-21st-century-admin-without-powershell.aspx>)
 - PowerShell for Unix Hackers - Part I (<https://docs.google.com/View?id=ap5pdc5jjps_58fs9cvwcz>)
+- Cmdlet Overview (<http://msdn.microsoft.com/en-us/library/windows/desktop/ms714395%28v=vs.85%29.aspx>)
 
-# Copyright Information
+## Copyright Information
 
 - Header image by solaro. Some rights reserved. (<http://flickr.com/photos/solaro/2127576608/sizes/z/in/photostream/>)
