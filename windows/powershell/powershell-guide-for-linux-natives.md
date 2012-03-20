@@ -15,7 +15,7 @@ they are hacky at the best. Granted that both the prompt and shell emulators can
 everyday tasks, but the more complex your tasks get, the less these tools provide you with good facilities.
 
 The bottom line is Windows is not Unix. Factually, they are two completely different ecosystems, which share 
-some of the core of principles, but don't work exactly the same way. If you want to work in Windows,
+some of the core of principles, but don't work exactly the same. If you want to work in Windows,
 I really encourage you to familiarize yourself with Windows PowerShell. Yes, it requires an initial investment
 of time and effort. Risk it and you may find yourself becoming even more productive and comfortable working on
 Windows.
