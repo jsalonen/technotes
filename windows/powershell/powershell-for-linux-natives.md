@@ -75,6 +75,18 @@ Bash:
     or
     dd if=/dev/sdb of=file.iso
 
+### Download a file
+
+Bash:
+  
+    curl http://example.com> output.html
+
+PowerShell:
+
+    (new-object System.Net.WebClient).DownloadFile('http://example.com', 'output.html')
+
+(Or just get `curl` for Windows)
+
 ### Manage Swap (@TBD@)
 
 Bash:
