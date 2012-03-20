@@ -49,6 +49,11 @@ My preferred settings:
 - **Colors**
   - Screen background: select black from color selection or set values to `0, 0, 0`
 
+Restart and type `$Host.Version` to check which version of PowerShell you are running.
+You should end up seeing something like:
+
+(image)
+  
 **We are set to go!**
 
 ### Cheatsheet
