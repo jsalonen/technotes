@@ -77,7 +77,7 @@ Get yourself started by using the following list of rough equivalents for typica
     <tr>
       <td><code>cat file.txt | more</code><br>&nbsp;</td>  
       <td><code>cat file.txt | more</code><br>&nbsp;</td>  
-      <td><code>get-content file.txt | more</code><code>gc file.txt | more</code></td>
+      <td><code>get-content file.txt | more</code><br><code>gc file.txt | more</code></td>
     </tr>
     <tr>
       <td><code>man command</code><br>&nbsp;</td>      
