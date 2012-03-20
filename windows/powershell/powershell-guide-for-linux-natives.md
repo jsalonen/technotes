@@ -1,4 +1,4 @@
-# Windows PowerShell Guide for Linux Natives
+# Tiny Windows PowerShell Guide for Linux Natives
 
 <div>
   <p><img src="https://raw.github.com/jsalonen/technotes/master/windows/powershell/powershell-guide-deco.jpg"></p>
@@ -6,7 +6,7 @@
 
 The intend of this guide is to provide a quick and painless introduction of Windows PowerShell and its tools to users familiar with Unix and Linux shell tools.
 
-## Cheatsheet: Common Commands
+## Cheatsheet
 
 <table>
     <tr>
