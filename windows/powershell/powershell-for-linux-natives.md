@@ -1,6 +1,6 @@
 # Windows PowerShell for Linux Natives
 
-**The intend of this guide is to provide a quick and painless introduction of Windows PowerShell to users familiar with Unix and Linux shell tools.**
+**Are you familiar with Unix/Linux shell tools and want to apply your knowledge for Windows administration? No problem. We got you covered with Windows Powershell.**
 
 ## Cheatsheet
 
