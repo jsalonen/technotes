@@ -92,7 +92,7 @@ Get yourself started by using the following list of rough equivalents for typica
     <tr>
       <td><code>cd ~</code></td>
       <td><code>cd ~</code></td>
-      <td><code>sl $env:home</code></td>
+      <td><code>set-location $env:home</code><br><code>sl $env:home</code></td>
     </tr>
     <tr>
       <td><code>ps</code><br>&nbsp;</td>
