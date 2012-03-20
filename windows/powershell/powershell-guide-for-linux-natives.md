@@ -120,7 +120,7 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
 
 #### Show Processes Consuming the Most CPU (`top`)
 
-    while (1) { ps | sort -desc cpu | select -first 25; sleep 1}
+    while (1) { cls; ps | sort -desc cpu | select -first 25; sleep 1}
 
 #### List USB Devices (`lsusb`)
 
