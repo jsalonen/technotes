@@ -65,7 +65,7 @@ The intend of this guide is to provide a quick and painless introduction of Wind
 
 ## Recipes
 
-### Show Process Consuming the Most CPU (`top`)
+### Show Processes Consuming the Most CPU (`top`)
 
     while (1) { ps | sort -desc cpu | select -first 25; sleep 1}
 
