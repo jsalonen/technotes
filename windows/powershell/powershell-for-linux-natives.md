@@ -65,7 +65,7 @@
 
 ### List USB Devices (`lsusb`)
 
-    gwmi Win32_USBControllerDevice</code></td>
+    gwmi Win32_USBControllerDevice
 
 ### Rip CD/DVD (@TBD@)
 
