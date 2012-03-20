@@ -66,7 +66,7 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
     </tr>
     <tr>
       <td><code>ls</code><br>&nbsp;</td>
-      <td><code>ls</code><br><code>dir</code></td>
+      <td><code>ls</code><br><code>get-childitem</code></td>
       <td></td>
     </tr>
     <tr>
