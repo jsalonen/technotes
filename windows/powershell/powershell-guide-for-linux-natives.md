@@ -145,11 +145,24 @@ The conceptual difference here is that commands in PowerShell are based on *cmdl
 **A cmdlet** is a lightweight command that is used in the Windows PowerShell environment.
 By convention, cmdlets are named in the format of *Verb-Noun*. Examples include
 `Get-Help`, `Stop-Process` and `Format-List`. It is recommended that verbs are
-chosen from a list of approved alternatives. If you are intested, you can display
-this list by invoking `Get-Verb`.
+chosen from a list of approved alternatives (just write `Get-Verb` to see this list).
 
-From the outside, cmdlets seem to work just like programs in Unix/Linux, which take
-text (parameters) as input and provide text as output. @@@
+From the outside, cmdlets seem to work just like programs in Unix/Linux: they
+take text (parameters) as input and provide text as output within the processing
+pipeline. Externally cmdlets seem to be performing just that as well and can
+actually be used in this fashion "just as plain text" for instance with `grep`.
+
+**Instead of raw text, mdlets operate on objects**; they process input objects
+from the pipeline and typically deliver objects as an output to the pipeline.
+As such, instead of raw text separated by newline characters, cmdlets process
+*objects*, one at a time. Also instead of stand-alone executables, cmdlets are objects
+(instances of .NET Framework classes). 
+
+*This all may sound heavy and scary, but it isn't that: cmdlets are basically
+just as easy to use as standard executables*. In addition, cmdlets provide us
+with some advantanges. *Most notably you don't have to worry about input parsing,
+error presentation or output formattin since PowerShell runtime already does
+this for you!*
 
 ## More Recipes
 
@@ -214,6 +227,7 @@ Bash:
 
 ## References and Further Reading
 
+- [1] Cmdlet Overview (<http://msdn.microsoft.com/en-us/library/windows/desktop/ms714395%28v=vs.85%29.aspx>)
 - Why isn't QuickEdit on by default in console windows?. (<http://blogs.msdn.com/b/oldnewthing/archive/2007/09/13/4886108.aspx>)
 - PowerShell Community Extensions. Homepage. (<https://pscx.codeplex.com/>)
 - Mastering PowerShell. Available also as an eBook. (<http://powershell.com/cs/blogs/ebook/>).
@@ -224,7 +238,6 @@ Bash:
 - Writing Command-line Tools with IronPython and Visual Studio. PyCon 2011 Presentation. (<http://www.slideshare.net/noahgift/iron-python-command-line>)
 - You can’t be a 21st century admin without PowerShell. (<http://blogs.technet.com/b/jamesone/archive/2009/11/02/you-can-t-be-a-21st-century-admin-without-powershell.aspx>)
 - PowerShell for Unix Hackers - Part I (<https://docs.google.com/View?id=ap5pdc5jjps_58fs9cvwcz>)
-- Cmdlet Overview (<http://msdn.microsoft.com/en-us/library/windows/desktop/ms714395%28v=vs.85%29.aspx>)
 
 ## Copyright Information
 
