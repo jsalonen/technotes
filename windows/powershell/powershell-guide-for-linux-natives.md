@@ -81,7 +81,7 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
     </tr>
     <tr>
       <td><code>rm -Rf dirname</code></td>
-      <td><em>N/A</em></td>
+      <td><em>n/a</em></td>
       <td><code>remove-item -recurse -force dirname</code><br><code>ri -recurse -force dirname</code></td>
     </tr>
     <tr>
