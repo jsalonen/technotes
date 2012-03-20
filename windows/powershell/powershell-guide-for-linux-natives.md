@@ -23,7 +23,9 @@ If you want to work in Windows, I really encourage you to familiarize yourself w
 it requires an initial investment of time and effort. Risk it and you may find yourself becoming very
 comfortable and even more productive.
 
-## Cheatsheet
+## Quick Start
+
+### Cheatsheet
 
 <table>
     <tr>
@@ -90,17 +92,17 @@ comfortable and even more productive.
 
 *Disclaimer: the listed commands are rough equivalents.*
 
-## Recipes
+### Recipes
 
-### Show Processes Consuming the Most CPU (`top`)
+#### Show Processes Consuming the Most CPU (`top`)
 
     while (1) { ps | sort -desc cpu | select -first 25; sleep 1}
 
-### List USB Devices (`lsusb`)
+#### List USB Devices (`lsusb`)
 
     gwmi Win32_USBControllerDevice
 
-### Download a File (`wget` or `curl`)
+#### Download a File (`wget` or `curl`)
 
     (new-object System.Net.WebClient).DownloadFile('http://example.com', 'output.html')
 
@@ -108,7 +110,7 @@ Or just get `curl` for Windows and run:
 
     curl http://example.com > output.html
 
-### Rip CD/DVD (@TBD@)
+#### Rip CD/DVD (@TBD@)
 
 Bash:
 
@@ -118,14 +120,21 @@ Bash:
 
 Stuff: <http://winserverteam.org.uk/blogs/austin/archive/2007/11/02/burn-cd-s-and-dvds-with-powershell.aspx>
 
-### Manage Swap (@TBD@)
+#### Manage Swap (@TBD@)
 
 Bash:
 
     swapoff
     swapon [file]
 
-# References and Further Reading
+## PowerShell Concepts
+
+About command names: <http://technet.microsoft.com/en-us/library/ee407453.aspx>
+
+    get-verb
+  
+
+## References and Further Reading
 
 - Mastering PowerShell. Available also as an eBook. (<http://powershell.com/cs/blogs/ebook/>).
 - PowerShell vs Bash Compared (PowerShell for Unixers) (<http://xahlee.org/powershell/PowerShell_for_unixer.html>)
