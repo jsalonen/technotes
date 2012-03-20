@@ -29,6 +29,11 @@ Windows.
         <th>Notes</th>
     </tr>
     <tr>
+      <td><code>./myprogram</code></td>
+      <td><code>.\myprogram</code></td>
+      <td>Avoid typing `.\` by using using TAB auto-complete</td>
+    </tr>
+    <tr>
       <td><code>ls</code><br>&nbsp;</td>
       <td><code>ls</code><br><code>dir</code></td>
       <td></td>
