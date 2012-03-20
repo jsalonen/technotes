@@ -100,9 +100,10 @@ Bash:
     swapoff
     swapon [file]
 
-# References
+# References and Further Reading
 
-- PowerShell for Unixers (<http://xahlee.org/powershell/PowerShell_for_unixer.html>)
+- PowerShell vs Bash Compared (PowerShell for Unixers) (<http://xahlee.org/powershell/PowerShell_for_unixer.html>)
+- PowerShell as cmd.exe or Bash (<http://xahlee.org/powershell/commands.html>)
 
 # Copyright Information
 
