@@ -75,7 +75,7 @@ Bash:
     or
     dd if=/dev/sdb of=file.iso
 
-### Download a file
+### Download a File
 
 Bash:
   
