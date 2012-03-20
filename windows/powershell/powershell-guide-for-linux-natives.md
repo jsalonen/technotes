@@ -49,6 +49,11 @@ You should end up seeing something like:
   
 **We are set to go!**
 
+**Hints:**
+
+- When typing commands, use TAB for auto-completion
+- Use `.\myprogram` to run a program or script (just like `./myprogram` in bash)
+
 ### Cheatsheet
 
 Get yourself started by using the following list of rough equivalents for typical Linux shell commands in PowerShell.
@@ -58,11 +63,6 @@ Get yourself started by using the following list of rough equivalents for typica
         <th>Bash</th>
         <th>PowerShell (compatibility command)</th>
         <th>PowerShell (native commands)</th>
-    </tr>
-    <tr>
-      <td><code>./myprogram</code></td>
-      <td><code>.\myprogram</code></td>
-      <td>Hint: use TAB auto-complete to avoid typing <em>.\</em></td>
     </tr>
     <tr>
       <td><code>cd ../new/path</code><br>&nbsp;</td>
