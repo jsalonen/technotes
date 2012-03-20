@@ -61,7 +61,7 @@ Get yourself started by using the following list of rough equivalents for typica
 <table>
     <tr>
         <th>Bash</th>
-        <th>PowerShell (compatibility command)</th>
+        <th>PowerShell (compatibility commands)</th>
         <th>PowerShell (native commands)</th>
     </tr>
     <tr>
