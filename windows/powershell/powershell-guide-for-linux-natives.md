@@ -75,6 +75,11 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
       <td><code>get-childitem</code><br><code>gci</code></td>
     </tr>
     <tr>
+      <td><code>cat file.txt | more</code><br>&nbsp;</td>  
+      <td><code>cat file.txt | more</code><br>&nbsp;</td>  
+      <td><code>get-content file.txt | more</code><code>gc file.txt | more</code></td>
+    </tr>
+    <tr>
       <td><code>man command</code><br>&nbsp;</td>      
       <td><code>man command</code><br>&nbsp;</td>
       <td><code>get-help command</code><br><code>help command</code></td>
