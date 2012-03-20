@@ -17,7 +17,8 @@ everyday tasks, but the more complex your tasks get, the less these tools provid
 The bottom line is Windows is not Unix. Factually, they are two completely different ecosystems, which share 
 some of the core of principles, but don't work exactly the same way. If you want to work in Windows,
 I really encourage you to familiarize yourself with Windows PowerShell. Yes, it requires an initial investment
-of time and effort, but after it, you may find yourself even more productive and comfortable.
+of time and effort, but after it, you may find yourself even more productive and comfortable working in a
+Windows environment.
 
 ## Cheatsheet
 
