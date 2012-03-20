@@ -79,7 +79,7 @@ Bash:
 
 Bash:
   
-    curl http://example.com> output.html
+    curl http://example.com > output.html
 
 PowerShell:
 
