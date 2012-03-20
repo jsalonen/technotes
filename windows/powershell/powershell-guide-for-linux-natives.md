@@ -27,7 +27,20 @@ comfortable and even more productive.
 
 ### Open and Configure PowerShell (@TBD@)
 
-Find *Windows PowerShell* from the menu. Run it. If you are in Windows 7 or later, I strongly suggest pin it to your taskbar (Right click -> *Pin to taskbar*).
+Find *Windows PowerShell* from the menu. Run it. If you are in
+Windows 7 or later, I strongly suggest pin it to your taskbar
+(Right click -> *Pin to taskbar*).
+
+Personally I hate the default configuration. Especially as windows path are typically
+very long, is the 80 character standard width too little. Tweak as follows:
+
+- **Font**
+  - Family: `Consolas`
+  - Size: `14`
+- **Window**
+  - Buffer width: `120` 
+  - Window width: `120` (match with buffer)
+  - Window height: `40`
 
 ### Cheatsheet
 
