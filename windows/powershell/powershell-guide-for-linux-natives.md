@@ -105,14 +105,14 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
       <td><code>get-process yourprocess*</code><br><code>gps yourprocess*</code></td>
     </tr>
     <tr>
-      <td><code>kill 1234</code><br>&nbsp;<br>&nbsp;</td>
-      <td><code>kill 1234</code><br><code>spps 1234</code><br><code>stop-process 1234</code></td>
-      <td><em>kill</em> is an alias of <em>stop-process</em></td>
+      <td><code>kill 1234</code><br>&nbsp;</td>
+      <td><code>kill 1234</code><br>&nbsp;</td>
+      <td><code>stop-process 1234</code><br><code>spps 1234</code></td>
     </tr>
     <tr>
       <td><code>alias c=command</code></td>
+      <td>n/a</td>
       <td><code>set-alias c=command</code></td>
-      <td></td>
     </tr>
     <tr>
       <td><code></code></td>
