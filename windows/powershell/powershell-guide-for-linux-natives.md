@@ -73,7 +73,7 @@ The intend of this guide is to provide a quick and painless introduction of Wind
 
     gwmi Win32_USBControllerDevice
 
-### Download a File
+### Download a File (`wget` or `curl`)
 
     (new-object System.Net.WebClient).DownloadFile('http://example.com', 'output.html')
 
