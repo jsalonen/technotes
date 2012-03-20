@@ -34,7 +34,7 @@ comfortable and even more productive.
     <tr>
       <td><code>./myprogram</code></td>
       <td><code>.\myprogram</code></td>
-      <td>Use TAB auto-complete to avoid typing `.\`</td>
+      <td>Use TAB auto-complete to avoid typing <code>.\</code></td>
     </tr>
     <tr>
       <td><code>ls</code><br>&nbsp;</td>
