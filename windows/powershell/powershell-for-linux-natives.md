@@ -1,6 +1,6 @@
 # Windows PowerShell for Linux Natives
 
-## Cheatsheet: Bash vs. PowerShell
+## Cheatsheet
 
 <table>
     <tr>
