@@ -90,11 +90,6 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
       <td><code>sl $env:home</code></td>
     </tr>
     <tr>
-      <td><code>find . | xargs grep 'string' -ls</code></td>
-      <td><code>ls | select-string "string"</code></td>
-      <td><code>gci | select-string "string"</code></td>
-    </tr>
-    <tr>
       <td><code>ps</code><br>&nbsp;</td>
       <td><code>ps</code><br>&nbsp;</td>
       <td><code>get-process</code><br><code>gps</code></td>
@@ -122,6 +117,16 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
 </table>
 
 ### Recipes
+
+#### Find Occurrences of Given String From Files
+
+Bash:
+
+    find . | xargs grep 'string' -ls
+    
+PowerShell (native):
+
+    gci | select-string "string"
 
 #### Show Processes Consuming the Most CPU (`top`)
 
