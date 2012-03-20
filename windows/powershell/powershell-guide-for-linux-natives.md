@@ -14,7 +14,7 @@ For power users, command prompt is simply not good enough. Yes, you can use Unix
 they are hacky at the best. Granted that both the prompt and shell emulators can be used to do many of the
 everyday tasks, but the more complex your tasks get, the less these tools provide you with good facilities.
 
-Windows is not Unix. Factually, these two are completely different ecosystems. Many of
+Windows is not Unix. Factually, these are two completely different ecosystems. Many of
 the design principles are shared, but the community and the tools are fundamentally different.
 Unix tools are made from the premises of the Unix world; applicability to Windows is only a
 potential afterthought. Similarly, it is a bad idea to assume Windows tools work smoothly in Linux.
@@ -192,9 +192,9 @@ PowerShell (native):
 
     (new-object System.Net.WebClient).DownloadFile('http://example.com', 'output.html')
 
-Or just get `curl` for Windows and run:
+**Why `curl http://example.com > output.html` may be a bad idea?**
 
-    curl http://example.com > output.html
+Default encoding in PowerShell is UTF-16, which may end up mangling your file.
 
 ### Run process with elevated access (`sudo`)
 
