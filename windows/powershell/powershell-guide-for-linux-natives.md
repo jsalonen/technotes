@@ -14,7 +14,7 @@ For power users, command prompt is simply not good enough. Yes, you can use Unix
 they are hacky at the best. Granted that both the prompt and shell emulators can be used to do many of the
 everyday tasks, but the more complex your tasks get, the less these tools provide you with good facilities.
 
-The bottom line is Windows is not Unix. Factually, they are two completely different ecosystems. Many of
+Windows is not Unix. Factually, these two are completely different ecosystems. Many of
 the design principles are shared, which shared, but the community and tools are fundamentally different.
 Unix tools are made for the unix world, which means they may not be as easily applied to Windows systems --
 just like why using Windows-style tools on Unix systems is generally a bad idea.
