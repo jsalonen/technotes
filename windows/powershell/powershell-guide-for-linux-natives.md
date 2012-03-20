@@ -25,14 +25,17 @@ comfortable and even more productive.
 
 ## Quick Start
 
-### Open and Configure PowerShell (@TBD@)
+### Open and Configure PowerShell
 
 Find *Windows PowerShell* from the menu. Run it. If you are in
 Windows 7 or later, I strongly suggest pin it to your taskbar
 (Right click -> *Pin to taskbar*).
 
-Personally I hate the default configuration. Especially as windows path are typically
-very long, is the 80 character standard width too little. Tweak as follows:
+Personally I hate the default configuration. The bluish background makes
+my eyes bleed. The standard window size is too small. Especially as paths
+in Windows are typically very long, width of 80 is insufficient. 
+
+Tweak settings as follows:
 
 - **Font**
   - Family: `Consolas`
@@ -41,6 +44,10 @@ very long, is the 80 character standard width too little. Tweak as follows:
   - Buffer width: `120` 
   - Window width: `120` (match with buffer)
   - Window height: `40`
+- **Colors**
+  - Screen background: *select black* or set color values to `0, 0, 0`
+
+**You are up and running!**
 
 ### Cheatsheet
 
