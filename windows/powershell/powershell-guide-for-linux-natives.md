@@ -27,11 +27,7 @@ comfortable and even more productive.
 
 ### Open and Configure PowerShell (@TBD@)
 
-Opening PowerShell:
-
- - Find *Windows PowerShell* from the menu
- - Run it
- - If in Windows 7 or 8, I strongly suggest pin it to your taskbar (Right click -> *Pin to taskbar*)
+Find *Windows PowerShell* from the menu. Run it. If you are in Windows 7 or later, I strongly suggest pin it to your taskbar (Right click -> *Pin to taskbar*).
 
 ### Cheatsheet
 
