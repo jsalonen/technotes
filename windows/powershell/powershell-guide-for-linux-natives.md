@@ -37,10 +37,10 @@ QuickEdit should be on by default, but sadly, it isn't.
 
 My preferred settings:
 
-- **Settings**: QuickEdit=*enabled*
-- **Font**: type `Consolas` size `14`
-- **Window**: buffer and window width `120`, window height `40`
-- **Colors**: black background (select back from list or set values to `0, 0, 0`)
+- **Settings**: check on *QuickEdit*
+- **Font**: set type to `Consolas` and size to `14`
+- **Window**: set buffer and window width `120` and window height to `40`
+- **Colors**: set background to black (or whatever you prefer)
 
 Restart and type `$Host.Version` to check which version of PowerShell you are running.
 You should end up seeing something like:
