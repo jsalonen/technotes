@@ -51,7 +51,7 @@ You should end up seeing something like:
 
 ### Cheatsheet
 
-A list of rough equivalents of typical Linux bash commands in PowerShell.
+A list of rough equivalents for typical Linux shell commands in PowerShell.
 
 <table>
     <tr>
