@@ -108,6 +108,8 @@ Bash:
     or
     dd if=/dev/sdb of=file.iso
 
+Stuff: <http://winserverteam.org.uk/blogs/austin/archive/2007/11/02/burn-cd-s-and-dvds-with-powershell.aspx>
+
 ### Manage Swap (@TBD@)
 
 Bash:
