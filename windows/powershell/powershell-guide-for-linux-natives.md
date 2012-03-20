@@ -25,6 +25,14 @@ comfortable and even more productive.
 
 ## Quick Start
 
+### Open and Configure PowerShell (@TBD@)
+
+Opening PowerShell:
+
+ - Find *Windows PowerShell* from the menu
+ - Run it
+ - If in Windows 7 or 8, I strongly suggest pin it to your taskbar (Right click -> *Pin to taskbar*)
+
 ### Cheatsheet
 
 <table>
