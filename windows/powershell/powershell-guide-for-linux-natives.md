@@ -8,7 +8,7 @@ The intend of this guide is to provide a quick and painless introduction of Wind
 
 ## Motivation
 
-**If you need shell in Windows, stop crippling yourself with old and unsuitable tools like Windows Command Prompt and Linux shell emulators. Seriously.**
+**If you use shell in Windows, stop crippling yourself with old and unsuitable tools like Windows Command Prompt and Linux shell emulators. Seriously.**
 
 Command prompt is not good enough for power users and Unix/Linux-style shells
 in Windows are hacky at the best. Granted that they both can be used to
