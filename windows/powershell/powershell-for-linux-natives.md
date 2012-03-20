@@ -1,10 +1,10 @@
 # Windows PowerShell for Linux Natives
 
-# Cheatsheet: Typical Linux vs. PowerShell Commands
+## Cheatsheet: Bash vs. PowerShell
 
 <table>
     <tr>
-        <th>Typical Linux Shell</th>
+        <th>Bash</th>
         <th>PowerShell</th>
         <th>Notes</th>
     </tr>
@@ -49,16 +49,6 @@
       <td>`kill` is an alias of `stop-process`</td>
     </tr>
     <tr>
-      <td><code>top</code></td>
-      <td><a href="http://superuser.com/a/176625/25810">[1]</a>, <a href="http://jon.netdork.net/2010/04/06/powershell-top-x-processes-using-cpu/">[2]</a></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><code>lsusb</code></td>
-      <td><code>gwmi Win32_USBControllerDevice</code></td>
-      <td></td>
-    </tr>
-    <tr>
       <td><code></code></td>
       <td><code></code></td>
       <td></td>
@@ -69,26 +59,31 @@
 
 ## Recipes
 
-### List the Processes Consuming the most CPU (`top`)
+### Show Process Consuming the Most CPU (`top`)
 
-TODO
+    while (1) { ps | sort -desc cpu | select -first 25; sleep 1}
 
-## Recipes to consider
+### List USB Devices (`lsusb`)
 
-Rip CD/DVD:
+    gwmi Win32_USBControllerDevice</code></td>
+
+### Rip CD/DVD (@TBD@)
+
+Bash:
 
     cat /dev/sdb > file.iso    
     or
     dd if=/dev/sdb of=file.iso
 
-Manage swap:
+### Manage Swap (@TBD@)
+
+Bash:
 
     swapoff
     swapon [file]
 
+# Other PowerShell Guides
 
-    
-
-
+- PowerShell for Unixers (<http://xahlee.org/powershell/PowerShell_for_unixer.html>)
 
 
