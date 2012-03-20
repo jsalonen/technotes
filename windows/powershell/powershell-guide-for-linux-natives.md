@@ -1,4 +1,4 @@
-# A Tiny PowerShell Guide for Linux Natives
+# A Tiny Windows PowerShell Guide for Linux Natives
 
 <div>
   <p><img src="https://raw.github.com/jsalonen/technotes/master/windows/powershell/powershell-guide-deco.jpg"></p>
@@ -10,12 +10,13 @@ The intend of this guide is to provide a quick and painless introduction of Wind
 
 **If you use shell in Windows, stop crippling yourself with old and unsuitable tools like Windows Command Prompt and Linux shell emulators. Seriously.**
 
-Command prompt is not good enough for power users and Unix/Linux-style shells
-in Windows are hacky at the best. Granted that they both can be used to
-do many of the tasks you may need a shell for, but it still doesn't change the
-fact that Windows is not Unix. You are just fine with trivial tasks, but the
-more complex your shell tasks get, the more rewarding it becomes to learn and apply
-PowerShell.
+For power users, command prompt is simply not good enough. Yes, you can use Unix-style shell emulators as well, but
+they are hacky at the best. Granted that both the prompt and shell emulators can be used to do many of the
+everyday tasks. You may feel like using a Linux box. 
+
+Yet, the bottom line is Windows is not Unix: factually, they are two completely different ecosystems and don't
+work the same way. You are just fine with trivial tasks, but the more complex your shell tasks get, the more
+rewarding it becomes to learn and apply PowerShell.
 
 ## Cheatsheet
 
