@@ -8,17 +8,6 @@ Basic stuff:
 - You are no longer able to run executables with "filename", you need to do ".\filename" (equivalent of ./filename in unix)
   - Autocomplete is your friend here as well
 
-### Opening PowerShell and Checking Version
-
-- Just look for `PowerShell` in start menu.
-- Check that letters `PS` are present in your prompt indicating you are in PowerShell (not in standard `cmd.exe` shell)
-
-Check your PowerShell version:
-
-	$PSVersionTable.PSVersion
-
-Make sure you are using PowerShell 2 (Major=2, others don't matter right here)
-
 ### Using Profile
 
 Where your profile location:
