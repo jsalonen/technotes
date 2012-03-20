@@ -12,11 +12,12 @@ The intend of this guide is to provide a quick and painless introduction of Wind
 
 For power users, command prompt is simply not good enough. Yes, you can use Unix-style shell emulators as well, but
 they are hacky at the best. Granted that both the prompt and shell emulators can be used to do many of the
-everyday tasks. You may feel like using a Linux box. 
+everyday tasks, but the more complex your tasks get, the less these tools provide you with good facilities.
 
-Yet, the bottom line is Windows is not Unix: factually, they are two completely different ecosystems and don't
-work the same way. You are just fine with trivial tasks, but the more complex your shell tasks get, the more
-rewarding it becomes to learn and apply PowerShell.
+The bottom line is Windows is not Unix. Factually, they are two completely different ecosystems, which share 
+some of the core of principles, but don't work exactly the same way. If you want to work in Windows,
+I really encourage you to familiarize yourself with Windows PowerShell. Yes, it requires an initial investment
+of time and effort, but after it, you may find yourself even more productive and comfortable.
 
 ## Cheatsheet
 
