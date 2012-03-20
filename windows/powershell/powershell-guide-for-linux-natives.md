@@ -101,6 +101,7 @@ Bash:
 - PowerShell vs Bash Compared (PowerShell for Unixers) (<http://xahlee.org/powershell/PowerShell_for_unixer.html>)
 - PowerShell as cmd.exe or Bash (<http://xahlee.org/powershell/commands.html>)
 - An excellent article about curl, wget and PowerShell. (<http://blog.commandlinekungfu.com/2009/11/episode-70-tangled-web.html>)
+- Bash vs PowerShell. Windows PowerShell Blog. (<https://blogs.msdn.com/b/powershell/archive/2008/07/08/bash-vs-powershell.aspx>)
 
 # Copyright Information
 
