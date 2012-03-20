@@ -56,8 +56,8 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
 <table>
     <tr>
         <th>Bash</th>
-        <th>PowerShell (compatibility commands)</th>
-        <th>PowerShell (native)</th>
+        <th>PowerShell (compatibility command)</th>
+        <th>PowerShell (native commands)</th>
     </tr>
     <tr>
       <td><code>./myprogram</code></td>
