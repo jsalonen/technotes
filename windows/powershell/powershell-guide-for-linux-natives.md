@@ -17,7 +17,7 @@ everyday tasks, but the more complex your tasks get, the less these tools provid
 Windows is not Unix. Factually, these two are completely different ecosystems. Many of
 the design principles are shared, but the community and the tools are fundamentally different.
 Unix tools are made from the premises of the Unix world; applicability to Windows is only a
-potential afterthought. Similarly, it is a bad idea to assume Windows tools work smoothly in Linux or Unix.
+potential afterthought. Similarly, it is a bad idea to assume Windows tools work smoothly in Linux.
 
 If you want to work in Windows, I really encourage you to familiarize yourself with PowerShell. Yes,
 it requires an initial investment of time and effort. Risk it and you may find yourself becoming very
