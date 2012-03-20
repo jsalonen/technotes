@@ -6,6 +6,17 @@
 
 The intend of this guide is to provide a quick and painless introduction of Windows PowerShell and its tools to users familiar with Unix and Linux shell tools.
 
+## Motivation
+
+If you use Windows, stop crippling yourself with `cmd.exe` or Linux shell emulators. Seriously.
+
+Command prompt is not good enough for power users and Unix/Linux-style shells
+in Windows are hacky at the best. Granted that they both can be used to
+do many of the tasks you may need a shell for, but it still doesn't change the
+fact that Windows is not Unix. You are just fine with trivial tasks, but the
+more complex your shell tasks get, the more rewarding it becomes to learn and apply
+PowerShell.
+
 ## Cheatsheet
 
 <table>
