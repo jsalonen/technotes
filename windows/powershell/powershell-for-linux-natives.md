@@ -1,6 +1,6 @@
 # Windows PowerShell for Linux Natives
 
-**Are you familiar with Unix/Linux shell tools and want to apply your knowledge for Windows administration? No problem. We got you covered with Windows PowerShell.**
+Are you familiar with Unix/Linux shell tools and want to apply your knowledge for Windows administration? No problem. We got you covered with Windows PowerShell.
 
 ## Cheatsheet
 
