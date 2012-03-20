@@ -51,6 +51,8 @@ You should end up seeing something like:
 
 ### Cheatsheet
 
+A list of rough equivalents of typical Linux bash commands in PowerShell.
+
 <table>
     <tr>
         <th>Bash</th>
@@ -113,8 +115,6 @@ You should end up seeing something like:
       <td></td>
     </tr>
 </table>
-
-*Disclaimer: the listed commands are rough equivalents.*
 
 ### Recipes
 
