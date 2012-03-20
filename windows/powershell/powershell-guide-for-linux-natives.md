@@ -158,8 +158,8 @@ As such, instead of raw text separated by newline characters, cmdlets process
 *objects*, one at a time. Also instead of stand-alone executables, cmdlets are objects
 (instances of .NET Framework classes). 
 
-*This all may sound heavy and scary, but it isn't that: cmdlets are basically
-just as easy to use as standard executables*. In addition, cmdlets provide us
+**This all may sound heavy and scary, but it isn't that: cmdlets are basically
+just as easy to use as standard executables**. In addition, cmdlets provide us
 with some advantanges. *Most notably you don't have to worry about input parsing,
 error presentation or output formattin since PowerShell runtime already does
 this for you!*
