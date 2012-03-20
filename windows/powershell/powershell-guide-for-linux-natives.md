@@ -6,7 +6,7 @@
 
 The intend of this guide is to provide a quick and painless introduction of Windows PowerShell and its tools to users familiar with Unix and Linux shell tools.
 
-## Cheatsheet
+## Cheatsheet: Common Commands
 
 <table>
     <tr>
