@@ -2,7 +2,6 @@
 
 <div>
   <p><img src="https://raw.github.com/jsalonen/technotes/master/windows/powershell/powershell-guide-deco.jpg"></p>
-  <p>Image: some rights reserved by <a href="https://secure.flickr.com/photos/solaro/2127576608/sizes/z/in/photostream/">solaro / Flickr.com</a></p>
 </div>
 
 The intend of this guide is to provide a quick and painless introduction of Windows PowerShell and its tools to users familiar with Unix and Linux shell tools.
@@ -101,8 +100,10 @@ Bash:
     swapoff
     swapon [file]
 
-# Other PowerShell Guides
+# References
 
 - PowerShell for Unixers (<http://xahlee.org/powershell/PowerShell_for_unixer.html>)
 
+# Copyright Information
 
+- Header image by solaro. Some rights reserved. (<http://flickr.com/photos/solaro/2127576608/sizes/z/in/photostream/>)
