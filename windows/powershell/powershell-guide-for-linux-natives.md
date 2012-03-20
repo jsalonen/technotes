@@ -152,7 +152,7 @@ take text (parameters) as input and provide text as output within the processing
 pipeline. Externally cmdlets seem to be performing just that as well and can
 actually be used in this fashion "just as plain text" for instance with `grep`.
 
-**Instead of raw text, mdlets operate on objects**; they process input objects
+**Instead of raw text, cmdlets operate on objects**; they process input objects
 from the pipeline and typically deliver objects as an output to the pipeline.
 As such, instead of raw text separated by newline characters, cmdlets process
 *objects*, one at a time. Also instead of stand-alone executables, cmdlets are objects
@@ -161,7 +161,7 @@ As such, instead of raw text separated by newline characters, cmdlets process
 **This all may sound heavy and scary, but it isn't that: cmdlets are basically
 just as easy to use as standard executables**. In addition, cmdlets provide us
 with some advantanges. *Most notably you don't have to worry about input parsing,
-error presentation or output formattin since PowerShell runtime already does
+error presentation or output formatting since PowerShell runtime already does
 this for you!*
 
 ## More Recipes
