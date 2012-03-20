@@ -118,7 +118,7 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
 
 ### Recipes
 
-#### Find Occurrences of Given String From Files
+#### Find Occurrences of Given String from Files
 
 Bash:
 
