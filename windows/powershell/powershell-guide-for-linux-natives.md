@@ -85,8 +85,13 @@ Get yourself started by using the following list of rough equivalents for typica
       <td><code>get-help command</code><br><code>help command</code></td>
     </tr>
     <tr>
+      <td><code>mkdir dirname</code><br>&nbsp;</td>
+      <td><code>mkdir dirname</code><br>&nbsp;</td>
+      <td><code>mkdir dirname</code><br><code>md dirname</code></td>
+    </tr>
+    <tr>
       <td><code>rm -Rf dirname</code></td>
-      <td><em>n/a</em></td>
+      <td><code>rm -recurse -force dirname</code></td>
       <td><code>remove-item -recurse -force dirname</code><br><code>ri -recurse -force dirname</code></td>
     </tr>
     <tr>
