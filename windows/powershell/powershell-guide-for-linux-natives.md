@@ -134,6 +134,18 @@ Or just get `curl` for Windows and run:
 
     curl http://example.com > output.html
 
+#### Run process with elevated access (`sudo`)
+
+@TBD@
+
+#### Change File Permissions (`chmod`)
+
+@TBD@
+
+#### Change File Ownership (`chown`)
+
+@TBD@
+
 #### Rip CD/DVD (@TBD@)
 
 Bash:
