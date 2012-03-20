@@ -63,4 +63,24 @@
     </tr>
 </table>
 
-Disclaimer: the listed commands are rough equivalents.
+*Disclaimer: the listed commands are rough equivalents.*
+
+## Recipes to consider
+
+Rip CD/DVD:
+
+    cat /dev/sdb > file.iso    
+    or
+    dd if=/dev/sdb of=file.iso
+
+Manage swap:
+
+    swapoff
+    swapon [file]
+
+
+    
+
+
+
+
