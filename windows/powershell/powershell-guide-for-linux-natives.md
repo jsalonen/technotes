@@ -110,6 +110,11 @@ Get yourself started by using the following list of rough equivalents for typica
       <td><code>stop-process 1234</code><br><code>spps 1234</code></td>
     </tr>
     <tr>
+      <td><code>touch filename</code><br>&nbsp;</td>
+      <td><em>n/a</em><br>&nbsp;</td>
+      <td><code>ni filename -type file</code><br><code>new-item filename -type file</code></td>
+    </tr>
+    <tr>
       <td><code>alias c=command</code></td>
       <td>n/a</td>
       <td><code>set-alias c=command</code></td>
