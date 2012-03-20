@@ -183,6 +183,7 @@ About command names: <http://technet.microsoft.com/en-us/library/ee407453.aspx>
 ## References and Further Reading
 
 - Why isn't QuickEdit on by default in console windows?. (<http://blogs.msdn.com/b/oldnewthing/archive/2007/09/13/4886108.aspx>)
+- PowerShell Community Extensions. Homepage. (<https://pscx.codeplex.com/>)
 - Mastering PowerShell. Available also as an eBook. (<http://powershell.com/cs/blogs/ebook/>).
 - PowerShell vs Bash Compared (PowerShell for Unixers) (<http://xahlee.org/powershell/PowerShell_for_unixer.html>)
 - PowerShell as cmd.exe or Bash (<http://xahlee.org/powershell/commands.html>)
