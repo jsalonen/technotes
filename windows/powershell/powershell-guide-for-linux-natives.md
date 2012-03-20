@@ -121,9 +121,16 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
     </tr>
 </table>
 
-### Recipes
+## Filesystem Management
 
-#### Find Occurrences of Given String from Files
+## @TODO@
+
+- PowerShell concepts:
+-- Verbs (get-verb)
+
+## Appendix I: Recipes
+
+### Find Occurrences of Given String from Files
 
 Bash:
 
@@ -133,19 +140,19 @@ PowerShell (native):
 
     gci | select-string "string"
 
-#### Show Processes Consuming the Most CPU (`top`)
+### Show Processes Consuming the Most CPU (`top`)
 
     while (1) { cls; ps | sort -desc cpu | select -first 25; sleep 1}
 
-#### List Environment Variables
+### List Environment Variables
   
     gci env:
 
-#### List USB Devices (`lsusb`)
+### List USB Devices (`lsusb`)
 
     gwmi Win32_USBControllerDevice
 
-#### Download a File (`wget` or `curl`)
+### Download a File (`wget` or `curl`)
 
     (new-object System.Net.WebClient).DownloadFile('http://example.com', 'output.html')
 
@@ -153,19 +160,19 @@ Or just get `curl` for Windows and run:
 
     curl http://example.com > output.html
 
-#### Run process with elevated access (`sudo`)
+### Run process with elevated access (`sudo`)
 
 @TBD@
 
-#### Change File Permissions (`chmod`)
+### Change File Permissions (`chmod`)
 
 @TBD@
 
-#### Change File Ownership (`chown`)
+### Change File Ownership (`chown`)
 
 @TBD@
 
-#### Rip CD/DVD (@TBD@)
+### Rip CD/DVD (@TBD@)
 
 Bash:
 
@@ -175,19 +182,12 @@ Bash:
 
 Stuff: <http://winserverteam.org.uk/blogs/austin/archive/2007/11/02/burn-cd-s-and-dvds-with-powershell.aspx>
 
-#### Manage Swap (@TBD@)
+### Manage Swap (@TBD@)
 
 Bash:
 
     swapoff
     swapon [file]
-
-## PowerShell Concepts
-
-About command names: <http://technet.microsoft.com/en-us/library/ee407453.aspx>
-
-    get-verb
-  
 
 ## References and Further Reading
 
