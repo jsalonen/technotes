@@ -141,15 +141,12 @@ in lowercase and auto-completing the name with *TAB* key if necessary. Aliases
 for native commands are often provided as well: for instance, `Set-Location` has
 a short-hand of `sl`.
 
-*A cmdlet* is a lightweight command that is used in the Windows PowerShell environment.
-By convention, cmdlets are named in the format of `Verb-Noun`. Examples include
-`Get-Help`, `Stop-Process` and `Format-List`.
-
-It is recommended that verbs are chosen from a list of approved alternatives. This list
-can be displayed in PowerShell by invoking:
-
-    Get-Verb
-
+The conceptual difference here is that commands in PowerShell are based on *cmdlets*.
+**A cmdlet** is a lightweight command that is used in the Windows PowerShell environment.
+By convention, cmdlets are named in the format of *Verb-Noun*. Examples include
+`Get-Help`, `Stop-Process` and `Format-List`. It is recommended that verbs are
+chosen from a list of approved alternatives. If you are intested, you can display
+this list by invoking `Get-Verb`.
 
 ## More Recipes
 
