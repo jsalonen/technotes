@@ -131,7 +131,7 @@ Get yourself started by using the following list of rough equivalents for typica
     </tr>
 </table>
 
-## Key Concepts in PowerShell
+## Anatomy of PowerShell Commands
 
 For compatibility with command prompt and Unix/Linux style shell usage, PowerShell
 uses aliases to its native commands. The native commands itself are often longer
@@ -147,6 +147,9 @@ By convention, cmdlets are named in the format of *Verb-Noun*. Examples include
 `Get-Help`, `Stop-Process` and `Format-List`. It is recommended that verbs are
 chosen from a list of approved alternatives. If you are intested, you can display
 this list by invoking `Get-Verb`.
+
+From the outside, cmdlets seem to work just like programs in Unix/Linux, which take
+text (parameters) as input and provide text as output. @@@
 
 ## More Recipes
 
