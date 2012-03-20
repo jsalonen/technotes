@@ -192,9 +192,9 @@ PowerShell (native):
 
     (new-object System.Net.WebClient).DownloadFile('http://example.com', 'output.html')
 
-Or just get `curl` for Windows and run:
+**Why `curl http://example.com > output.html` may be a bad idea?**
 
-    curl http://example.com > output.html
+Default encoding in PowerShell is UTF-16, which may end up mangling your file.
 
 ### Run process with elevated access (`sudo`)
 
