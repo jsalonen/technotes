@@ -67,6 +67,12 @@
 
 *Disclaimer: the listed commands are rough equivalents.*
 
+## Recipes
+
+### List the Processes Consuming the most CPU (`top`)
+
+TODO
+
 ## Recipes to consider
 
 Rip CD/DVD:
