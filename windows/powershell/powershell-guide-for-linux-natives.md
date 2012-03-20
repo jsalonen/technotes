@@ -1,4 +1,4 @@
-# Windows PowerShell for Linux Natives
+# Windows PowerShell for Guide Linux Natives
 
 <div>
   <p><img src="https://raw.github.com/jsalonen/technotes/master/windows/powershell/powershell-guide-deco.jpg"></p>
