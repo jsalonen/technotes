@@ -1,4 +1,4 @@
-3.7.2012
+3.7.2012 (revised: 20.3.2012)
 
 # A Backbone.js Tutorial for the Impatient
 
@@ -30,7 +30,7 @@ By: **Jaakko Salonen (@jsalonen)**
 
 **Git**
 
-- Used to get stuff from git repositories quickly
+- Used to get stuff from git repositories quickly.
 - Get it from <http://git-scm.com/>
 
 Done? Now let's get started
@@ -46,14 +46,12 @@ Creating our project:
 
     git clone https://github.com/tbranyen/backbone-boilerplate.git myproject
     cd myproject
-    rm -Rf .git
     node build server
 
+- Delete `.git` folder
 - Open [localhost:8000](http://localhost:8000)
 
-## IT'S ALIVE
-
-Windows hint: replace `rm` command with `rmdir /s /q .git` (Command Prompt) or `Remove-Item -Recurse -Force .git` (PowerShell).
+**IT'S ALIVE**
 
 ---
 
@@ -61,18 +59,7 @@ Windows hint: replace `rm` command with `rmdir /s /q .git` (Command Prompt) or `
 
 - Let's make our own index page with routers:
 
-`app/main.js`
-
-    initialize: function() {
-      this.exampleRouter = new Example.Router();
-    },
-
-    index: function(hash) {
-      return this.navigate('test', true);
-    }
-
-
-`app/modules/example.js`
+Implement the Router in `app/modules/example.js`:
 
     Example.Router = Backbone.Router.extend({
       routes: {
@@ -84,15 +71,33 @@ Windows hint: replace `rm` command with `rmdir /s /q .git` (Command Prompt) or `
       }
     });
 
-Check your browser
+Hook it to the main router `app/main.js`:
+    
+    initialize: function() {
+      this.exampleRouter = new Example.Router();
+    },
+
+# Building and validating
+
+Build and validate the app:
+
+    node build
+
+If everything is ok, you get `Done, without errors.`.
+
+Set development server back up:
+
+    node build server
+
+Check your browser. Repeat these steps after future slides as well.
 
 ---
 
 # Views
 
-Instead of directly manipulating DOM, le't's make the page with a view.
+Instead of directly manipulating DOM, let's make the page with a view.
 
-`app/mains.js`
+Modify `app/modules/example.js` (overwrite old `index`):
 
     index: function() {
       var index = new Example.Views.Index();
@@ -105,14 +110,14 @@ Instead of directly manipulating DOM, le't's make the page with a view.
       render: function() {
         var view = this;
         namespace.fetchTemplate(this.template, function(tmpl) {
-          view.el.innerHTML = tmpl({name: 'World'});
+          view.el.innerHTML = tmpl({name: 'world'});
         });
       }
     });
 
 `app/templates/index.html`
 
-    <h1>Hello, <%= name %>!</h1>
+    <h1>Hello <%= name %> from app/template/index.html!</h1>
 
 Note the template syntax ([underscore's](http://documentcloud.github.com/underscore/#template) microtemplates)
 
@@ -120,20 +125,20 @@ Note the template syntax ([underscore's](http://documentcloud.github.com/undersc
 
 # Refactoring to Support Multiple Pages (1/2)
 
-Add stub model for webpages:
+Add a stub Webpage model to `app/modules/example.js`:
 
     Example.Webpage = Backbone.Model.extend({
       defaults: {
         title: 'Untitled',
-        content: 'No content',
+        content: 'No content'
       }
     });
 
-Add new route to router:
+Add new route:
 
     ":pageid": "index"
 
-Rewrite index in router:
+And rewrite `index` again:
 
     index: function(pageid) {
       if(pageid === undefined) {
@@ -144,44 +149,38 @@ Rewrite index in router:
       index.render();
     }
 
-(I won't work just yet)
+(continue...)
 
 ---
 
 # Refactoring to Support Multiple Pages (2/2)
 
-Pass Webpage model to template in render.
+Pass Webpage model to template in `render` (still editing `app/modules/example.js`)
 
-Change
+    view.el.innerHTML = tmpl(view.model.toJSON());
 
-    tmpl({name: 'World'})
-
-to:
-    
-    tmpl(view.model.toJSON())
-
-Finally update template:
+And finally rewrite `app/templates/index.html`:
 
     <h1>Hello Page #<%= id %>!</h1>
 
-Done!
+Done! Try different URLS and back and forward:
 
-- Try different URLS ([/](http://localhost:8000/), [/1](http://localhost:8000/1), [/#2](http://localhost:8000/#2))
-
-- Try back and forward 
+- ([/](http://localhost:8000/)
+- [/1](http://localhost:8000/1)
+- [/#2](http://localhost:8000/#2))
 
 ---
 
 # Managing Models with a Collection
 
-Add after your model definition:
+Add after your model definition (still editing `app/modules/example.js`):
 
     Example.Webpages = Backbone.Collection.extend({
-      model: Example.Webpage,
+      model: Example.Webpage,      
       //localStorage: new window.Store("Webpages") // comment for now
     });
 
-Rewrite router function for index:
+Rewrite `index` in Router (again):
 
     if(pageid === undefined) {
       pageid = 1;
@@ -207,25 +206,29 @@ Try it (not very useful yet)
 
 # Persisting Models with HTML5 localStorage
 
-- Get the adapter file from [github.com/jeromegn/Backbone.localStorage](https://github.com/jeromegn/Backbone.localStorage/)
-- Save as `assets/js/libs/backbone.localstorage.js`
+- Get `backbone.localStorage.js` from [github.com/jeromegn/Backbone.localStorage](https://github.com/jeromegn/Backbone.localStorage/blob/master/backbone.localStorage.js):
+- Save as `assets/js/libs/backbone.localStorage.js`
 
-`config.js` section `paths` (after backbone):
+Add following lines to `config.js` (after `backbone` sections):
 
-    localstorage: "../assets/js/libs/backbone.localstorage",
+    "backbone.localStorage": "../assets/js/libs/backbone.localStorage",
 
-`config.js` section `use` (after backbone):
+    ...
 
-    localstorage: {
+    backbone.localStorage: {
       deps: ["use!backbone", "use!underscore"],
       attach: "Backbone"
     },
 
-`example.js` function `define` (add row after `"use!backbone",`):
+`app/modules/example.js` function `define` (add row after `"use!backbone",`):
 
-    "use!localstore"
+    "use!backbone.localStorage"
 
 **Uncomment lines from previous slide**
+
+Browse through pages and watch out how localStorage content changes. Run e.g. in Firebug:
+
+    console.dir(localStorage);
 
 ---
 
@@ -244,18 +247,17 @@ Now that our data is safe (in browser), we can start adding some content.
       <div class="rendered"><%= content %></div>
     </div>
 
-`app/modules/example.js` tweak the view (Example.Views.Index):
+`app/modules/example.js` add to `Example.Views.Index`:
 
     events: {
-      "click .page-content .rendered": "editContent",
+      "click .page-content .rendered": "editContent"
     },
-    ...
     editContent: function() {
       var content = this.model.get('content');
       $('.page-content .rendered').hide();
       $('.page-content .editor').removeClass('hidden');
       $('.page-content .editor textarea').html(content);
-    }
+    },
 
 ---
 
@@ -286,9 +288,10 @@ Now that our data is safe (in browser), we can start adding some content.
 
 Let's hook up showdown.js (a JavaScript Markdown converter)
 
-Get library:
+Get the library (save as `../asets/js/libs/showdown.js`):
 
     https://github.com/github/github-flavored-markdown/blob/gh-pages/scripts/showdown.js
+
 
 `app/config.js`
 
@@ -305,11 +308,13 @@ Get library:
 
 # Eye Candy - Markdown Renderer Hook-up (2/2)
 
-`app/main.js`
+`app/modules/example.js`
 
     "use!backbone",
     "use!showdown"
+
     ...
+
     function(namespace, Backbone, Showdown) {
 
 Now start using it in template:
@@ -317,9 +322,31 @@ Now start using it in template:
 `app/templates/index.html`
 
     <div class="rendered">
-    <% var converter = new Showdown.converter(); %>
-    <%= converter.makeHtml(content) %>
+      <% var converter = new Showdown.converter(); %>
+      <%= converter.makeHtml(content) %>
     </div>
+
+---
+
+# Building for production
+
+Run build script (default build target):
+
+    node build
+
+Check that everything was ok. For more info, use:
+
+    node build --help
+
+Build for release:
+
+    node build release
+
+Run release build on local server:
+
+    node build server:release
+
+**YSlow gives us Grade A (overall performance score 94)**
 
 ---
 
@@ -336,7 +363,9 @@ Further improvements to consider:
 
 ---
 
-# Thank you!
+# See you in Part 2
+
+## Thank you!
 
 - Jaakko Salonen 
  - Use twitter ([@jsalonen](http://twitter.com/jsalonen)) for questions (follow me to receive updates!)
