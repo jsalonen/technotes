@@ -73,6 +73,14 @@ The intend of this guide is to provide a quick and painless introduction of Wind
 
     gwmi Win32_USBControllerDevice
 
+### Download a File
+
+    (new-object System.Net.WebClient).DownloadFile('http://example.com', 'output.html')
+
+Or just get `curl` for Windows and run:
+
+    curl http://example.com > output.html
+
 ### Rip CD/DVD (@TBD@)
 
 Bash:
@@ -80,18 +88,6 @@ Bash:
     cat /dev/sdb > file.iso    
     or
     dd if=/dev/sdb of=file.iso
-
-### Download a File
-
-Bash:
-  
-    curl http://example.com > output.html
-
-PowerShell:
-
-    (new-object System.Net.WebClient).DownloadFile('http://example.com', 'output.html')
-
-(Or just get `curl` for Windows)
 
 ### Manage Swap (@TBD@)
 
