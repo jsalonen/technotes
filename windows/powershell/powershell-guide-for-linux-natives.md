@@ -45,7 +45,7 @@ My preferred settings:
 Restart and type `$Host.Version` to check which version of PowerShell you are running.
 You should end up seeing something like:
 
-(image)
+<p><img src="https://raw.github.com/jsalonen/technotes/master/windows/powershell/img/powershell-start-screen.png"></p>
   
 **We are set to go!**
 
