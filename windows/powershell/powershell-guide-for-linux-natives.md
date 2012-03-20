@@ -65,6 +65,11 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
       <td>Hint: use TAB auto-complete to avoid typing <em>.\</em></td>
     </tr>
     <tr>
+      <td><code>cd ../new/path</code><br>&nbsp;</td>
+      <td><code>cd ..\new\path</code><br>&nbsp;</td>
+      <td><code>set-location ..\new\path</code><br><code>sl ..\new\path</code></td>
+    </tr>
+    <tr>
       <td><code>ls</code><br>&nbsp;</td>
       <td><code>ls</code><br><code>dir</code></td>
       <td><code>get-childitem</code><br><code>gci</code></td>
@@ -82,7 +87,7 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
     <tr>
       <td><code>cd ~</code></td>
       <td><code>cd ~</code></td>
-      <td><em>N/A</em></td>
+      <td><code>sl $env:home</code></td>
     </tr>
     <tr>
       <td><code>find . | xargs grep 'string' -ls</code></td>
