@@ -27,16 +27,22 @@ comfortable and even more productive.
 
 ### Open and Configure PowerShell
 
-Find *Windows PowerShell* from the menu. Run it. If you are in
-Windows 7 or later, I strongly suggest pin it to your taskbar
-(Right click -> *Pin to taskbar*).
+Find *Windows PowerShell* from the menu. Run it. If you are in Windows 7 or later,
+I strongly suggest pin it to your taskbar (Right click -> *Pin to taskbar*). 
+
+**You are up and running!**
+
+#### Configuring
 
 Personally I hate the default configuration. The bluish background makes
 my eyes bleed. The standard window size is too small. Especially as paths
-in Windows are typically very long, width of 80 is insufficient. 
+in Windows are typically very long, width of 80 is insufficient. Also
+QuickEdit should be on by default, but sadly, it isn't. 
 
 My preferred settings:
 
+- **Settings**
+  - QuickEdit: *set to enabled*
 - **Font**
   - Family: `Consolas`
   - Size: `14`
@@ -46,8 +52,6 @@ My preferred settings:
   - Window height: `40`
 - **Colors**
   - Screen background: select black from color selection or set values to `0, 0, 0`
-
-**You are up and running!**
 
 ### Cheatsheet
 
