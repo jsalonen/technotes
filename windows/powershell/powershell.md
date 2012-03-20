@@ -220,13 +220,6 @@ Example 2: Using Input Parameters:
 
 More notes: <http://huddledmasses.org/powershell-power-user-tips-current-directory/>
 
-### Rotating an Image File
-
-	[Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms"); 
-	$i = new-object System.Drawing.Bitmap("C:\Filepath\file.jpg); 
-	$i.rotateflip("Rotate90FlipNone"); 
-	$i.Save("C:\Filepath\file-rotated.jpg");
-
 ### Greater than, smaller than
 
 Greater than comparisons:
