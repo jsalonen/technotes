@@ -35,7 +35,7 @@ Personally I hate the default configuration. The bluish background makes
 my eyes bleed. The standard window size is too small. Especially as paths
 in Windows are typically very long, width of 80 is insufficient. 
 
-Tweak settings as follows:
+My preferred settings:
 
 - **Font**
   - Family: `Consolas`
@@ -45,7 +45,7 @@ Tweak settings as follows:
   - Window width: `120` (match with buffer)
   - Window height: `40`
 - **Colors**
-  - Screen background: *select black* or set color values to `0, 0, 0`
+  - Screen background: select black from color selection or set values to `0, 0, 0`
 
 **You are up and running!**
 
