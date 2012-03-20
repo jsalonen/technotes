@@ -116,7 +116,7 @@ Get yourself started by using the following list of rough equivalents for typica
     </tr>
     <tr>
       <td><code>alias c=command</code></td>
-      <td>n/a</td>
+      <td><em>n/a</em></td>
       <td><code>set-alias c=command</code></td>
     </tr>
     <tr>
