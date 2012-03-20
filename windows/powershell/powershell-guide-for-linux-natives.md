@@ -132,6 +132,10 @@ PowerShell (native):
 
     while (1) { cls; ps | sort -desc cpu | select -first 25; sleep 1}
 
+#### List Environment Variables
+  
+    gci env:
+
 #### List USB Devices (`lsusb`)
 
     gwmi Win32_USBControllerDevice
