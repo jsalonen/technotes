@@ -125,6 +125,7 @@ Get yourself started by using the following list of rough equivalents for typica
 
 - PowerShell concepts:
 -- Verbs (get-verb)
+-- Cmdlet
 
 ## Appendix I: Recipes
 
