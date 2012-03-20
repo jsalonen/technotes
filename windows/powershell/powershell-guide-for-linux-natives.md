@@ -121,8 +121,6 @@ Get yourself started by using the following list of rough equivalents for typica
     </tr>
 </table>
 
-## Filesystem Management
-
 ## @TODO@
 
 - PowerShell concepts:
