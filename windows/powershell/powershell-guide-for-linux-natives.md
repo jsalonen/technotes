@@ -1,4 +1,4 @@
-# A Tiny Windows PowerShell Guide for a Linux Native
+# A Tiny Windows PowerShell Guide for Linux Natives
 
 <div>
   <p><img src="https://raw.github.com/jsalonen/technotes/master/windows/powershell/img/powershell-guide-deco.jpg"></p>
