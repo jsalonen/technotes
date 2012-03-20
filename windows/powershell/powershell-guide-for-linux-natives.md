@@ -1,10 +1,10 @@
-# A Tiny Windows PowerShell Guide for Linux Natives
+# A Tiny Windows PowerShell Guide
 
 <div>
   <p><img src="https://raw.github.com/jsalonen/technotes/master/windows/powershell/img/powershell-guide-deco.jpg"></p>
 </div>
 
-The intend of this guide is to provide a quick and painless introduction of Windows PowerShell and its tools to users familiar with Unix and Linux shell tools.
+The intend of this guide is to provide a quick and painless introduction of Windows PowerShell and its tools, especially to users familiar with Unix and Linux shell tools.
 
 ## Motivation
 
@@ -204,6 +204,7 @@ Bash:
 - Bash vs PowerShell. Windows PowerShell Blog. (<https://blogs.msdn.com/b/powershell/archive/2008/07/08/bash-vs-powershell.aspx>)
 - Writing Command-line Tools with IronPython and Visual Studio. PyCon 2011 Presentation. (<http://www.slideshare.net/noahgift/iron-python-command-line>)
 - You can’t be a 21st century admin without PowerShell. (<http://blogs.technet.com/b/jamesone/archive/2009/11/02/you-can-t-be-a-21st-century-admin-without-powershell.aspx>)
+- PowerShell for Unix Hackers - Part I (<https://docs.google.com/View?id=ap5pdc5jjps_58fs9cvwcz>)
 
 # Copyright Information
 
