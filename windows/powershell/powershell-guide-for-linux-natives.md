@@ -56,48 +56,48 @@ A list of rough equivalents for typical Linux shell commands in PowerShell.
 <table>
     <tr>
         <th>Bash</th>
-        <th>PowerShell</th>
-        <th>Notes</th>
+        <th>PowerShell (compatibility commands)</th>
+        <th>PowerShell (native)</th>
     </tr>
     <tr>
       <td><code>./myprogram</code></td>
       <td><code>.\myprogram</code></td>
-      <td>Use TAB auto-complete to avoid typing <em>.\</em></td>
+      <td>Hint: use TAB auto-complete to avoid typing <em>.\</em></td>
     </tr>
     <tr>
       <td><code>ls</code><br>&nbsp;</td>
-      <td><code>ls</code><br><code>get-childitem</code></td>
-      <td></td>
+      <td><code>ls</code><br><code>dir</code></td>
+      <td><code>get-childitem</code><br><code>gci</code></td>
     </tr>
     <tr>
       <td><code>man command</code><br>&nbsp;</td>      
-      <td><code>man command</code><br><code>get-help command</code></td>
-      <td><em>man</em> is an alias of <em>get-help</em></td>
+      <td><code>man command</code><br>&nbsp;</td>
+      <td><code>get-help command</code><br><code>help command</code></td>
     </tr>
     <tr>
       <td><code>rm -Rf dirname</code></td>
-      <td><code>remove-item -recurse -force dirname</code></td>
-      <td></td>
+      <td><em>N/A</em></td>
+      <td><code>remove-item -recurse -force dirname</code><br><code>ri -recurse -force dirname</code></td>
     </tr>
     <tr>
       <td><code>cd ~</code></td>
       <td><code>cd ~</code></td>
-      <td></td>
+      <td><em>N/A</em></td>
     </tr>
     <tr>
       <td><code>find . | xargs grep 'string' -ls</code></td>
       <td><code>ls | select-string "string"</code></td>
-      <td><em>ls</em> is an alias of <em>select-string</em></td>
+      <td><code>gci | select-string "string"</code></td>
     </tr>
     <tr>
       <td><code>ps</code><br>&nbsp;</td>
-      <td><code>ps</code><br><code>get-process</code></td>
-      <td></td>
+      <td><code>ps</code><br>&nbsp;</td>
+      <td><code>get-process</code><br><code>gps</code></td>
     </tr>
     <tr>
       <td><code>ps -aux | grep yourprocess</code><br>&nbsp;</td>
-      <td><code>ps yourprocess*</code><br><code>get-process yourprocess*</code></td>
-      <td><em>ps</em> is an alias of <em>get-process</em>. <em>grep</em> works in PowerShell too, but unlike <em>get-process</em> it hides list header.</td>
+      <td><code>ps | grep yourprocess</code><br>&nbsp;</td>
+      <td><code>get-process yourprocess*</code><br><code>gps yourprocess*</code></td>
     </tr>
     <tr>
       <td><code>kill 1234</code><br>&nbsp;<br>&nbsp;</td>
