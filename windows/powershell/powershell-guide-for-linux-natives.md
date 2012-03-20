@@ -55,6 +55,11 @@ The intend of this guide is to provide a quick and painless introduction of Wind
       <td>`kill` is an alias of `stop-process`</td>
     </tr>
     <tr>
+      <td><code>alias c=command</code></td>
+      <td><code>set-alias c=command</code></td>
+      <td></td>
+    </tr>
+    <tr>
       <td><code></code></td>
       <td><code></code></td>
       <td></td>
