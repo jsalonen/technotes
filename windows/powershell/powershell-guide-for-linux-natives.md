@@ -15,9 +15,9 @@ they are hacky at the best. Granted that both the prompt and shell emulators can
 everyday tasks, but the more complex your tasks get, the less these tools provide you with good facilities.
 
 Windows is not Unix. Factually, these two are completely different ecosystems. Many of
-the design principles are shared, which shared, but the community and tools are fundamentally different.
-Unix tools are made for the unix world, which means they may not be as easily applied to Windows systems --
-just like why using Windows-style tools on Unix systems is generally a bad idea.
+the design principles are shared, but the community and the tools are fundamentally different.
+Unix tools are made from the premises of the Unix world; applicability to Windows is only a
+potential afterthought. Similarly, it is a bad idea to assume Windows tools work smoothly in Linux or Unix.
 
 If you want to work in Windows, I really encourage you to familiarize yourself with PowerShell. Yes,
 it requires an initial investment of time and effort. Risk it and you may find yourself becoming very
