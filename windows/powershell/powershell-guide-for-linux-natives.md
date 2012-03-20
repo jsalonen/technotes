@@ -34,7 +34,7 @@ comfortable and even more productive.
     <tr>
       <td><code>./myprogram</code></td>
       <td><code>.\myprogram</code></td>
-      <td>Use TAB auto-complete to avoid typing <code>.\</code></td>
+      <td>Use TAB auto-complete to avoid typing <em>.\</em></td>
     </tr>
     <tr>
       <td><code>ls</code><br>&nbsp;</td>
@@ -44,7 +44,7 @@ comfortable and even more productive.
     <tr>
       <td><code>man command</code><br>&nbsp;</td>      
       <td><code>man command</code><br><code>get-help command</code></td>
-      <td>`man` is an alias of `get-help`</td>
+      <td><em>man</em> is an alias of <em>get-help</em></td>
     </tr>
     <tr>
       <td><code>rm -Rf dirname</code></td>
@@ -59,7 +59,7 @@ comfortable and even more productive.
     <tr>
       <td><code>find . | xargs grep 'string' -ls</code></td>
       <td><code>ls | select-string "string"</code></td>
-      <td>`ls` is an alias of `select-string`</td>
+      <td><em>ls</em> is an alias of <em>select-string</em></td>
     </tr>
     <tr>
       <td><code>ps</code><br>&nbsp;</td>
@@ -69,12 +69,12 @@ comfortable and even more productive.
     <tr>
       <td><code>ps -aux | grep yourprocess</code><br>&nbsp;</td>
       <td><code>ps yourprocess*</code><br><code>get-process yourprocess*</code></td>
-      <td>`ps` is an alias of `get-process`. `grep` works in PowerShell too, but unlike `get-process` it hides the table header.</td>
+      <td><em>ps</em> is an alias of <em>get-process</em>. <em>grep</em> works in PowerShell too, but unlike <em>get-process</em> it hides list header.</td>
     </tr>
     <tr>
       <td><code>kill 1234</code><br>&nbsp;<br>&nbsp;</td>
       <td><code>kill 1234</code><br><code>spps 1234</code><br><code>stop-process 1234</code></td>
-      <td>`kill` is an alias of `stop-process`</td>
+      <td><em>kill</em> is an alias of <em>stop-process</em></td>
     </tr>
     <tr>
       <td><code>alias c=command</code></td>
