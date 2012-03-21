@@ -218,6 +218,14 @@ Bash:
 
 Stuff: <http://winserverteam.org.uk/blogs/austin/archive/2007/11/02/burn-cd-s-and-dvds-with-powershell.aspx>
 
+### &&-pattern
+
+Example:
+
+    mkdir test && cd test
+    
+TODO
+
 ### Manage Swap (@TBD@)
 
 Bash:
