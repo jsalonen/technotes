@@ -165,9 +165,9 @@ And finally rewrite `app/templates/index.html`:
 
 Done! Try different URLS and back and forward:
 
-- ([/](http://localhost:8000/)
-- [/1](http://localhost:8000/1)
-- [/#2](http://localhost:8000/#2))
+- [http://localhost/](http://localhost:8000/)
+- [http://localhost/1](http://localhost:8000/1)
+- [http://localhost/#2](http://localhost:8000/#2)
 
 ---
 
