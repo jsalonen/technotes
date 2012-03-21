@@ -4,7 +4,7 @@
 
 ### Part 2: Adding Functionality with Model Bindings
 
-![Image](todo)
+![Image](https://github.com/jsalonen/technotes/raw/master/presentations/2012-03-21-backbonejs-part-2/6766549137_be7a0d0fd3.jpg)
 
 By: **Jaakko Salonen (@jsalonen)**
 
