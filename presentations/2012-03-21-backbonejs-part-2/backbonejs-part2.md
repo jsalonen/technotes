@@ -4,7 +4,14 @@
 
 ### Part 2: Adding Functionality with Model Bindings
 
+![Image](todo)
+
 By: **Jaakko Salonen (@jsalonen)**
+
+<span style="font-size: 50%">
+  Image: Marine Corps Archives &amp; Special Collections. <a href="https://secure.flickr.com/photos/usmcarchives/6766549137/sizes/m/in/photostream/">Some rights reserved.</a>
+</span>
+<br>
 
 ---
 
