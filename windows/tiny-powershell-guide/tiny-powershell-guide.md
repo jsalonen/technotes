@@ -1,7 +1,7 @@
 # A Tiny Windows PowerShell Guide
 
 <div>
-  <p><img src="https://raw.github.com/jsalonen/technotes/master/windows/powershell/img/powershell-guide-deco.jpg"></p>
+  <p><img src="https://raw.github.com/jsalonen/technotes/master/windows/tiny-powershell-guide/img/powershell-guide-deco.jpg"></p>
 </div>
 
 The intend of this guide is to provide a quick and painless introduction of Windows PowerShell and its tools, especially for users familiar with Unix and Linux shell tools.
@@ -217,6 +217,14 @@ Bash:
     dd if=/dev/sdb of=file.iso
 
 Stuff: <http://winserverteam.org.uk/blogs/austin/archive/2007/11/02/burn-cd-s-and-dvds-with-powershell.aspx>
+
+### &&-pattern
+
+Example:
+
+    mkdir test && cd test
+    
+TODO
 
 ### Manage Swap (@TBD@)
 
