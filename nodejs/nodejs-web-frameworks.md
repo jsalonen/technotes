@@ -14,6 +14,11 @@ Overview (21.3.2012):
 		<td>Inspired by Sinatra. JavaScript</td>
 	</tr>
 	<tr>
+		<td>(Zappa.js)[http://zappajs.org/]</td>
+		<td>(843 / 58)[https://github.com/mauricemach/zappa]</td>
+		<td>uses CoffeeScript</td>
+	</tr>
+	<tr>
 		<td>(RailwayJS)[http://railwayjs.com/]</td>
 		<td>(724 / 69)[https://github.com/1602/express-on-railway]</td>
 		<td>Ruby on Rails style framework (JavaScript first, CoffeeScript second)</td>
