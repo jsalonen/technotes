@@ -244,6 +244,8 @@ Create the view to Router (`app/modules/example.js`):
     pagelist.Webpages = webpages;
     pagelist.render();
 
+---
+
 # Adding a New View: Menu (2/3)
 
 Implement the view:
@@ -283,13 +285,12 @@ Create the template (`app/templates/pagelist.html`)
 
 ---
 
-# Our Time is Up
+# End of Part 2
 
 Further improvements to consider:
 
 - Update menu automatically when pages are edited
 - Go strategic from tactical coding with testing (Jasmine, QUnit)
-- Clean up unused boilerplate code / components
 - Switch localStorage to a REST backend (more trivial than you would think)
 - Grid layout, nicer looking UI components ([960.gs](http://960.gs/), [Bootstrap](http://twitter.github.com/bootstrap/), etc.)
 - Localization
