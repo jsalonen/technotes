@@ -1,4 +1,4 @@
-3.7.2012 (revised: 20.3.2012)
+21.3.2012
 
 # A Backbone.js Tutorial for the Impatient
 
