@@ -1,4 +1,4 @@
-# Node.js
+# Beginning node.js
 
 Lessons learned from node.js stuff so far:
 
