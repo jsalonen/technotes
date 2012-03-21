@@ -182,9 +182,8 @@ New functions now look like:
 
 ---
 
-# Refactoring Overview
+# Fully Refactored Example.Views.Index
 
-  Example.Views.Index = Backbone.View.extend({
     el: '#main',
     template: "app/templates/index.html",
     events: {
@@ -201,27 +200,24 @@ New functions now look like:
       });
     },
     editContent: function() {
-      $('.page-content .rendered').hide();
-      $('.page-content .editor').removeClass('hidden');
+      $('.page-content .rendered, .editor').toggleClass('hidden');
     },
     saveContent: function() {
       this.model.save();
-      $('.page-content .editor').addClass('hidden');
-      $('.page-content .rendered').removeClass('hidden');
+      $('.page-content .rendered, .editor').toggleClass('hidden');
       this.render();
     },
     editTitle: function() {
-      $('.page-title .rendered').hide();
-      $('.page-title .editor').removeClass('hidden');
+      $('.page-title .rendered, .editor').toggleClass('hidden');
     },
     saveTitle: function() {
       this.model.save();
-      $('.page-title .editor').addClass('hidden');
-      $('.page-title .rendered').removeClass('hidden');
+      $('.page-title .rendered, .editor').toggleClass('hidden');
       this.render();
       return false;
     }
-  });
+
+Much nicer!
 
 ---
 
@@ -229,8 +225,6 @@ New functions now look like:
 
 Further improvements to consider:
 
-- Add functionalities: title editing, page list, etc. (+refactoring!)
-- Start using boilerplate's build system (or switch to your own)
 - Go strategic from tactical coding with testing (Jasmine, QUnit)
 - Clean up unused boilerplate code / components
 - Switch localStorage to a REST backend (more trivial than you would think)
