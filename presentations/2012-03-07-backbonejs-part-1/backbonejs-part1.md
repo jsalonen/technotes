@@ -350,19 +350,6 @@ Run release build on local server:
 
 ---
 
-# Our Time is Up
-
-Further improvements to consider:
-
-- Add functionalities: title editing, page list, etc. (+refactoring!)
-- Start using boilerplate's build system (or switch to your own)
-- Go strategic from tactical coding with testing (Jasmine, QUnit)
-- Clean up unused boilerplate code / components
-- Switch localStorage to a REST backend (more trivial than you would think)
-- Grid layout, nicer looking UI components ([960.gs](http://960.gs/), [Bootstrap](http://twitter.github.com/bootstrap/), etc.)
-
----
-
 # See you in Part 2
 
 ## Thank you!

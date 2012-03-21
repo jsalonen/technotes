@@ -2,7 +2,7 @@
 
 # A Backbone.js Tutorial for the Impatient
 
-### Part 2: Full Backbone.js Stack
+### Part 2: Adding Functionality with Model Bindings
 
 By: **Jaakko Salonen (@jsalonen)**
 
@@ -157,7 +157,7 @@ Bind title input element via `id`:
 
     <input class="title" id="title" type="text">
 
-(continued)
+For more, see [full documentation on modelbinding](https://github.com/derickbailey/backbone.modelbinding).
 
 ---
 
@@ -184,40 +184,95 @@ New functions now look like:
 
 # Fully Refactored Example.Views.Index
 
-    el: '#main',
-    template: "app/templates/index.html",
-    events: {
-      "click .page-title": "editTitle",
-      "click .page-title .editor .save": "saveTitle",
-      "click .page-content .rendered": "editContent",
-      "click .page-content input[type='submit']": "saveContent"
-    },
-    render: function() {
-      var view = this;
-      namespace.fetchTemplate(this.template, function(tmpl) {
-        view.el.innerHTML = tmpl(view.model.toJSON());
-        Backbone.ModelBinding.bind(view);
-      });
-    },
-    editContent: function() {
-      $('.page-content .rendered, .editor').toggleClass('hidden');
-    },
-    saveContent: function() {
-      this.model.save();
-      $('.page-content .rendered, .editor').toggleClass('hidden');
-      this.render();
-    },
-    editTitle: function() {
-      $('.page-title .rendered, .editor').toggleClass('hidden');
-    },
-    saveTitle: function() {
-      this.model.save();
-      $('.page-title .rendered, .editor').toggleClass('hidden');
-      this.render();
-      return false;
-    }
+    Example.Views.Index = Backbone.View.extend({
+      el: '#main',
+      template: "app/templates/index.html",
+      events: {
+        "click .page-title": "editTitle",
+        "click .page-title .editor .save": "saveTitle",
+        "click .page-content .rendered": "editContent",
+        "click .page-content input[type='submit']": "saveContent"
+      },
+      render: function() {
+        var view = this;
+        namespace.fetchTemplate(this.template, function(tmpl) {
+          view.el.innerHTML = tmpl(view.model.toJSON());
+          Backbone.ModelBinding.bind(view);
+        });
+      },
+      editContent: function() {
+        $('.page-content .rendered, .page-content .editor').toggleClass('hidden');
+      },
+      saveContent: function() {
+        this.model.save();
+        $('.page-content .rendered, .page-content .editor').toggleClass('hidden');
+        this.render();
+      },      
+      editTitle: function() {
+        $('.page-title .editor').removeClass('hidden');
+        $('.page-title .rendered').addClass('hidden');
+      },
+      saveTitle: function() {
+        this.model.save();
+        $('.page-title .editor').addClass('hidden');
+        $('.page-title .rendered').removeClass('hidden');
+        this.render();
+        return false;
+      }
+    });
 
 Much nicer!
+
+---
+
+# Adding a New View: Menu (1/3)
+
+Add placeholder for the new view to `index.html`:
+
+    <div role="main" id="pagelist"></div>
+
+Create the view to Router (`app/modules/example.js`):
+
+    var pagelist = new Example.Views.Pagelist();
+    pagelist.Webpages = webpages;
+    pagelist.render();
+
+# Adding a New View: Menu (2/3)
+
+Implement the view:
+
+    Example.Views.Pagelist = Backbone.View.extend({
+      el: '#pagelist',
+      template: "app/templates/pagelist.html",
+      render: function() {
+        var view = this;
+        namespace.fetchTemplate(this.template, function(tmpl) {
+
+          // Sort by page title
+          var pages = view.Webpages.sortBy(function(page) {
+            return page.get("title");
+          });
+
+          // Render
+          view.el.innerHTML = tmpl({pages: pages});
+        });
+      }
+    });
+
+---
+
+# Adding a New View: Menu (3/3)
+
+Create the template (`app/templates/pagelist.html`)
+
+    <section id="pagelist">
+      <ul class="pagelist-items">
+        <% pages.forEach(function(page) { %>
+          <li><a href="/<%= page.get('id') %>"><%= page.get('title') %></a></li>
+        <% }); %>
+      </ul>
+      <hr>
+    </section>
 
 ---
 
@@ -225,6 +280,7 @@ Much nicer!
 
 Further improvements to consider:
 
+- Update menu automatically when pages are edited
 - Go strategic from tactical coding with testing (Jasmine, QUnit)
 - Clean up unused boilerplate code / components
 - Switch localStorage to a REST backend (more trivial than you would think)
@@ -232,8 +288,6 @@ Further improvements to consider:
 - Localization
 
 ---
-
-# See you in Part 2
 
 ## Thank you!
 
