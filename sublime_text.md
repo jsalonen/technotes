@@ -12,7 +12,11 @@ Command-line tool is called `subl`
 
 <http://wbond.net/sublime_packages/package_control/installation>
 
-## Adding CoffeeScript Support
+### Markdown Toolchain
+
+<https://github.com/jclement/SublimePandoc>
+
+### Adding CoffeeScript Support
 
 Get <https://github.com/jashkenas/coffee-script-tmbundle>
 
