@@ -8,6 +8,10 @@ Command-line tool is called `subl`
 - In Windows you need to run `sublime_text.exe` (add Sublime Text install folder to PATH)
 	- You may also want to alias `sublime_text` to `subl` for convience
 
+## Package Management
+
+<http://wbond.net/sublime_packages/package_control/installation>
+
 ## Adding CoffeeScript Support
 
 Get <https://github.com/jashkenas/coffee-script-tmbundle>
