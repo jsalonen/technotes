@@ -1,6 +1,6 @@
 # A Tiny Windows PowerShell Guide
 
-[decorative image]: http://raw.github.com/jsalonen/technotes/master/windows/powershell/img/powershell-start-screen.png
+[decorative image]: img\powershell-start-screen.png
 
 The intend of this guide is to provide a quick and painless introduction of Windows PowerShell and its tools, especially for users familiar with Unix and Linux shell tools.
 
@@ -26,7 +26,7 @@ comfortable and even more productive.
 ### Open and Configure PowerShell
 
 Find *Windows PowerShell* from the menu. Run it. If you are in Windows 7 or later,
-I strongly suggest pin it to your taskbar (Right click -> *Pin to taskbar*). 
+I strongly suggest you to pin it to your taskbar (Right click -> *Pin to taskbar*). 
 
 Personally I hate the default configuration. The bluish background makes
 my eyes bleed. The standard window size is too small. Especially as paths
@@ -43,7 +43,7 @@ My preferred settings:
 Restart and type `$Host.Version` to check which version of PowerShell you are running.
 You should end up seeing something like:
 
-<p><img src="https://raw.github.com/jsalonen/technotes/master/windows/powershell/img/powershell-start-screen.png"></p>
+[powershell-start-screen]: img\powershell-start-screen.png
   
 **We are set to go!**
 
@@ -51,6 +51,8 @@ You should end up seeing something like:
 
 - When typing commands, use TAB for auto-completion
 - Use `.\myprogram` to run a program or script (just like `./myprogram` in bash)
+
+\pagebreak
 
 ### Cheatsheet
 
@@ -81,7 +83,9 @@ Bash                    PowerShell (compatibility)  PowerShell (native)
                                                     `ni file -type file`
 `alias c=command`       n/a                         `set-alias c=command`
                                                     `sal c=command`
-`sort`                  ``                          ``
+`cat data`              `cat data`                  `get-content data`
+                        `type data`                 `gc data`
+`ren from to`           `ren from to`               `rename-item from to`
 
 [^1]: Given that *file* doesn't exist.
 
@@ -201,7 +205,7 @@ Bash:
 
 - <http://ss64.com/ps/syntax-touch.html>
 - <http://rkeithhill.wordpress.com/2006/04/04/writing-cmdlets-with-powershell-script/>
-- <>http://joe-pruitt.sys-con.com/node/954652/mobile>
+- <http://joe-pruitt.sys-con.com/node/954652/mobile>
 
 ## References and Further Reading
 
