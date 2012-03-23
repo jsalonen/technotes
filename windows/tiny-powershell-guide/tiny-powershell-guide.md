@@ -209,15 +209,7 @@ Bash:
 
 Stuff: <http://winserverteam.org.uk/blogs/austin/archive/2007/11/02/burn-cd-s-and-dvds-with-powershell.aspx>
 
-### `command1 && command2`
-
-Example:
-
-    mkdir test && cd test
-    
-@TODO@
-
-## `md5`
+### `md5`
 
 - <https://devcentral.f5.com/weblogs/joe/archive/2009/05/18/unix-to-powershell---md5.aspx>
 
@@ -230,6 +222,14 @@ Example:
 - <http://ss64.com/ps/syntax-touch.html>
 - <http://rkeithhill.wordpress.com/2006/04/04/writing-cmdlets-with-powershell-script/>
 - <http://joe-pruitt.sys-con.com/node/954652/mobile>
+
+### `command1 && command2`
+
+Example:
+
+    mkdir test && cd test
+    
+@TODO@
 
 ## References and Further Reading
 
