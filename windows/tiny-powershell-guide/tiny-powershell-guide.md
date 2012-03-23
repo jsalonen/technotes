@@ -1,6 +1,6 @@
 # A Tiny Windows PowerShell Guide
 
-[decorative image]: img\powershell-start-screen.png
+\includegraphics[width=1.0\textwidth]{img/powershell-guide-deco.jpg}
 
 The intend of this guide is to provide a quick and painless introduction of Windows PowerShell and its tools, especially for users familiar with Unix and Linux shell tools.
 
@@ -43,7 +43,7 @@ My preferred settings:
 Restart and type `$Host.Version` to check which version of PowerShell you are running.
 You should end up seeing something like:
 
-[powershell-start-screen]: img\powershell-start-screen.png
+\includegraphics[width=1.0\textwidth]{img/powershell-start-screen.png}
   
 **We are set to go!**
 
