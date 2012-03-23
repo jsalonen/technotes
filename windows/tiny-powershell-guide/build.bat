@@ -1,0 +1,1 @@
+pandoc tiny-powershell-guide.md -o tiny-powershell-guide.pdf --epub-stylesheet=screen.css

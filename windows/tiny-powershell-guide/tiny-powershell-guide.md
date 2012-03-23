@@ -1,8 +1,6 @@
 # A Tiny Windows PowerShell Guide
 
-<div>
-  <p><img src="https://raw.github.com/jsalonen/technotes/master/windows/tiny-powershell-guide/img/powershell-guide-deco.jpg"></p>
-</div>
+[decorative image]: http://raw.github.com/jsalonen/technotes/master/windows/powershell/img/powershell-start-screen.png
 
 The intend of this guide is to provide a quick and painless introduction of Windows PowerShell and its tools, especially for users familiar with Unix and Linux shell tools.
 
@@ -58,78 +56,34 @@ You should end up seeing something like:
 
 Get yourself started by using the following list of rough equivalents for typical Linux shell commands in PowerShell.
 
-<table>
-    <tr>
-        <th>Bash</th>
-        <th>PowerShell (compatibility commands)</th>
-        <th>PowerShell (native commands)</th>
-    </tr>
-    <tr>
-      <td><code>cd ../new/path</code><br>&nbsp;</td>
-      <td><code>cd ..\new\path</code><br>&nbsp;</td>
-      <td><code>set-location ..\new\path</code><br><code>sl ..\new\path</code></td>
-    </tr>
-    <tr>
-      <td><code>ls</code><br>&nbsp;</td>
-      <td><code>ls</code><br><code>dir</code></td>
-      <td><code>get-childitem</code><br><code>gci</code></td>
-    </tr>
-    <tr>
-      <td><code>cat file.txt | more</code><br>&nbsp;</td>  
-      <td><code>cat file.txt | more</code><br>&nbsp;</td>  
-      <td><code>get-content file.txt | more</code><br><code>gc file.txt | more</code></td>
-    </tr>
-    <tr>
-      <td><code>man command</code><br>&nbsp;</td>      
-      <td><code>man command</code><br>&nbsp;</td>
-      <td><code>get-help command</code><br><code>help command</code></td>
-    </tr>
-    <tr>
-      <td><code>mkdir dirname</code><br>&nbsp;</td>
-      <td><code>mkdir dirname</code><br>&nbsp;</td>
-      <td><code>mkdir dirname</code><br><code>md dirname</code></td>
-    </tr>
-    <tr>
-      <td><code>rm -Rf dirname</code></td>
-      <td><code>rm -recurse -force dirname</code></td>
-      <td><code>remove-item -recurse -force dirname</code><br><code>ri -recurse -force dirname</code></td>
-    </tr>
-    <tr>
-      <td><code>cd ~</code></td>
-      <td><code>cd ~</code></td>
-      <td><code>set-location $env:home</code><br><code>sl $env:home</code></td>
-    </tr>
-    <tr>
-      <td><code>ps</code><br>&nbsp;</td>
-      <td><code>ps</code><br>&nbsp;</td>
-      <td><code>get-process</code><br><code>gps</code></td>
-    </tr>
-    <tr>
-      <td><code>ps -aux | grep yourprocess</code><br>&nbsp;</td>
-      <td><code>ps | grep yourprocess</code><br>&nbsp;</td>
-      <td><code>get-process yourprocess*</code><br><code>gps yourprocess*</code></td>
-    </tr>
-    <tr>
-      <td><code>kill 1234</code><br>&nbsp;</td>
-      <td><code>kill 1234</code><br>&nbsp;</td>
-      <td><code>stop-process 1234</code><br><code>spps 1234</code></td>
-    </tr>
-    <tr>
-      <td><code>touch filename</code><br>(when creating a new file)</td>
-      <td><em>n/a</em><br>&nbsp;</td>
-      <td><code>ni filename -type file</code><br><code>new-item filename -type file</code></td>
-    </tr>
-    <tr>
-      <td><code>alias c=command</code></td>
-      <td><em>n/a</em></td>
-      <td><code>set-alias c=command</code></td>
-    </tr>
-    <tr>
-      <td><code></code></td>
-      <td><code></code></td>
-      <td></td>
-    </tr>
-</table>
+Bash                    PowerShell (compatibility)  PowerShell (native)
+----------------------- --------------------------- ----------------------------
+`cd ../path`            `cd ..\path`                `set-location ..\path`
+`ls`                    `ls`                        `get-childitem`
+                        `dir`                       `gci`
+`cat out.txt | more`    `cat out.txt | more`        `get-content out.txt | more`
+                                                    `gc file.txt | more`
+`man command`           `man command`               `get-help command`
+                                                    `help command`
+`mkdir dir`             `mkdir dir`                 `mkdir dir`
+                                                    `md`
+`rm -Rf dir`            `rm -recurse -force dir`    `remove-item -recurse -force dir`
+                                                    `ri -recurse -force dirname`
+`cd ~`                  `cd ~`                      `set-location $env:home`
+                                                    `sl $env:home`
+`ps`                    `ps`                        `get-process`
+                                                    `gps`
+`ps -aux | grep proc`   `ps | grep proc`            `get-process proc*`
+                                                    `gps proc*`
+`kill 1234`             `kill 1234`                 `stop-process 1234`
+                                                    `spps 1234`
+`touch file`[^1]        n/a                         `new-item file -type file`
+                                                    `ni file -type file`
+`alias c=command`       n/a                         `set-alias c=command`
+                                                    `sal c=command`
+`sort`                  ``                          ``
+
+[^1]: Given that *file* doesn't exist.
 
 ## Anatomy of PowerShell Commands
 
@@ -232,6 +186,22 @@ Bash:
 
     swapoff
     swapon [file]
+
+## Implementations of Unix commands on PowerShell
+
+### `md5`
+
+- <https://devcentral.f5.com/weblogs/joe/archive/2009/05/18/unix-to-powershell---md5.aspx>
+
+### `which`
+
+- <https://devcentral.f5.com/weblogs/Joe/archive/2009/04/10/unix-to-powershell---which.aspx>
+
+### `touch`
+
+- <http://ss64.com/ps/syntax-touch.html>
+- <http://rkeithhill.wordpress.com/2006/04/04/writing-cmdlets-with-powershell-script/>
+- <>http://joe-pruitt.sys-con.com/node/954652/mobile>
 
 ## References and Further Reading
 
