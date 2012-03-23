@@ -52,11 +52,9 @@ You should end up seeing something like:
 - When typing commands, use TAB for auto-completion
 - Use `.\myprogram` to run a program or script (just like `./myprogram` in bash)
 
-\pagebreak
-
-### Cheatsheet
-
 Get yourself started by using the following list of rough equivalents for typical Linux shell commands in PowerShell.
+
+### Cheatsheet: Basic PowerShell Commands (1/2)
 
 Bash                    PowerShell (compatibility)  PowerShell (native)
 ----------------------- --------------------------- ----------------------------
@@ -73,21 +71,37 @@ Bash                    PowerShell (compatibility)  PowerShell (native)
                                                     `ri -recurse -force dirname`
 `cd ~`                  `cd ~`                      `set-location $env:home`
                                                     `sl $env:home`
+`touch file`[^1]        n/a                         `new-item file -type file`
+                                                    `ni file -type file`
+`cat data`              `cat data`                  `get-content data`
+                        `type data`                 `gc data`
+`ren from to`           `ren from to`               `rename-item from to`
+
+[^1]: Given that *file* doesn't exist.
+
+### Cheatsheet: Basic PowerShell Commands (2/2)
+
+Bash                    PowerShell (compatibility)  PowerShell (native)
+----------------------- --------------------------- ----------------------------
+`man command`           `man command`               `get-help command`
+                                                    `help command`
+`./prog > error.log`    `.\prog > error.log`        @TODO@
+`./prog < input`        `.\prog < input`            @TODO@
+`alias c=command`       n/a                         `set-alias c=command`
+                                                    `sal c=command`
 `ps`                    `ps`                        `get-process`
                                                     `gps`
 `ps -aux | grep proc`   `ps | grep proc`            `get-process proc*`
                                                     `gps proc*`
 `kill 1234`             `kill 1234`                 `stop-process 1234`
                                                     `spps 1234`
-`touch file`[^1]        n/a                         `new-item file -type file`
-                                                    `ni file -type file`
-`alias c=command`       n/a                         `set-alias c=command`
-                                                    `sal c=command`
-`cat data`              `cat data`                  `get-content data`
-                        `type data`                 `gc data`
-`ren from to`           `ren from to`               `rename-item from to`
-
-[^1]: Given that *file* doesn't exist.
+`tail logfile -f`       n/a                         `get-content -path logfile -wait`
+                                                    `gc -path logfile -wait`
+`top`                   (described later)
+`wget`                  (described later)
+`curl`                  (described later)
+`which`                 (described later)
+`lsusb`                 (described later)
 
 ## Anatomy of PowerShell Commands
 
@@ -122,7 +136,38 @@ with some advantanges. *Most notably you don't have to worry about input parsing
 error presentation or output formatting since PowerShell runtime already does
 this for you!*
 
-## More Recipes
+## More Unix Command Equivalents
+
+### `sudo`
+
+Sudo is used to run a process with elevated access.
+
+@TODO@
+
+### `top`
+
+`top` is used to show processing consuming the most CPU. Rough equivalent
+in PowerShell:
+
+    while (1) { cls; ps | sort -desc cpu | select -first 25; sleep 1}
+
+### `wget` and `curl`
+
+`wget` and `curl` are often used to simply retrieve data from given URL
+into a file. In PowerShell you can write:
+
+    (new-object System.Net.WebClient).DownloadFile('http://example.com', 'output.html')
+
+You can also get *curl* for Windows and run:
+
+    curl http://example.com > output.html
+
+This, however, can be a bad idea since PowerShell uses `UTF-16` by default.
+This may end up mangling your file content.
+
+### `lsusb`
+
+    gwmi Win32_USBControllerDevice
 
 ### Find Occurrences of Given String from Files
 
@@ -134,39 +179,27 @@ PowerShell (native):
 
     gci | select-string "string"
 
-### Show Processes Consuming the Most CPU (`top`)
-
-    while (1) { cls; ps | sort -desc cpu | select -first 25; sleep 1}
-
 ### List Environment Variables
   
     gci env:
 
-### List USB Devices (`lsusb`)
+### `chmod`
 
-    gwmi Win32_USBControllerDevice
+Change File Permissions.
 
-### Download a File (`wget` or `curl`)
+@TODO@
 
-    (new-object System.Net.WebClient).DownloadFile('http://example.com', 'output.html')
+### `chown`
 
-**Why `curl http://example.com > output.html` may be a bad idea?**
+Change File Ownership.
 
-Default encoding in PowerShell is UTF-16, which may end up mangling your file.
+@TODO@
 
-### Run process with elevated access (`sudo`)
+### `tail`
 
-@TBD@
+<http://stackoverflow.com/questions/4426442/unix-tail-equivalent-command-in-windows-powershell>
 
-### Change File Permissions (`chmod`)
-
-@TBD@
-
-### Change File Ownership (`chown`)
-
-@TBD@
-
-### Rip CD/DVD (@TBD@)
+### Rip CD/DVD
 
 Bash:
 
@@ -176,24 +209,15 @@ Bash:
 
 Stuff: <http://winserverteam.org.uk/blogs/austin/archive/2007/11/02/burn-cd-s-and-dvds-with-powershell.aspx>
 
-### &&-pattern
+### `command1 && command2`
 
 Example:
 
     mkdir test && cd test
     
-TODO
+@TODO@
 
-### Manage Swap (@TBD@)
-
-Bash:
-
-    swapoff
-    swapon [file]
-
-## Implementations of Unix commands on PowerShell
-
-### `md5`
+## `md5`
 
 - <https://devcentral.f5.com/weblogs/joe/archive/2009/05/18/unix-to-powershell---md5.aspx>
 
