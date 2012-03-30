@@ -48,3 +48,15 @@ Check out python-requests library: <https://github.com/kennethreitz/requests>
 
 See: <http://www.lfd.uci.edu/~gohlke/pythonlibs/>
 
+## Deployment
+
+### Deploying on Linux Server with Fabrik
+
+Framework-specific guides:
+- Deploying Flask on Fabrik: <http://flask.pocoo.org/docs/patterns/fabric/>
+- Django with Fabrik: <http://lethain.com/deploying-django-with-fabric/>
+
+On server:
+
+	pip install fabrik
+

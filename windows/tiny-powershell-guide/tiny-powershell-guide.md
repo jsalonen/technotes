@@ -78,6 +78,8 @@ default encoding.
 
 For instructions, see <http://superuser.com/questions/327492/default-powershell-to-emitting-utf-8-instead-of-utf-16> (we should write).
 
+@@
+
 ## Basic Shell Commands
 
 Bash                            PowerShell (compatibility)  PowerShell (native)
@@ -121,12 +123,13 @@ Unix/Linux              PowerShell (compatibility)  PowerShell (native)
                         `type data`                 `gc data`
 `cat out.txt | more`    `cat out.txt | more`        `get-content out.txt | more`
                                                     `gc file.txt | more`
-`./prog > error.log`    `.\prog > error.log`        -
-`./prog < input`                                    *(n/a)* [^2]
+`./prog > error.log`    `.\prog > error.log` [^2]   -
+`./prog < input`                                    *(n/a)* [^3]
 `tail logfile -f`                                   `get-content -path logfile -wait`
                                                     `gc -path logfile -wait`
 
-[^2]: Not applicable: "The '<' operator is reserved for future use."
+[^2]: Note that PowerShell's default encoding is `UTF-16` (NOT `UTF-8`), which may lead to undesired results
+[^3]: Not applicable: "The '<' operator is reserved for future use."
 
 ## Process Management
 
