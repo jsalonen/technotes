@@ -80,6 +80,26 @@ Now login as a `user1` and run commands via sudo:
 
 	sudo bash
 
+## Managing SSH
+
+### SSH Configurations
+
+- Edit `/etc/ssh/sshd_config`
+- Restart after changes `/etc/init.d/sshd restart`
+
+### Don't allow root to login via SSH
+
+Make sure you have line:
+
+	PermitRootLogin no
+	
+### Only allow specific users / groups to login via SSH
+
+	AllowUsers user1 user2
+	DenyUsers user3 user 4
+	AllowGroups group1 group2
+	DenyGroups group3 group4
+
 ## Managing files
 
 ### Transferring files with SCP
