@@ -29,7 +29,27 @@ Display PCI status:
 
 	lspci
 	
-## Managing users
+## Managing Users and Groups
+
+### Add, List and Remove Groups
+
+Add group:
+
+	addgroup group1
+	
+List *your* groups:
+
+	groups
+	
+All groups can be listed with:
+
+	cat /etc/group
+
+Remove a group:
+
+	groupdel group1
+
+### Add User
 
 ## Managing files
 
