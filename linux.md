@@ -2,7 +2,7 @@
 
 Some rudimentary Linux stuff, mostly for Debian and Ubuntu.
 
-## Managing system
+## Managing Software
 
 ### Using apt
 
@@ -14,20 +14,6 @@ Upgrade (update system):
 Install (yes, rudimentary):
 
 	sudo apt-get install [package]
-
-### Hardware
-
-Display hardware config:
-
-	lshw
-
-Display USB status:
-
-	lsusb
-
-Display PCI status:
-
-	lspci
 	
 ## Managing Users and Groups
 
@@ -96,10 +82,9 @@ Case-insensitive version:
 
 	grep -ir "word" .
 
+## Managing Network
 
-## Managing network
-
-### Network adapters
+### Network Adapters
 
 List all adapters:
 
@@ -122,3 +107,17 @@ Iptables config can be found from:
     /etc/sysconfig/iptables
     
 **Warning: it is generally unwise to directly edit the config file**
+
+## Hardware
+
+Display hardware config (Ubuntu Desktop):
+
+	lshw
+
+Display USB status (Ubuntu Desktop):
+
+	lsusb
+
+Display PCI status:
+
+	lspci
