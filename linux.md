@@ -1,6 +1,6 @@
-# Linux (Red Hat)
+# Linux
 
-Some rudimentary Linux stuff
+Some rudimentary Linux stuff, mostly for Debian and Ubuntu.
 
 ## Managing system
 
@@ -28,6 +28,8 @@ Display USB status:
 Display PCI status:
 
 	lspci
+	
+## Managing users
 
 ## Managing files
 
