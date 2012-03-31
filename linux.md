@@ -47,9 +47,24 @@ All groups can be listed with:
 
 Remove a group:
 
-	groupdel group1
+	delgroup group1
 
 ### Add User
+
+Add user:
+
+	adduser 
+
+### Differences between adduser and useradd
+
+`man adduser` says:
+
+"adduser and addgroup are friendlier front ends
+to the low level tools like useradd, groupadd and
+usermod programs, by default choosing Debian policy
+conformant UID and GID values, creating a home
+directory with skeletal configuration, running a
+custom script, and other features."
 
 ## Managing files
 
