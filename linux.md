@@ -49,7 +49,7 @@ Remove a user:
 
 	deluser test
 
-### Differences between adduser and useradd
+#### Differences between adduser and useradd
 
 `man adduser` says:
 
@@ -59,6 +59,16 @@ usermod programs, by default choosing Debian policy
 conformant UID and GID values, creating a home
 directory with skeletal configuration, running a
 custom script, and other features."
+
+### Managing Sudoers
+
+Install `sudo`:
+
+	apt-get install sudo
+	
+Edit sudoers list:
+
+	visudo
 
 ## Managing files
 
