@@ -49,11 +49,19 @@ Remove a group:
 
 	delgroup group1
 
-### Add User
+### Add, List and Remove Users
 
 Add user:
 
-	adduser 
+	adduser user1
+	
+Add user to a group:
+
+	adduser user1 group1
+	
+Remove a user:
+
+	deluser test
 
 ### Differences between adduser and useradd
 
