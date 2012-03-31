@@ -69,6 +69,16 @@ Install `sudo`:
 Edit sudoers list:
 
 	visudo
+	
+Minimal configuration example:
+	
+	# User privilege specification
+	root    ALL=(ALL) ALL
+	user1 ALL=(ALL) ALL
+
+Now login as a `user1` and run commands via sudo:
+
+	sudo bash
 
 ## Managing files
 
