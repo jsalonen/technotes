@@ -162,7 +162,15 @@ See: <http://www.debianadmin.com/install-and-configure-apache2-with-php5-and-ssl
 Your config file will be at:
 
 	/etc/apache2/apache2.conf
+
+### Installing PHP
+
+Provided that you have Apache running:
+
+	aptitude install php5 libapache2-mod-php5
 	
+Restart Apache.
+
 ## Hardware
 
 Display hardware config (Ubuntu Desktop):
