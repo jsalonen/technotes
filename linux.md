@@ -148,6 +148,16 @@ Iptables config can be found from:
     
 **Warning: it is generally unwise to directly edit the config file**
 
+### Installing Apache
+
+See: <http://www.debianadmin.com/install-and-configure-apache2-with-php5-and-ssl-support-in-debian-etch.html>
+
+	apt-get install apache2
+	apt-get install openssl ssl-cert
+	apt-get install libapache2-mod-php5 php5-cli php5-common php5-cgi
+	openssl req $@ -new -x509 -days 365 -nodes -out /etc/apache2/apache.pem -keyout /etc/apache2/apache.pem
+	chmod 600 /etc/apache2/apache.pem
+	
 ## Hardware
 
 Display hardware config (Ubuntu Desktop):
