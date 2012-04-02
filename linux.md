@@ -171,7 +171,7 @@ Provided that you have Apache running:
 	
 Restart Apache.
 
-### Installing `mod_wsgi`
+### Installing mod_wsgi
 
 	aptitude install libapache2-mod-wsgi
 
