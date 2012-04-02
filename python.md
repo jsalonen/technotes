@@ -50,13 +50,13 @@ See: <http://www.lfd.uci.edu/~gohlke/pythonlibs/>
 
 ## Deployment
 
-### Deploying on Linux Server with Fabrik
+### Deploying on Linux Server with Fabric
 
 Framework-specific guides:
-- Deploying Flask on Fabrik: <http://flask.pocoo.org/docs/patterns/fabric/>
-- Django with Fabrik: <http://lethain.com/deploying-django-with-fabric/>
+- Deploying Flask on Fabric: <http://flask.pocoo.org/docs/patterns/fabric/>
+- Django with Fabric: <http://lethain.com/deploying-django-with-fabric/>
 
 On server:
 
-	pip install fabrik
+	pip install fabric
 
