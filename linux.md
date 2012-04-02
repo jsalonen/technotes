@@ -173,7 +173,7 @@ Restart Apache.
 
 ### Installing `mod_wsgi`
 
-Quick tutorial: <https://code.google.com/p/modwsgi/wiki/QuickInstallationGuide>
+	aptitude install libapache2-mod-wsgi
 
 ## Hardware
 
