@@ -171,6 +171,10 @@ Provided that you have Apache running:
 	
 Restart Apache.
 
+### Installing `mod_wsgi`
+
+Quick tutorial: <https://code.google.com/p/modwsgi/wiki/QuickInstallationGuide>
+
 ## Hardware
 
 Display hardware config (Ubuntu Desktop):
