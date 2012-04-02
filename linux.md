@@ -35,6 +35,14 @@ Remove a group:
 
 	delgroup group1
 
+Change group for files:
+
+	chgrp group1 files
+	
+You often want to change group **recursively**:
+
+	chgrp group1 -R dirname1
+
 ### Add, List and Remove Users
 
 Add user:
