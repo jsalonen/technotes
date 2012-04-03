@@ -183,6 +183,10 @@ Restart Apache.
 
 	aptitude install libapache2-mod-wsgi
 
+### Installing node.js
+
+See: <http://www.freshblurbs.com/install-node-js-and-express-js-nginx-debian-lenny>
+
 ## Hardware
 
 Display hardware config (Ubuntu Desktop):
