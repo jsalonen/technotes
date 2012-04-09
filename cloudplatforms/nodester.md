@@ -26,7 +26,7 @@ Instead of the above, go to your existing git repo and run:
 	nodester app create [appname]
 	nodester app info [appname]
 	git remote add nodester git@nodester.com:node/git/<username>/<repo_id>.git 
-	git push nodester remote
+	git push nodester master
 
 ### Installing Modules
 
