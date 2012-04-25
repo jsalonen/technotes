@@ -1,6 +1,4 @@
-# Linux
-
-Some rudimentary Linux stuff, mostly for Debian and Ubuntu.
+# Debian (Ubuntu)
 
 ## Managing Software
 
@@ -156,6 +154,22 @@ Iptables config can be found from:
     
 **Warning: it is generally unwise to directly edit the config file**
 
+### Installing MySQL
+
+See: <http://ariejan.net/2007/12/12/how-to-install-mysql-on-ubuntudebian>
+
+	sudo apt-get install mysql-server mysql-client
+	sudo mysqladmin -u root -h localhost password 'mypassword'
+	sudo mysqladmin -u root -h myhostname password 'mypassword'
+
+PHP integration:
+
+	sudo apt-get install php5-mysql
+
+Access MySQL with:
+
+	mysql -u root -p
+
 ### Installing Apache
 
 See: <http://www.debianadmin.com/install-and-configure-apache2-with-php5-and-ssl-support-in-debian-etch.html>
@@ -165,7 +179,6 @@ See: <http://www.debianadmin.com/install-and-configure-apache2-with-php5-and-ssl
 	apt-get install libapache2-mod-php5 php5-cli php5-common php5-cgi
 	openssl req $@ -new -x509 -days 365 -nodes -out /etc/apache2/apache.pem -keyout /etc/apache2/apache.pem
 	chmod 600 /etc/apache2/apache.pem
-
 
 Your config file will be at:
 
@@ -189,11 +202,11 @@ See: <http://www.freshblurbs.com/install-node-js-and-express-js-nginx-debian-len
 
 ## Hardware
 
-Display hardware config (Ubuntu Desktop):
+Display hardware config (Ubuntu):
 
 	lshw
 
-Display USB status (Ubuntu Desktop):
+Display USB status (Ubuntu):
 
 	lsusb
 
