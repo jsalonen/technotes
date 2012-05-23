@@ -68,3 +68,4 @@ Use `-3` switch to warn about obsolete stuff:
 
     python -3 yourscript.py
 
+Make sure test suite is comprehensive.
