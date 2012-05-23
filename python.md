@@ -60,3 +60,11 @@ On server:
 
 	pip install fabric
 
+## Preparing for Python 3
+
+Some background: http://www.python.org/doc/essays/ppt/euro2008/Py3kEuro08.pdf
+
+Use `-3` switch to warn about obsolete stuff:
+
+    python -3 yourscript.py
+
