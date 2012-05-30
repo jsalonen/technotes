@@ -43,3 +43,14 @@ After admin has been created you may enable authentication, by either:
 - Running `mongo` with `--auth`
 - Enabling authentication in `/etc/mongodb.conf`
 
+## Setting up perdatabase user accounts
+  
+Enter `mongod` and login with an admin account. For example:	
+
+	use admin
+	db.auth("adminusername", "password")
+
+Now change DB to what you wish and create user:
+
+	use yourdbname
+        db.addUser("dbusername", "password")
