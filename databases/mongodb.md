@@ -4,6 +4,12 @@
 
 http://www.mkyong.com/mongodb/how-to-install-mongodb-on-ubuntu/    
 
+## Configuration
+
+Config file is at `/etc/mongob.conf`
+
+You may want to customize etc. logpath.
+
 ## Setting up accounts
 
 http://www.mongodb.org/display/DOCS/Security+and+Authentication
