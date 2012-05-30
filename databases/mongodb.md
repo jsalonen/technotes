@@ -1,10 +1,8 @@
 # MongoDB
 
-## Installing MongoDB on Ubuntu
+## Installing MongoDB
 
-http://www.mkyong.com/mongodb/how-to-install-mongodb-on-ubuntu/    
-
-We assume here that we are running on a late Ubuntu with Upstart based MongoDB.
+Installing on Unix: http://www.mongodb.org/display/DOCS/Quickstart+Unix
 
 ## Configuration
 
