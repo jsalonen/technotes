@@ -22,7 +22,7 @@ Stop with upstart:
 
      sudo service mongodb stop
 
-## Setting up accounts
+## Setting up authentication (admin)
 
 http://www.mongodb.org/display/DOCS/Security+and+Authentication
 
