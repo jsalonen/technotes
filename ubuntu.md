@@ -6,6 +6,10 @@ Security and authentication: http://www.mongodb.org/display/DOCS/Security+and+Au
 
 ## Changing Message of the day
 
-Take a look at:
+Current message of the day can be found from:
 
     /etc/motd
+
+Add your own message after this by modifying:
+
+    /etc/motd.tail
