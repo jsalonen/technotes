@@ -1,5 +1,9 @@
 # MongoDB
 
+## Installing MongoDB on Ubuntu
+
+http://www.mkyong.com/mongodb/how-to-install-mongodb-on-ubuntu/    
+
 ## Setting up accounts
 
 http://www.mongodb.org/display/DOCS/Security+and+Authentication
