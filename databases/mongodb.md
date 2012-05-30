@@ -1,5 +1,27 @@
 # MongoDB
 
+## Installing MongoDB
+
+Installing on Unix: http://www.mongodb.org/display/DOCS/Quickstart+Unix
+
+## Configuration
+
+Config file is at `/etc/mongob.conf`
+
+You may want to customize etc. logpath.
+
+## Starting / stopping
+
+http://www.mongodb.org/display/DOCS/Starting+and+Stopping+Mongo
+
+Start with upstart:
+
+     sudo service mongodb start
+
+Stop with upstart:
+
+     sudo service mongodb stop
+
 ## Setting up accounts
 
 http://www.mongodb.org/display/DOCS/Security+and+Authentication
