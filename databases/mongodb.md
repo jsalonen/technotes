@@ -54,3 +54,10 @@ Now change DB to what you wish and create user:
 
 	use yourdbname
         db.addUser("dbusername", "password")
+
+## Firewall setup
+
+Given that your MongoDB is running in authenticated mode, you may need to change your firewall to allow connections:
+
+     sudo iptables -A INPUT -p tcp --dport 27017 -j ACCEPT
+     sudo iptables -A OUTPUT -p tcp --dport 27017 -j ACCEPT
