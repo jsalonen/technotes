@@ -61,3 +61,11 @@ Given that your MongoDB is running in authenticated mode, you may need to change
 
      sudo iptables -A INPUT -p tcp --dport 27017 -j ACCEPT
      sudo iptables -A OUTPUT -p tcp --dport 27017 -j ACCEPT
+
+## Backups
+
+When database is running, use `mongodump`:
+
+    mongodump --host example.com --db dbname --username user1 --password password1
+
+Creates `dump` directory under current workdir
