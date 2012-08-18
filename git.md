@@ -65,6 +65,10 @@ You find them at `~/.gitconfig` in section `alias`:
     git add [pattern]
     git rm [pattern]
 
+A nice shorthand for updating all currently tracked files that are either modified or deleted:
+
+   git add -u
+
 #### Using ignores (.gitignore)
 
 To leave out files from git, specify them as masks in `.gitignore` files. Each directory can have its own ignore file.
