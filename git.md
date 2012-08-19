@@ -157,6 +157,10 @@ Commit and push back:
 
     git commit -m "..."
     git push
+    
+HINT! Before push you can fix invalid commit message with amend:
+
+    git commit --amend -m "New commit message"
 
 ## Tagging
 
