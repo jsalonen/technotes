@@ -185,7 +185,3 @@ Let's try out chatroom example:
 ROCK!
 
 Now if you wish to reuse these modules in your project, just copy `socket.io` and `now` folders under your project's `node_modules`.
-
-
-
-

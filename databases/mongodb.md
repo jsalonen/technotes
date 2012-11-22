@@ -69,3 +69,7 @@ When database is running, use `mongodump`:
     mongodump --host example.com --db dbname --username user1 --password password1
 
 Creates `dump` directory under current workdir
+
+## Resources
+
+MongoDB book: <http://shop.oreilly.com/product/0636920001096.do>
