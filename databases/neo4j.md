@@ -40,10 +40,16 @@ See: <https://devcenter.heroku.com/articles/neo4j>
 
 - By default, data is stored under `neo4j/data` folder
 
-## 3. Administration and Development Tools
+## 3. Using Administration and Development tools
 
-- Use the built-in admin UI at <http://localhost:7474/>
-- For Eclipse, there is Neoclipse: <https://github.com/neo4j/neoclipse>
+### 3.1. Build-in admin UI and Shell
+
+- Use the build-in admin UI at <http://localhost:7474/>
+
+### 3.2. Neoclipse
+
+- Requires Eclipse 3.8 Juno and some configuring
+- Get Neoclipse from here: <https://github.com/neo4j/neoclipse>
 
 ## 4. Application Development
 
