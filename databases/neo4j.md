@@ -26,7 +26,7 @@ you need to share your data among multiple applications and/or host it in a serv
 
 Embedded mode is likely a better choice if you want to use neo4j internally in your application.
 
-### 2.1. Installing neo4j server
+### 2.1. Installing as a standalone server
 
 Get neo4j: <http://www.neo4j.org/install>
 
@@ -42,7 +42,7 @@ Make sure the server is running by visiting it with a browser:
 
 **Hint:** add neo4j bin folder to PATH so that you can simply use `neo4j` command in the future.
 
-### 2.2. Installing neo4j embedded
+### 2.2. Installing as embedded
 
 - Download and install Python neo4j embedded: http://pypi.python.org/pypi/neo4j-embedded/
 - It's somewhat tricky on Windows and you probably need to solve some DLL problems. See the documentation.
