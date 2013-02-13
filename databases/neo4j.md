@@ -51,6 +51,12 @@ Make sure the server is running by visiting it with a browser:
 ### 2.3. Installing neo4j on Heroku
 
 - Create a new Heroku app and add neo4j addon: <https://addons.heroku.com/neo4j>
+- Note: you need a verified Heroku account
+
+Command-line syntax:
+
+    heroku app:create myapp
+    heroku addons:add neo4j:try --app myapp
 
 For details, see: <https://devcenter.heroku.com/articles/neo4j>
 
