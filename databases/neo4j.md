@@ -73,4 +73,7 @@ For details, see: <https://devcenter.heroku.com/articles/neo4j>
 
 ### 4.1. With Python
 
-Get py2neo: <http://py2neo.org/> (basically just `pip install py2neo`).
+Python libraries:
+
+- neo4j-rest-client: <https://github.com/versae/neo4j-rest-client>
+- py2neo: <http://py2neo.org/>
