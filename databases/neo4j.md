@@ -49,7 +49,9 @@ Make sure the server is running by visiting it with a browser:
 
 ### 2.3. Installing neo4j on Heroku
 
-See: <https://devcenter.heroku.com/articles/neo4j>
+- Create a new Heroku app and add neo4j addon: <https://addons.heroku.com/neo4j>
+
+For details, see: <https://devcenter.heroku.com/articles/neo4j>
 
 ### 2.3. General notes about installation
 
