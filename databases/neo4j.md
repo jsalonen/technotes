@@ -16,6 +16,11 @@ Neo4j is a graph database. Unlike SQL, *it doesn't have tables; it is simply jus
 
 ## 2. Installation
 
+You generally have two alternatives of using neo4j:
+
+- *As a standalone server*: Install and run neo4j is a standalone server
+- *In embedded mode*: Install and run neo4j as part of your application
+
 ### 2.1. Installing neo4j on Windows
 
 Get neo4j: <http://www.neo4j.org/install>
