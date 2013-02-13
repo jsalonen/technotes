@@ -43,7 +43,7 @@ After admin has been created you may enable authentication, by either:
 - Running `mongo` with `--auth`
 - Enabling authentication in `/etc/mongodb.conf`
 
-## Setting up perdatabase user accounts
+## Setting up per database user accounts
   
 Enter `mongod` and login with an admin account. For example:	
 
