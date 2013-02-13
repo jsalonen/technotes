@@ -1,5 +1,8 @@
 # Ep.io
 
+Ep.io has pivoted into something else and no longer provides Python hosting.
+
+<del>
 Python-hosting <https://www.ep.io/>.
 
 Pricing: <https://www.ep.io/pricing/>
@@ -13,3 +16,4 @@ Ready instructions for:
 - Django
 - Flask
 - WSGI apps in general
+</del>
