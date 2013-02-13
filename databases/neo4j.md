@@ -46,6 +46,7 @@ Make sure the server is running by visiting it with a browser:
 
 - Download and install Python neo4j embedded: http://pypi.python.org/pypi/neo4j-embedded/
 - It's somewhat tricky on Windows and you probably need to solve some DLL problems. See the documentation.
+  - Edit: clarification: your head will likely explode in the process.
 
 ### 2.3. Installing neo4j on Heroku
 
