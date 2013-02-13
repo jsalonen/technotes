@@ -12,7 +12,7 @@ Neo4j is a graph database. Unlike SQL, *it doesn't have tables; it is simply jus
 
 **Reference node**: "when a new Neo4j database is created, it already contains one single node, known as the reference node. This node can be used as a main entry point to the graph, and next we'll show a useful pattern for this." <http://blog.neo4j.org/2010/03/modeling-categories-in-graph-database.html>
 
-**Subreference nodes:**: "In most real applications you'll want multiple entry points to the graph, and this can be done by creating subreference nodes. A subreference node is a node that is connected to the reference node with a special relationship type, indicating it's role." <http://blog.neo4j.org/2010/03/modeling-categories-in-graph-database.html>
+**Subreference nodes**: "In most real applications you'll want multiple entry points to the graph, and this can be done by creating subreference nodes. A subreference node is a node that is connected to the reference node with a special relationship type, indicating it's role." <http://blog.neo4j.org/2010/03/modeling-categories-in-graph-database.html>
 
 ## 2. Installation
 
