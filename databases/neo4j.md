@@ -55,7 +55,7 @@ Make sure the server is running by visiting it with a browser:
 
 Command-line syntax:
 
-    heroku app:create myapp
+    heroku apps:create myapp
     heroku addons:add neo4j:try --app myapp
 
 For details, see: <https://devcenter.heroku.com/articles/neo4j>
