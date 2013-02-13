@@ -18,8 +18,13 @@ Neo4j is a graph database. Unlike SQL, *it doesn't have tables; it is simply jus
 
 You generally have two alternatives of using neo4j:
 
-- *As a standalone server*: Install and run neo4j is a standalone server
-- *In embedded mode*: Install and run neo4j as part of your application
+- **Standalone server**. Install and run neo4j is a standalone server
+- **Embedded**. Install and run neo4j as part of your application
+
+Which one to choose depends on what you are doing. Standalone server is generally a better choice if
+you need to share your data among multiple applications and/or host it in a server.
+
+Embedded mode is likely a better choice if you want to use neo4j internally in your application.
 
 ### 2.1. Installing neo4j on Windows
 
