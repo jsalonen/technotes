@@ -127,7 +127,7 @@ Resetting stashing:
 
 ### Selectively checkout only chosen files
 
-    git checkout tmp/**
+    git checkout -- tmp/**
 
 ## Merging and Conflicts
 
