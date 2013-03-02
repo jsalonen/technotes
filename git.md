@@ -85,7 +85,6 @@ Sample file:
     # Example 3: You can also ignore stuff from subdirectories
     tmp/**/* 
 
-
 Examples:
 
     git add README.txt
@@ -123,6 +122,12 @@ Resetting stashing:
 `git reset HEAD`
 
 `git reset --hard HEAD`
+
+## Checking out
+
+### Selectively checkout only chosen files
+
+    git checkout tmp/**
 
 ## Merging and Conflicts
 
