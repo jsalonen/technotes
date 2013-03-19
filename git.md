@@ -220,6 +220,10 @@ All done. Check your logs and push if needed.
 
 ## Recipes
 
+### Git Workflows
+
+See: <http://atlassian.com/git/workflows#!workflow-gitflow>
+
 ### Updating a Github Fork From the Original Repo
 
 From: <http://bradlyfeeley.com/2008/09/03/update-a-github-fork-from-the-original-repo/>
