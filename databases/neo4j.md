@@ -4,7 +4,7 @@
 
 ### 1.1. What is Neo4j?
 
-Neo4j is a fully ACID compliant, transactional property graph database. Unlike SQL, it doesn't have tables; it is simply just one (potentially huge) graph.
+Neo4j is a fully ACID compliant, transactional, property graph database. Unlike SQL, it doesn't have tables; it is simply just one (potentially huge) graph.
 
 Neo4j is *schema-less*, which means that the database doesn't help you much with keeping your data in shape -- you need to figure out other ways for expressing and managing your schema. On the other hand neo4j doesn't get too much in your way if you want to use it for managing datasets with rapidly evolving or complex schemata.
 
