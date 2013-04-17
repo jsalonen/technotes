@@ -2,3 +2,5 @@
 
 ![jsalonen](random-noter.png)
 
+
+*"Yeah. Just some random stuff"!*
