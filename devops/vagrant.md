@@ -6,9 +6,11 @@ Download and install OS specific Vagrant bundle from http://downloads.vagrantup.
 
 You also need to install a backend such as VirtualBox (<https://www.virtualbox.org/>).
 
-### Getting Start
+### Getting Started
 
 This stuff is nicely documented here as well: http://docs.vagrantup.com/v2/getting-started/index.html
+
+#### Initializing Vagrant on a project
 
 Go to your project folder:
 
@@ -19,6 +21,8 @@ Initialize
     vagrant init
     
 As a result, `Vagrantfile` is generated
+
+#### Adding a Box
 
 Let's add a box to Vagrant (<http://docs.vagrantup.com/v2/getting-started/boxes.html>):
 
