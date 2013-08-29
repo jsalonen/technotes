@@ -4,6 +4,8 @@
 
 Download and install OS specific Vagrant bundle from http://downloads.vagrantup.com/
 
+You also need to install a backend such as VirtualBox (<https://www.virtualbox.org/>).
+
 ## Initialize Vagrant environment
 
 Go to your project folder:
