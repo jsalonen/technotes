@@ -22,6 +22,12 @@ Let's add a box to Vagrant (<http://docs.vagrantup.com/v2/getting-started/boxes.
 
     vagrant box add precise32 http://files.vagrantup.com/precise32.box
 
+Open `Vagrantfile` and configure it to use the newly added box:
+
+    Vagrant.configure("2") do |config|
+      config.vm.box = "precise32"
+    end
+
 Now, to open the Vagrant enviroment, you just call:
 
     vagrant up
