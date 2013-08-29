@@ -1,5 +1,9 @@
 # Vagrant
 
+## Installation
+
+Download and install OS specific Vagrant bundle from http://downloads.vagrantup.com/
+
 ## Initialize Vagrant environment
 
 Go to your project folder:
