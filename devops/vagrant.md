@@ -44,3 +44,6 @@ To open an SSH session call:
 
     vagrant ssh
     
+#### Synced folders
+
+By convention, Vagrant shares and syncs `/vagrant` directory between host and guest machines.
