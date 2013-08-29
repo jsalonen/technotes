@@ -39,3 +39,8 @@ Open `Vagrantfile` and configure it to use the newly added box:
 Now, to open the Vagrant enviroment, you just call:
 
     vagrant up
+
+To open an SSH session call:
+
+    vagrant ssh
+    
