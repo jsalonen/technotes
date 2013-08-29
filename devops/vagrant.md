@@ -34,6 +34,8 @@ Open `Vagrantfile` and configure it to use the newly added box:
       config.vm.box = "precise32"
     end
 
+#### Getting inside the Environment
+
 Now, to open the Vagrant enviroment, you just call:
 
     vagrant up
