@@ -237,3 +237,7 @@ List remotes:
 Fetch and merge:
     git fetch user1
     git merge user1/master
+
+### Nicely formatted log output on command-line
+
+    git log --graph --decorate --abbrev-commit --all --pretty=oneline
