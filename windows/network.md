@@ -1,5 +1,9 @@
 # Windows Network Configuration
 
+## Find out what programs are running on ports
+
+    netstat -anb
+
 ## Port forwading
 
 Forward localhost port 8080 to remote address example.com port 80:
