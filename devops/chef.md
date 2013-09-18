@@ -7,3 +7,7 @@ Knife: a command-line tool that provides an interface between a local chef-repo 
 ## Commands
 
     knife node list
+
+## Update a cookbook on a Chef server
+
+    knife cookbook upload mycookbook
