@@ -183,6 +183,10 @@ Example 2: Using Input Parameters:
 
 	$Host.UI.WriteErrorLine("Your error message")
 
+### Find text in files
+
+	dir -r -i *.* | select-string "mytext"
+
 ### Alert WIndow
 
 	[System.Windows.Forms.MessageBox]::Show("Add your alert message here")
