@@ -241,3 +241,7 @@ Fetch and merge:
 ### Nicely formatted log output on command-line
 
     git log --graph --decorate --abbrev-commit --all --pretty=oneline
+
+### Using subtrees to manage dependencies
+
+http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/
