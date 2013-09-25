@@ -210,6 +210,10 @@ Smaller than:
 
 Etc.
 
+### Find files by name
+
+    gci -recurse -filter "hosts"
+    
 ## Literature
 
 Bruce Payette. (2007). Windows PowerShell in Action. Manning. <http://manning.com/payette/>
