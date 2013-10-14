@@ -13,3 +13,7 @@ Knife: a command-line tool that provides an interface between a local chef-repo 
 ### Update a cookbook on a Chef server
 
     knife cookbook upload mycookbook
+
+### Update environment
+
+    knife environment from file dev.rb
