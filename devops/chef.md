@@ -17,3 +17,7 @@ Knife: a command-line tool that provides an interface between a local chef-repo 
 ### Update environment
 
     knife environment from file dev.rb
+
+### Update role
+
+    knife role from file app1.rb
