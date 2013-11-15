@@ -21,3 +21,11 @@ Knife: a command-line tool that provides an interface between a local chef-repo 
 ### Update role
 
     knife role from file app1.rb
+
+### Show node information (like IP)
+
+    knife node show mynode1
+    
+### Search nodes by criteria
+
+    knife search node "chef_environment:development AND tags:mynodegroup"
