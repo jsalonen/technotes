@@ -6,7 +6,7 @@
 
 See: <http://help.github.com/win-set-up-git/>
 
-*Tip: use Git bash instead of cmd.exe or PowerShell! It's ridiculously simple and effective to use.*
+**Tip: use Git bash instead of cmd.exe or PowerShell! It's ridiculously simple and effective to use.**
 
 Go to your .ssh:
 
