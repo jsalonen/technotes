@@ -218,6 +218,43 @@ An editor will open displaying all your commits. You can now edit the commit mes
 
 All done. Check your logs and push if needed.
 
+## Branches
+
+### List your branches
+
+To list your branches invoke:
+
+    git branch
+    
+You get something like:
+
+      help
+    * master
+      feature1
+
+Star (*) indicates currently checked out branch.
+
+### Checkout out a branch
+
+If you wish to checkout a branch just use:
+
+    git checkout feature1
+    
+You can get back to master similarly:
+
+    git checkout master
+
+### Creating new (local) branch
+
+Simplest way:
+
+    git checkout -b feature2
+
+Which is shorthand for:
+
+    git branch feature2
+    git checkout feature2
+
 ## Recipes
 
 ### Git Workflows
