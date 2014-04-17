@@ -187,36 +187,6 @@ Sharing tags (they are not pushed to remote by default):
 
     git push --tags
 
-## Using Branches and Rebasing
-
-Check your log:
-
-    git log
-
-check status:
-
-    git status
-
-Alright now, let's checkout a branch:
-
-    git checkout -b featurebranch1
-
-Now just commit stuff whenever you feel like it. If anything breaks, you can simply roll back or diff what you did.
-At some point you are done. For instance if you made five commits see the log with:
-
-    git log -5
-
-If the last 4 commits have been made after branching from master, you can combine these all four with rebase as follows:
-
-    git rebase -i HEAD~4
-
-An editor will open displaying all your commits. You can now edit the commit message and finish the rebase. Some conventions:
-
-- r = reword, text is changed
-- f = fixup that is combine with previous comment
-
-All done. Check your logs and push if needed.
-
 ## Branches
 
 ### List your branches
@@ -242,6 +212,14 @@ If you wish to checkout a branch just use:
 You can get back to master similarly:
 
     git checkout master
+    
+### Pushing branch to remote
+
+Pushing branch to remote when it has not been done before:
+
+    git push -u --set-upstream origin feature2
+
+Will set upstream location for the branch and push it.
 
 ### Creating new (local) branch
 
