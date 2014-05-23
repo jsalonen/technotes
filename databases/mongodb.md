@@ -70,6 +70,12 @@ When database is running, use `mongodump`:
 
 Creates `dump` directory under current workdir
 
+## Exports
+
+Parametrized export example: run a query in database `database1` in collection `collection1`, query for documents with case-insensitive regexp title matching, sort resuts by date created in ascending order and return fields `created`, `userId` and `status` and export to CSV file `dump.csv`:
+
+    mongoexport --csv -d database1 -c collection1 -q '{"title": /^example$/i}' -f "created","userId","status" --sort '{"created": -1}' -o dump.csv
+
 ## Resources
 
 MongoDB book: <http://shop.oreilly.com/product/0636920001096.do>
