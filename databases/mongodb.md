@@ -70,6 +70,24 @@ When database is running, use `mongodump`:
 
 Creates `dump` directory under current workdir
 
+## JSON and CSV Export
+
+JSON export is the default:
+
+    mongexport --db users --collection contacts --out userbackup.json
+
+Parametrized CSV export example:
+
+    mongoexport --csv -d dn1 -c col1 -q '{"title": /^example$/i}' -f "created","userId" --sort '{"created": -1}' -o dump.csv
+
+It will:
+
+- run a query in database `db1` in collection `col1`,
+- query for documents with case-insensitive regexp title matching,
+- sort resuts by date created in ascending order,
+- return fields `created` and `userId`,
+- and export to CSV file `dump.csv`:
+
 ## Resources
 
 MongoDB book: <http://shop.oreilly.com/product/0636920001096.do>

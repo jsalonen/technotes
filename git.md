@@ -6,8 +6,7 @@
 
 See: <http://help.github.com/win-set-up-git/>
 
-Remember to use Git bash instead of cmd.exe or PowerShell! It's
-ridiculously simple and effective to use.
+**Tip: use Git bash instead of cmd.exe or PowerShell! It's ridiculously simple and effective to use.**
 
 Go to your .ssh:
 
@@ -188,35 +187,50 @@ Sharing tags (they are not pushed to remote by default):
 
     git push --tags
 
-## Using Branches and Rebasing
+## Branches
 
-Check your log:
+### List your branches
 
-    git log
+To list your branches invoke:
 
-check status:
+    git branch
+    
+You get something like:
 
-    git status
+      help
+    * master
+      feature1
 
-Alright now, let's checkout a branch:
+Star (*) indicates currently checked out branch.
 
-    git checkout -b featurebranch1
+### Checkout out a branch
 
-Now just commit stuff whenever you feel like it. If anything breaks, you can simply roll back or diff what you did.
-At some point you are done. For instance if you made five commits see the log with:
+If you wish to checkout a branch just use:
 
-    git log -5
+    git checkout feature1
+    
+You can get back to master similarly:
 
-If the last 4 commits have been made after branching from master, you can combine these all four with rebase as follows:
+    git checkout master
+    
+### Pushing branch to remote
 
-    git rebase -i HEAD~4
+Pushing branch to remote when it has not been done before:
 
-An editor will open displaying all your commits. You can now edit the commit message and finish the rebase. Some conventions:
+    git push -u --set-upstream origin feature2
 
-- r = reword, text is changed
-- f = fixup that is combine with previous comment
+Will set upstream location for the branch and push it.
 
-All done. Check your logs and push if needed.
+### Creating new (local) branch
+
+Simplest way:
+
+    git checkout -b feature2
+
+Which is shorthand for:
+
+    git branch feature2
+    git checkout feature2
 
 ## Using Stashes
 
