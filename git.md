@@ -115,7 +115,7 @@ To pull changes from remote repository:
 
     git pull
 
-Resetting stashing:
+Resetting:
 
 `git reset`
 
@@ -217,6 +217,28 @@ An editor will open displaying all your commits. You can now edit the commit mes
 - f = fixup that is combine with previous comment
 
 All done. Check your logs and push if needed.
+
+## Using Stashes
+
+See: http://git-scm.com/book/en/Git-Tools-Stashing
+
+### Moving Code to Stash
+
+Check your changes:
+
+    git status
+
+Put them into stash:
+
+    git stash
+
+### Getting Code Back from Stash
+
+Check out what you have in stash now:
+
+    git stash list
+
+
 
 ## Recipes
 
