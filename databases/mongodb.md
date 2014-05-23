@@ -70,7 +70,7 @@ When database is running, use `mongodump`:
 
 Creates `dump` directory under current workdir
 
-## Exports
+## JSON and CSV Export
 
 Parametrized export example: run a query in database `db1` in collection `col1`, query for documents with case-insensitive regexp title matching, sort resuts by date created in ascending order and return fields `created` and `userId`, and export to CSV file `dump.csv`:
 
