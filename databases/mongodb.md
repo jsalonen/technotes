@@ -78,12 +78,14 @@ JSON export is the default:
 
 Parametrized CSV export example:
 
+    mongoexport --csv -d dn1 -c col1 -q '{"title": /^example$/i}' -f "created","userId" --sort '{"created": -1}' -o dump.csv
+
+It will:
+
 - run a query in database `db1` in collection `col1`,
 - query for documents with case-insensitive regexp title matching,
 - sort resuts by date created in ascending order and return fields `created` and `userId`,
 - and export to CSV file `dump.csv`:
-
-    mongoexport --csv -d dn1 -c col1 -q '{"title": /^example$/i}' -f "created","userId" --sort '{"created": -1}' -o dump.csv
 
 ## Resources
 
