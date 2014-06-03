@@ -68,6 +68,12 @@ A nice shorthand for updating all currently tracked files that are either modifi
 
    git add -u
 
+#### Staging diffs
+
+Show diff for uncommited files:
+
+    git diff --cached
+
 #### Using ignores (.gitignore)
 
 To leave out files from git, specify them as masks in `.gitignore` files. Each directory can have its own ignore file.
