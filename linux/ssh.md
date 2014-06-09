@@ -4,7 +4,7 @@
 
 Start ssh with proxy:
 
-    ssh -D 5000 -N proxy-nat
+    ssh -D 5000 -N proxy-via-servername.com
 
 Leave the proxy server open.
 
