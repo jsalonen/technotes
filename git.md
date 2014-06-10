@@ -238,6 +238,15 @@ Which is shorthand for:
     git branch feature2
     git checkout feature2
 
+### Cherry-picking specific commits from branch
+
+Picking single commit with id `62ac3d` from feature branch, etc. to master:
+
+    git checkout master
+    git cherry-pick 62ac3d
+
+See also: <https://ariejan.net/2010/06/10/cherry-picking-specific-commits-from-another-branch/>
+
 ## Recipes
 
 ### Git Workflows
