@@ -68,6 +68,12 @@ A nice shorthand for updating all currently tracked files that are either modifi
 
    git add -u
 
+#### Staging diffs
+
+Show diff for uncommited files:
+
+    git diff --cached
+
 #### Using ignores (.gitignore)
 
 To leave out files from git, specify them as masks in `.gitignore` files. Each directory can have its own ignore file.
@@ -253,6 +259,14 @@ Check out what you have in stash now:
     git stash list
 
 
+### Cherry-picking specific commits from branch
+
+Picking single commit with id `62ac3d` from feature branch, etc. to master:
+
+    git checkout master
+    git cherry-pick 62ac3d
+
+See also: <https://ariejan.net/2010/06/10/cherry-picking-specific-commits-from-another-branch/>
 
 ## Recipes
 
