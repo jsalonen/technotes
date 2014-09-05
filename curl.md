@@ -1,6 +1,6 @@
 # Curl recipes
 
-## Fake hostname
+## Set hostname header ("Fake hostname")
 
     curl -i -H "Host:example.com" http://localhost:8080/examplesiteurl
 
