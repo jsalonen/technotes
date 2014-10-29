@@ -259,6 +259,8 @@ Ring middleware example:
 
 **Compojure-api** - Stuff on top of Compojure (Swagger integration, etc.)
 
+**Prismatic/schema** - General-purpose schema-validation (<https://github.com/Prismatic/schema>)
+
 ## More stuff you should check out
 
 - Clojuredocs.org - Documentation with community examples
