@@ -339,3 +339,22 @@ Mult z -> apply to y -> apply to z
 
 **Unless tupling is explicitly required, all functions in Haskell are normally defined in curried form. ** (Normal in other languages this is the opposite.
 
+**Polymorphic Functions**
+
+A function is called **polymorphic** if its type contains one or more type variables:
+
+	length :: [a] -> Int
+
+- `Int` is a concrete type (starts with uppercase)
+- `a` is **a type variable** (see: it starts with lowercase)
+
+Many of the functions defined in the standard prelude library are polymorphic. For example:
+
+	fst :: (a,b) -> a
+	head :: [a] -> a
+	take :: Int -> [a] -> [a]
+	zip :: [a] -> [b] [(a,b)]
+	id :: a -> b
+
+
+
