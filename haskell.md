@@ -247,11 +247,9 @@ Pairs:
 		fst (1, "Hello")
 		snd (1, "Hello")
 
-## Notes from FP101x
+## Notes from FP101x (Lecture 2)
 
-### Lecture 2 (Types and Classes)
-
-#### Types
+### Types
 
 - A **type** is a name for a collection of related values.
 - Applying a function to one or more arguments of the wrong type is called a type error
@@ -277,7 +275,7 @@ Basic Types in Haskell: `Bool´, ´Char`, `String`, `Int`, `Integer`, `Float`
 - List: only one type per list
 - Tuple Types: A tuple is a sequence of values of *different* types
 
-#### Types of Functions
+### Types of Functions
 
 A function is a mapping from values of one type to values of another type
 
@@ -289,7 +287,7 @@ Examples:
 Type of from = "domain"
 Type of to = "range"
 
-**Curried Functions**
+#### Curried Functions
 
 Functions with multiple arguments are also possible by returning functions as results:
 
@@ -305,7 +303,7 @@ Functions with more than two arguments ca be curried by returning nested functio
 	mult	:: Int -> (Int -> (Int -> Int))
 	mult x y z = x*y*z
 
-**Why is Currying Useful?**
+#### Why is Currying Useful?
 
 Curried functions are more flexible than functions on tuples, because useful functions can often be made by *partially applying* a curried function.
 
@@ -317,7 +315,7 @@ Examples:
 
 *Haskell is optimized for curried functions. Languages typically are optimized for functions taking tuples as arguments.*
 
-**Currying Conventions**
+#### Currying Conventions
 
 	Int -> Int -> Int -> Int
 	
@@ -339,7 +337,7 @@ Mult z -> apply to y -> apply to z
 
 **Unless tupling is explicitly required, all functions in Haskell are normally defined in curried form. ** (Normal in other languages this is the opposite.
 
-**Polymorphic Functions**
+#### Polymorphic Functions
 
 A function is called **polymorphic** if its type contains one or more type variables:
 
@@ -355,6 +353,32 @@ Many of the functions defined in the standard prelude library are polymorphic. F
 	take :: Int -> [a] -> [a]
 	zip :: [a] -> [b] [(a,b)]
 	id :: a -> b
+
+#### Overloaded Functions
+
+A polymorphic function is called *overloaded* if its type contains one or more class constraints.
+
+Example:
+
+	sum :: Num a => [a] -> a
+
+For any numeric type `a`, sum takes a list of values of type `a` and returns `a` value of type `a`.
+
+Does not mean overloading in the object-oriented sense, it really means that you're restricting the types of the parameters, like in this case we require `a` type variable that are in this `Num` class.
+
+#### Type Classes
+
+Haskell has a number of type classes, including:
+
+	Num - Numeric types
+	Eq - Equality types
+	ord - Ordered types
+
+For example:
+
+	(+)	:: Num a => a -> a -> a
+	(==)	:: Eq a => a -> a -> Bool
+	(<)	:: Ord a => a -> a -> Bool
 
 
 
