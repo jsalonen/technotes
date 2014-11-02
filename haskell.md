@@ -251,6 +251,8 @@ Pairs:
 
 ### Lecture 2 (Types and Classes)
 
+#### Types
+
 - A **type** is a name for a collection of related values.
 - Applying a function to one or more arguments of the wrong type is called a type error
 - The goal of static typing is that the compiler will catch these type errors early on
@@ -275,3 +277,25 @@ Basic Types in Haskell: `Bool´, ´Char`, `String`, `Int`, `Integer`, `Float`
 - List: only one type per list
 - Tuple Types: A tuple is a sequence of values of *different* types
 
+#### Types of Functions
+
+A function is a mapping from values of one type to values of another type
+
+Examples:
+
+	not	:: Bool -> Bool
+	isDigit :: Char -> Bool
+
+Type of from = "domain"
+Type of to = "range"
+
+**Curried Functions**
+
+Functions with multiple arguments are also possible by returning functions as results:
+
+	add'	:: Int -> (Int -> Int)
+	add' x y = x + y
+
+In Haskell you don't have to write those inner arrows ("Int -> Int"). 
+
+Functions that take their arguments one-by-one are called **curried functions**
