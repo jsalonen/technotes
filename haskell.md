@@ -49,7 +49,8 @@ To indicate the grouping of definitions
 implicit grouping:
 
 	a = b + c
-        where a = 1
+        where
+              a = 1
               b = 2
 	d = a * 2
 
@@ -59,7 +60,7 @@ Same as
 	a = b + c
 	    where
 	        {b = 1;
-             c = 2}
+                 c = 2}
 	d = a * 2
 
 #### Comments
@@ -245,4 +246,11 @@ Pairs:
 
 		fst (1, "Hello")
 		snd (1, "Hello")
+
+## Notes from FP101x
+
+### Lecture 2
+
+TODO
+
 
