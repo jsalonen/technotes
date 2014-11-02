@@ -315,4 +315,27 @@ Examples:
 	take 5 :: [Int] -> [Int]
 	drop 5 :: [Int] -> [Int]
 
+*Haskell is optimized for curried functions. Languages typically are optimized for functions taking tuples as arguments.*
+
+**Currying Conventions**
+
+	Int -> Int -> Int -> Int
+	
+Means
+
+	Int -> (Int -> (Int -> Int))
+	
+We just commonly avoid writing all those parenthesis.
+
+As a consequence, it is then natural for a function application to associate to the left:
+
+	mult x y z
+	
+Means actually
+
+	((mult x) y) z
+
+Mult z -> apply to y -> apply to z
+
+**Unless tupling is explicitly required, all functions in Haskell are normally defined in curried form. ** (Normal in other languages this is the opposite.
 
