@@ -249,8 +249,24 @@ Pairs:
 
 ## Notes from FP101x
 
-### Lecture 2
+### Lecture 2 (Types and Classes)
 
-TODO
+- A **type** is a name for a collection of related values.
+- Applying a function to one or more arguments of the wrong type is called a type error
+- The goal of static typing is that the compiler will catch these type errors early on
 
+Notation for writing types in Haskell:
+
+	e :: t
+	
+If evaluation an expression `e` would produce a value of type `t` then `e`has type `t` as above.
+
+Every well formed expression has a type --> **type inference**
+
+- All type errors are found at compile time in Haskell, which makes programs safer and faster by removing the need for the type checks at run time
+
+Asking type in GHCi:
+
+	> :type not False
+	not False :: Bool
 
