@@ -299,3 +299,20 @@ Functions with multiple arguments are also possible by returning functions as re
 In Haskell you don't have to write those inner arrows ("Int -> Int"). 
 
 Functions that take their arguments one-by-one are called **curried functions**
+
+Functions with more than two arguments ca be curried by returning nested functions:
+
+	mult	:: Int -> (Int -> (Int -> Int))
+	mult x y z = x*y*z
+
+**Why is Currying Useful?**
+
+Curried functions are more flexible than functions on tuples, because useful functions can often be made by *partially applying* a curried function.
+
+Examples:
+
+	add' 1 :: Int -> Int
+	take 5 :: [Int] -> [Int]
+	drop 5 :: [Int] -> [Int]
+
+
