@@ -270,3 +270,8 @@ Asking type in GHCi:
 	> :type not False
 	not False :: Bool
 
+Basic Types in Haskell: `Bool´, ´Char`, `String`, `Int`, `Integer`, `Float`
+
+- List: only one type per list
+- Tuple Types: A tuple is a sequence of values of *different* types
+
