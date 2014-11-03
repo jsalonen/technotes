@@ -26,7 +26,7 @@ Knife: a command-line tool that provides an interface between a local chef-repo 
 
 Update data bag from folder `artifacts`
 
-    knife data bag from file artifacts app1.rb 
+    knife data bag from file artifacts app1.json
 
 ### Show node information (like IP)
 
