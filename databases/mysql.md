@@ -9,3 +9,9 @@ Running dump to an outfile:
 Restoring from the file:
 
     mysql -u [username] -p[user_password] -h [hostname] [database_name] < dump.sql
+
+Example:
+
+    mysqldump -u root -pABC123 -h example.com myapp > myapp.sql
+    mysql -u root -pABC123 -h example.com myapp < myapp.sql
+    
