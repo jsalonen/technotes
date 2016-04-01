@@ -6,10 +6,10 @@ Insert SD card. Locate which disk it is (about this mac -> System report -> find
 
 Unmount
 
-  sudo diskutil unmount /dev/disk3s1
+    sudo diskutil unmount /dev/disk3s1
   
 etc.
 
 Write:
 
-  sudo dd bs=1m if=THEIMAGEYOUWANTTOUSE.img of=/dev/rdisk3
+    sudo dd bs=1m if=THEIMAGEYOUWANTTOUSE.img of=/dev/rdisk3
