@@ -20,4 +20,19 @@
 - ECS or EC2 Container Service: Docker containers on top of EC2
 - Elastic Beanstalk: simple deployments for someone who doesn't know AWS in-depth
 - Lambda: Function as a Service
-- Lightsail: Out-of-box cloud ("Wordpress", "Joomla")
+- Lightsail: Out-of-box cloud (think: simple Wordpress deploy)
+
+### Storage
+
+- S3 = Simple Storage Service, cloud-based object storage (think: files in cloud)
+- Glacier = Long-term, low cost S3 object storage (think: backups, persisting data)
+- EFS = Elastic File System, NFS file system (think: file system you can share)
+- Storage Gateway = On-premises access to cloud storage
+- EBS = Elastic Block Store (think: hard-drive you attach to machines)
+
+### Databases
+
+- RDS = Relation Database Service, managed database in cloud (think: hosted SQL servers)
+- DynamoDB = NoSQL Database, managed in cloud (think: hosted key-value and document database servers)
+- Redshift = Cloud data warehouse (think: big data in cloud)
+- Elasticache = Managed caching layer in cloud (think: hosted Memcached/redis)
