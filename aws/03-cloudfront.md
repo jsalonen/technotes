@@ -21,4 +21,6 @@ Restrict Viewer Access. Possible with:
 
 ## Invalidation
 
+- Use invalidations to flush cache before TTL expoires
 - Create invalidations to invalidate distribution caches partially or completely
+- Avoid need for invalidation by adding version info as part of file path
