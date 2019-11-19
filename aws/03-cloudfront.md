@@ -13,3 +13,8 @@ Distribution types:
 
 - Web Distribution: web content
 - RTMP: media streaming
+
+Restrict Viewer Access. Possible with:
+
+- Signed URLs
+- Signed cookies
