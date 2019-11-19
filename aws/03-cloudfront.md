@@ -18,3 +18,7 @@ Restrict Viewer Access. Possible with:
 
 - Signed URLs
 - Signed cookies
+
+## Invalidation
+
+- Create invalidations to invalidate distribution caches partially or completely
